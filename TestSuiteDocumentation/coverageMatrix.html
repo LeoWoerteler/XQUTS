@@ -1,0 +1,869 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>XML Query Update Coverage Matrix</title>
+</head>
+<body>
+<p><img alt="W3C" src="http://www.w3.org/Icons/WWW/w3c_home.gif" /></p>
+<h1 style="text-align: center;">XML Query Update Coverage Matrix</h1>
+<center><h2><b>Replace Expressions</b></h2></center>
+<table frame = "border" style="solid" border = "1" width = "550" align="center">
+<tr>
+<td><h4><center>Test Name</center></h4></td>
+<td><h4><center>Feature Tested</center></h4></td>
+<td><h4><center>Section Number</center></h4></td>
+</tr>
+<tr><td>replace-1</td>
+<td>Evaluates a replace expression, which replaces an element node.</td>
+<td>2.3.4</td></tr> 
+ 
+<tr><td>replace-2</td>
+<td>Evaluates a replace expression, which replaces an attribute node.</td>
+<td>2.3.4</td></tr> 
+     
+<tr><td>replace-3</td>
+<td>Evaluates a replace expression that replaces a comment node.</td>
+<td>2.3.4</td></tr>
+ 
+<tr><td>replace-4</td>
+<td>Evaluates a replace expression that replaces Processing Instruction node.</td>
+<td>2.3.4</td></tr>
+    
+<tr><td>replace-5</td>
+<td>Evaluates a replace expression, which replaces an element node and usage of "value of" keyword.</td>
+<td>2.3.4</td></tr>
+  
+<tr><td>replace-6</td>
+<td>Evaluates a replace expression, which replaces an attribute node and usage of "value of" keyword.</td>
+<td>2.3.4</td></tr>
+     
+<tr><td>replace-7</td>
+<td>Evaluates a replace expression, which replaces a comment node and usage of "value of" keyword.</td>
+<td>2.3.4</td></tr>
+  
+<tr><td>replace-8</td>
+<td>Evaluates a replace expression, which replaces a Processing Instruction node and usage of "value of" keyword.</td>
+<td>2.3.4</td></tr>
+  
+<tr><td>replace-9</td>
+<td>Evaluates a replace expression, which replaces an element node and usage of "value of" keyword.  It uses an arithmetic expression.</td>
+<td>2.3.4</td></tr>
+   
+<tr><td>replace-10</td>
+<td>Evaluates a replace expression, which replaces an element node with a sequence of zero nodes.</td>
+<td>2.3.4</td></tr>
+  
+<tr><td>replace-11</td>
+<td>Evaluates a replace expression, where expression following the "with" clause is an updating expression.</td>
+<td>2.3.4</td></tr>
+
+<tr><td>replace-12</td>
+<td>Evaluates a replace expression, where the target expression is an updating expression.</td>
+<td>2.3.4</td></tr>
+    
+<tr><td>replace-13</td>
+<td>Evaluates a replace expression, where the target expression results in more than one node.</td>
+<td>2.3.4</td></tr>
+      
+<tr><td>replace-14</td>
+<td>Evaluates a replace expression, where the target expression results in a single node with no parent property.</td>
+<td>2.3.4</td></tr>
+  
+<tr><td>replace-15</td>
+<td>Evaluates a replace expression, where the target is a document node.</td>
+<td>2.3.4</td></tr>
+  
+<tr><td>replace-16</td>
+<td>Evaluates a replace expression, where an attempt is made to replace an attribute node with an element node.</td>
+<td>2.3.4</td></tr>
+  
+<tr><td>replace-17</td>
+<td>Evaluates a replace expression, where expression following the "with" clause is an updating expression and usage of "value of" keyword.</td>
+<td>2.3.4</td></tr>
+     
+<tr><td>replace-18</td>
+<td>Evaluates a replace expression, where the target expression is an updating expression and usage of the "value of" keyword.</td>
+<td>2.3.4</td></tr>
+
+<tr><td>replace-19</td>
+<td>Evaluates a replace expression, where the target expression results into more than one node and usage of the "value of" keyword.</td>
+<td>2.3.4</td></tr>
+ 
+<tr><td>replace-20</td>
+<td>Evaluates a replace expression, where the target is a document node and usage of the "value of" keyword.</td>
+<td>2.3.4</td></tr>
+        
+<tr><td>replace-21</td>
+<td>Evaluates a replace expression, used to replace an attribute node's value with an element node and usage of the "value of" clause.</td>
+<td>2.3.4</td></tr>
+             
+<tr><td>replace-22</td>
+<td>Evaluates a replace expression used with FLOWR expression with "let" clause set to an updating (replace) expression.</td>
+<td>2.3.4, 2.4.1</td></tr>             
+   
+<tr><td>replace-23</td>
+<td>Evaluates a replace expression used with FLOWR expression with "for" clause set to an updating (replace) expression.</td>
+<td>2.3.4, 2.4.1</td></tr> 
+ 
+<tr><td>replace-24</td>
+<td>Evaluates a replace expression used with FLOWR expression with "where" clause set to an updating (replace) expression.</td>
+<td>2.3.4, 2.4.1</td></tr>
+
+<tr><td>replace-25</td>
+<td>Evaluates a replace expression used with FLOWR expression with "order by" clause set to an updating (replace) expression.</td>
+<td>2.3.4, 2.4.1</td></tr> 
+           
+<tr><td>replace-26</td>
+<td>Evaluates a replace expression used together with a typeswitch expression where the operand is an updating (transform) expression.</td>
+<td>2.3.4, 2.4.2</td></tr> 
+
+<tr><td>replace-27</td>
+<td>Evaluates a replace expression used together with a typeswitch expression where a branch (a case) is an updating (transform) expression. Other branches are the empty sequence.</td>
+<td>2.3.4, 2.4.2</td></tr>
+ 
+<tr><td>replace-28</td>
+<td>Evaluates a replace expression used together with a typeswitch expression where a branch (the default) is an updating (transform) expression. Other branches are the empty sequence.</td>
+<td>2.3.4, 2.4.2</td></tr>
+ 
+<tr><td>replace-29</td>
+<td>Evaluates a replace expression used together with a typeswitch expression where a branch (a case) is an updating (transform) expression. Other branches are a call to the fn:error function.</td>
+<td>2.3.4, 2.4.2</td></tr> 
+   
+<tr><td>replace-30</td>
+<td>Evaluates a replace expression used together with a typeswitch expression where a branch (the default) is an updating (transform) expression. Other branches are a call to the fn:error function.</td>
+<td>2.3.4, 2.4.2</td></tr>
+    
+<tr><td>replace-31</td>
+<td>Evaluates a replace expression used together with a typeswitch expression where a branch (a case) is an updating (transform) expression. Other branches return a string.</td>
+<td>2.3.4, 2.4.2</td></tr>
+ 
+<tr><td>replace-32</td>
+<td>Evaluates a replace expression used together with a typeswitch expression where a branch (the default) is an updating (transform) expression. Other branches return a string.</td>
+<td>2.3.4, 2.4.2</td></tr>
+  
+<tr><td>replace-33</td>
+<td>Evaluates a replace expression used together with a conditional expression where a branch (the "then") is an updating (transform) expression. The "else" return the empty sequence.</td>
+<td>2.3.4, 2.4.3</td></tr>
+  
+<tr><td>replace-34</td>
+<td>Evaluates a replace expression used together with a conditional expression where a branch (the "else") is an updating (transform) expression. The "then" return the empty sequence.</td>
+<td>2.3.4, 2.4.3</td></tr> 
+  
+<tr><td>replace-35</td>
+<td>Evaluates a replace expression used together with a conditional expression where a branch (the "then") is an updating (transform) expression. The "else" invokes the fn:error function.</td>
+<td>2.3.4, 2.4.3</td></tr> 
+ 
+<tr><td>replace-36</td>
+<td>Evaluates a replace expression used together with a conditional expression where a branch (the "else") is an updating (transform) expression. The "then" invokes the fn:error function.</td>
+<td>2.3.4, 2.4.3</td></tr>
+
+<tr><td>replace-37</td>
+<td>Evaluates a replace expression used together with a conditional expression where a branch (the then) is an updating (transform) expression. The "else" just return a string.</td>
+<td>2.3.4, 2.4.3</td></tr>
+ 
+<tr><td>replace-38</td>
+<td>Evaluates a replace expression used together with a conditional expression where a branch (the else) is an updating (transform) expression. The "then" just return a string.</td>
+<td>2.3.4, 2.4.3</td></tr>
+  
+<tr><td>replace-39</td>
+<td>Evaluation of a replace expression used with comma expression where both expressions are updating (replace) expressions.</td>
+<td>2.3.4, 2.4.4</td></tr>
+
+<tr><td>replace-40</td>
+<td>Evaluation of a replace expression used with comma expression where first expression is an updating (replace) expression and the second one is ().</td>
+<td>2.3.4, 2.4.4</td></tr>
+  
+<tr><td>replace-41</td>
+<td>Evaluation of a replace expression used with comma expression where first expression is the empty sequence and the second one is an updating (replace) expression.</td>
+<td>2.3.4, 2.4.4</td></tr>
+  
+<tr><td>replace-42</td>
+<td>Evaluation of a replace expression used with comma expression where first expression is an updating (replace) expression and the second one a call to fn:error().</td>
+<td>2.3.4, 2.4.4</td></tr>
+   
+<tr><td>replace-43</td>
+<td>Evaluation of a replace expression used with comma expression where first expression is a call to fn:error() and the second one is an updating (replace) expression.</td>
+<td>2.3.4, 2.4.4</td></tr>
+   
+<tr><td>replace-44</td>
+<td>Evaluation of a replace expression used with comma expression where first expression is an updating (replace) expression and the second one is a mathematical expression.</td>
+<td>2.3.4, 2.4.4</td></tr>
+   
+<tr><td>replace-45</td>
+<td>Evaluation of a replace expression used with comma expression where first expression is a mathematical expression and second one is an updating (replace) expression.</td>
+<td>2.3.4, 2.4.4</td></tr>
+
+<tr><td>replace-46</td>
+<td>Evaluates a replace expression used with an updating function and enclosed expression is also updating (replace) expression.</td>
+<td>2.3.4, 2.4.6</td></tr>
+ 
+<tr><td>replace-47</td>
+<td>Evaluates a replace expression used with non updating/non external function and enclosed expression is also updating (replace)expression.</td>
+<td>2.3.4, 2.4.6</td></tr>
+ 
+<tr><td>replace-48</td>
+<td>Evaluates a replace expression as a parameter to a function call.</td>
+<td>2.3.4, 2.4.6</td></tr>
+</table>
+<p></p>
+<center><h2><b>Transform Expressions</b></h2></center>
+<table frame = "border" style="solid" border = "1" width = "550" align="center">
+<tr>
+<td><h4><center>Test Name</center></h4></td>
+<td><h4><center>Feature Tested</center></h4></td>
+<td><h4><center>Section Number</center></h4></td>
+</tr>
+<tr><td>transform-1</td>
+<td>Evaluates a transform expression with modify clause set to empty sequence.</td>
+<td>2.3.5</tr></td>            
+
+<tr><td>transform-2</td>
+<td>Evaluates a transform expression with modify clause set to a delete expression.</td>
+<td>2.3.5</tr></td>  
+  
+<tr><td>transform-3</td>
+<td>Evaluates a transform expression with modify clause set to a rename expression.</td>
+<td>2.3.5</tr></td> 
+ 
+<tr><td>transform-4</td>
+<td>Evaluates a transform expression with modify clause set to an insert expression.</td>
+<td>2.3.5</tr></td> 
+ 
+<tr><td>transform-5</td>
+<td>Evaluates a transform expression with modify clause set to a replace expression.</td>
+<td>2.3.5</tr></td>  
+  
+<tr><td>transform-6</td>
+<td>Evaluates a transform expression where multiple element nodes are bounded.</td>
+<td>2.3.5</tr></td> 
+ 
+<tr><td>transform-7</td>
+<td>Evaluates a transform expression where an attribute is transformed.</td>
+<td>2.3.5</tr></td>  
+   
+<tr><td>transform-8</td>
+<td>Evaluates a transform expression where a comment is transformed.</td>
+<td>2.3.5</tr></td>  
+ 
+<tr><td>transform-9</td>
+<td>Evaluates a transform expression where the modify clause contains a call to fn:error()</td>
+<td>2.3.5</tr></td>                     
+ 
+<tr><td>transform-10</td>
+<td>Evaluates a transform expression where two variables are bounded and only one is transformed.</td>
+<td>2.3.5</tr></td>  
+
+<tr><td>transform-11</td>
+<td>Evaluates a transform expression where two variables are bounded and both are transformed.</td>
+<td>2.3.5</tr></td>  
+ 
+<tr><td>transform-12</td>
+<td>Evaluates a transform expression where the source expression is an updating expression.</td>
+<td>2.3.5</tr></td> 
+   
+<tr><td>transform-13</td>
+<td>Evaluates a transform expression where the modify clause contains a non-updating expression.</td>
+<td>2.3.5</tr></td>  
+    
+<tr><td>transform-14</td>
+<td>Evaluates a transform expression where the return expression contains an updating expression.</td>
+<td>2.3.5</tr></td>  
+
+<tr><td>transform-15</td>
+<td>Evaluates a transform expression the pending update list contains a node that was not created within this transform expression.</td>
+<td>2.3.5</tr></td> 
+   
+<tr><td>transform-16</td>
+<td>Evaluates a transform expression together with a FLWOR expression where the "let" expression is an updating (transform) expression.</td>
+<td>2.3.5, 2.4.1</tr></td>               
+   
+<tr><td>transform-17</td>
+<td>Evaluates a transform expression together with a FLWOR expression where the "for" expression is an updating (transform) expression.</td>
+<td>2.3.5, 2.4.1</tr></td> 
+      
+<tr><td>transform-18</td>
+<td>Evaluates a transform expression together with a FLWOR expression where the "where" expression is an updating (transform) expression.</td>
+<td>2.3.5, 2.4.1</tr></td>  
+  
+<tr><td>transform-19</td>
+<td>Evaluates a transform expression together with a FLWOR expression where the "order by" expression is an updating (transform) expression.</td>
+<td>2.3.5, 2.4.1</tr></td> 
+   
+<tr><td>transform-20</td>
+<td>Evaluates a transform expression together with a typeswitch expression where the operand is an updating (transform) expression.</td>
+<td>2.3.5, 2.4.2</tr></td>
+   
+<tr><td>transform-21</td>
+<td>Evaluates a transform expression together with a typeswitch expression where a branch (a case) is an updating (transform) expression.</td>
+<td>2.3.5, 2.4.2</tr></td> 
+   
+<tr><td>transform-22</td>
+<td>Evaluates a transform expression together with a typeswitch expression where a branch (the default) is an updating (transform) expression.</td>
+<td>2.3.5, 2.4.2</tr></td> 
+
+<tr><td>transform-23</td>
+<td>Evaluates a transform expression together with a typeswitch expression where a branch (a case) is an updating (transform) expression and the other cases an invokation to fn:error.</td>
+<td>2.3.5, 2.4.2</tr></td>
+
+<tr><td>transform-24</td>
+<td>Evaluates a transform expression together with a typeswitch expression where a branch (the default)is an updating (transform) expression and the other cases an invokation to fn:error.</td>
+<td>2.3.5, 2.4.2</tr></td> 
+ 
+<tr><td>transform-25</td>
+<td>Evaluates a transform expression together with a typeswitch expression where a branch (a case)is an updating (transform) and the other branches return a string.</td>
+<td>2.3.5, 2.4.2</tr></td> 
+   
+<tr><td>transform-26</td>
+<td>Evaluates a transform expression together with a typeswitch expression where a branch (the default)is an updating (transform) and the other branches return a string.</td>
+<td>2.3.5, 2.4.2</tr></td>
+   
+<tr><td>transform-27</td>
+<td>Evaluates a transform expression together with a conditional expression where a branch (the "then")is an updating (transform) and the "else" returns the empty sequence.</td>
+<td>2.3.5, 2.4.3</tr></td> 
+   
+<tr><td>transform-28</td>
+<td>Evaluates a transform expression together with a conditional expression where a branch (the "else")is an updating (transform) and the "then" returns the empty sequence.</td>
+<td>2.3.5, 2.4.3</tr></td>
+    
+<tr><td>transform-29</td>
+<td>Evaluates a transform expression together with a conditional expression where a branch (the "then")is an updating (transform) and the "else" is an invokation to fn:error().</td>
+<td>2.3.5, 2.4.3</tr></td>
+ 
+<tr><td>transform-30</td>
+<td>Evaluates a transform expression together with a conditional expression where a branch (the "else")is an updating (transform) and the "then" is an invokation to fn:error().</td>
+<td>2.3.5, 2.4.3</tr></td>
+
+<tr><td>transform-31</td>
+<td>Evaluates a transform expression together with a conditional expression where a branch (the "then")is an updating (transform) and the "else" returns a string.</td>
+<td>2.3.5, 2.4.3</tr></td>
+
+<tr><td>transform-32</td>
+<td>Evaluates a transform expression together with a conditional expression where a branch (the "else")is an updating (transform) and the "then" return a string.</td>
+<td>2.3.5, 2.4.3</tr></td>
+     
+<tr><td>transform-33</td>
+<td>Evaluates a transform expression together with a comma expression where both expressions are updating (transform) expressions.</td>
+<td>2.3.5, 2.4.4</tr></td>
+  
+<tr><td>transform-34</td>
+<td>Evaluates a transform expression together with a comma expression where the first expression is an updating (transform) expression. The second one is the empty sequence.</td>
+<td>2.3.5, 2.4.4</tr></td>
+ 
+<tr><td>transform-35</td>
+<td>Evaluates a transform expression together with a comma expression where the first expression is the empty sequence and the second one is an updating (transform) expression.</td>
+<td>2.3.5, 2.4.4</tr></td>
+  
+<tr><td>transform-36</td>
+<td>Evaluates a transform expression together with a comma expression where the first expression is an updating (transform) expression and the second one an invokation to "fn:error()".</td>
+<td>2.3.5, 2.4.4</tr></td>
+ 
+<tr><td>transform-37</td>
+<td>Evaluates a transform expression together with a comma expression where the first expression is an invokation to "fn:error()" and the second one is an updating (transform) expression.</td>
+<td>2.3.5, 2.4.4</tr></td>
+  
+<tr><td>transform-38</td>
+<td>Evaluates a transform expression together with a comma expression where the first expression is an updating (transform) expression and the second one is a mathematical expression.</td>
+<td>2.3.5, 2.4.4</tr></td>
+  
+<tr><td>transform-39</td>
+<td>Evaluates a transform expression together with a comma expression where the first expression is a mathematical expression and the second one is an updating (transform) expression.</td>
+<td>2.3.5, 2.4.4</tr></td>
+
+<tr><td>transform-40</td>
+<td>Evaluates a transform expression used with an updating function and enclosed expression is also updating (transform) expression.</td>
+<td>2.3.5, 2.4.6</tr></td>
+
+<tr><td>transform-41</td>
+<td>Evaluates a transform expression used with non updating/non external function and enclosed expression is also updating (transform) expression.</td>
+<td>2.3.5, 2.4.6 </tr></td> 
+<tr><td>transform-42</td>
+<td>Evaluates a transform expression as a parameter to a function call.</td>
+<td>2.3.5, 2.4.6</tr></td>
+</table>
+<center><h2><b>Rename Expressions</b></h2></center>
+<table frame = "border" style="solid" border = "1" width = "550" align="center">
+<tr>
+<td><h4><center>Test Name</center></h4></td>
+<td><h4><center>Feature Tested</center></h4></td>
+<td><h4><center>Section Number</center></h4></td>
+</tr>
+<tr><td>rename-1</td>
+<td>A rename expression that renames an element from a directly constructed element node.</td>
+<td>2.3.4</td></tr> 
+
+<tr><td>rename-2</td>
+<td>A rename expression that renames an attribute from a directly constructed element node.</td>
+<td>2.3.4</td></tr>  
+
+<tr><td>rename-3</td>
+<td>A rename expression that renames a Processing Instruction.</td>
+<td>2.3.4</td></tr>
+ 
+<tr><td>rename-4</td>
+<td>A rename expression that renames an element from an xml file.</td>
+<td>2.3.4</td></tr> 
+
+<tr><td>rename-5</td>
+<td>A rename expression that renames an attribute from an xml file.</td>
+<td>2.3.4</td></tr> 
+  
+<tr><td>rename-6</td>
+<td>A rename expression where the target expression is an updating expression.</td>
+<td>2.3.4</td></tr>
+     
+<tr><td>rename-7</td>
+<td>A rename expression where the target expression results in a sequence of two nodes.</td>
+<td>2.3.4</td></tr>
+   
+<tr><td>rename-8</td>
+<td>A rename expression where the target expression is the empty sequence.</td>
+<td>2.3.4</td></tr>
+ 
+<tr><td>rename-9</td>
+<td>A rename expression where the new name expression is the empty sequence.</td>
+<td>2.3.4</td></tr>  
+    
+<tr><td>rename-10</td>
+<td>A rename expression where the new name expression is an updating expression.</td>
+<td>2.3.4</td></tr> 
+ 
+<tr><td>rename-11</td>
+<td>A rename expression where the new name expression is build dynamically (fn:string-join function).</td>
+<td>2.3.4</td></tr> 
+
+<tr><td>rename-12</td>
+<td>A rename expression where the target expression evaluates to a number.</td>
+<td>2.3.4</td></tr> 
+    
+<tr><td>rename-13</td>
+<td>A rename expression where the newname expression evaluates to a number.</td>
+<td>2.3.4</td></tr> 
+          
+<tr><td>rename-14</td>
+<td>A rename expression where the target expression is a complex one.</td>
+<td>2.3.4</td></tr> 
+           
+<tr><td>rename-15</td>
+<td>Evaluation of a rename expression use with FLWOR expression where let clause is an updating expression.</td>
+<td>2.3.4, 2.4.1</td></tr>               
+ 
+<tr><td>rename-16</td>
+<td>Evaluation of a rename expression use with FLWOR expression where the "for" clause is an updating expression.</td>
+<td>2.3.4, 2.4.1</td></tr>               
+   
+<tr><td>rename-17</td>
+<td>Evaluation of a rename expression use with FLWOR expression where the "where" clause is an updating expression.</td>
+<td>2.3.4, 2.4.1</td></tr>               
+ 
+<tr><td>rename-18</td>
+<td>Evaluation of a rename expression use with FLWOR expression where the "order by" clause is an updating expression.</td>
+<td>2.3.4, 2.4.1</td></tr>               
+ 
+ 
+<tr><td>rename-19</td>
+<td>Evaluation of a rename expression use with a typeswitch expression where the operand is an updating expression.</td>
+<td>2.3.4, 2.4.2</td></tr>               
+ 
+<tr><td>rename-20</td>
+<td>Evaluation of a rename expression use with a typeswitch expression where a branch (a case) is an updating expression.  Other branches equal to the empty sequence</td>
+<td>2.3.4, 2.4.2</td></tr>  
+  
+<tr><td>rename-21</td>
+<td>Evaluation of a rename expression use with a typeswitch expression where a branch (the default) is an updating expression. Other branches equal to the empty sequence.</td>
+<td>2.3.4, 2.4.2</td></tr> 
+
+<tr><td>rename-22</td>
+<td>Evaluation of a rename expression use with a typeswitch expression where a branch (a case) is an updating expression.  Other branches are an invokation to "fn:error()" </td>
+<td>2.3.4, 2.4.2</td></tr> 
+ 
+<tr><td>rename-23</td>
+<td>Evaluation of a rename expression use with a typeswitch expression where a branch (the default) is an updating expression.  Other branches are an invokation to "fn:error()" </td>
+<td>2.3.4, 2.4.2</td></tr>  
+   
+<tr><td>rename-24</td>
+<td>Evaluation of a rename expression use with a typeswitch expression a branch (a case)is an updating expression.  Other branches return a string</td>
+<td>2.3.4, 2.4.2</td></tr> 
+  
+<tr><td>rename-25</td>
+<td>Evaluation of a rename expression use with a typeswitch expression a branch (the default)is an updating expression.  Other branches return a string</td>
+<td>2.3.4, 2.4.2</td></tr> 
+           
+<tr><td>rename-26</td>
+<td>Evaluation of a rename expression used with a conditional expression where a branch (the "then") is an updating expression.  The "else" returns the empty sequence.</td>
+<td>2.3.4, 2.4.3</td></tr>  
+  
+<tr><td>rename-27</td>
+<td>Evaluation of a rename expression used with a conditional expression where a branch (the "else") is an updating expression.  The "then" returns the empty sequence.</td>
+<td>2.3.4, 2.4.3</td></tr>
+    
+<tr><td>rename-28</td>
+<td>Evaluation of a rename expression used with a conditional expression where a branch (the "then") is an updating expression.  The "else" invokes the fn:error function.</td>
+<td>2.3.4, 2.4.3</td></tr>
+ 
+<tr><td>rename-29</td>
+<td>Evaluation of a rename expression used with a conditional expression where a branch (the "else") is an updating expression.  The "then" invokes the fn:error function.</td>
+<td>2.3.4, 2.4.3</td></tr> 
+ 
+<tr><td>rename-30</td>
+<td>Evaluation of rename expression used with conditional expression where a branch (the "then") is an updating expression.  The "else" prints a string.</td>
+<td>2.3.4, 2.4.3</td></tr>
+ 
+<tr><td>rename-31</td>
+<td>Evaluation of a rename expression used with conditional expression where a branch (the "else") is an updating expression.  The "then" print a string.</td>
+<td>2.3.4, 2.4.3</td></tr> 
+ 
+<tr><td>rename-32</td>
+<td>Evaluation of rename expression used with comma expression where both expressions are updating expressions. </td>
+<td>2.3.4, 2.4.4</td></tr> 
+
+<tr><td>rename-33</td>
+<td>Evaluation of a rename expression used with comma expression where first expression is an updating expression and the second one is ().</td>
+<td>2.3.4, 2.4.4</td></tr> 
+      
+<tr><td>rename-34</td>
+<td>Evaluation of a rename expression used with comma expression where first expression is () and second expression is an updating expression.</td>
+<td>2.3.4, 2.4.4</td></tr>
+  
+<tr><td>rename-35</td>
+<td>Evaluation of a rename expression used with comma expression where first expression is an updating expression and the second one a call to fn:error().</td>
+<td>2.3.4, 2.4.4</td></tr> 
+
+ 
+<tr><td>rename-36</td>
+<td>Evaluation of a rename expression used with comma expression where first expression is a call to fn:error() and the second one updating expression.</td>
+<td>2.3.4, 2.4.4</td></tr>
+  
+<tr><td>rename-37</td>
+<td>Evaluation of a rename expression used with comma expression where first expression is an updating expression and the second one is a mathematical expression.</td>
+<td>2.3.4, 2.4.4</td></tr>
+   
+<tr><td>rename-38</td>
+<td>Evaluation of a rename expression used with comma expression where first expression is a mathematical expression and second one is an updating expression.</td>
+<td>2.3.4, 2.4.4</td></tr>
+
+<tr><td>rename-39</td>
+<td>Evaluates a rename expression used with an updating function and enclosed expression is also updating (rename) expression.</td>
+<td>2.3.4, 2.4.6</td></tr> 
+
+ <tr><td>rename-40</td>
+<td>Evaluates a rename expression used with non updating/non external function and enclosed expression is also updating (rename) expression.</td>
+<td>2.3.4, 2.4.6</td></tr>
+
+<tr><td>rename-41</td>
+<td>Evaluates a rename expression as a parameter to a function call.</td>
+<td>2.3.4, 2.4.6</td></tr>  
+</table>                     
+<p></p>                      
+<center><h2><b>Delete Expressions</b></h2></center>
+<table frame = "border" style="solid" border = "1" width = "550" align="center">
+<tr>
+<td><h4><center>Test Name</center></h4></td>
+<td><h4><center>Feature Tested</center></h4></td>
+<td><h4><center>Section Number</center></h4></td>
+</tr>
+<tr><td>delete-1</td>
+<td>A delete expression that removes an element from a directly constructed element node.</td><td>2.3.2</td></tr>
+  
+<tr><td>delete-2</td>
+<td>A delete expression that removes an attribute from a directly constructed element node.</td><td>2.3.2</td></tr>
+
+<tr><td>delete-3</td>
+<td>A delete expression that removes a comment node from a directly constructed element node.</td><td>2.3.2</td></tr>
+  
+<tr><td>delete-4</td>
+<td>A delete expression that removes multiple element nodes from an XML File.</td><td>2.3.2</td></tr>
+
+<tr><td>delete-5</td>
+<td>A delete expression that removes a sequence of element nodes from directly constructed element nodes.</td><td>2.3.2</td></tr>
+  
+<tr><td>delete-6</td>
+<td>A delete expression where the target expression is an updating expression.</td><td>2.3.2</td></tr>
+   
+<tr><td>delete-7</td>
+<td>A delete expression where the target expression is a mathematical expression.</td><td>2.3.2</td></tr>
+ 
+<tr><td>delete-8</td>
+<td>A delete expression where the target expression results in a sequence of zero nodes.</td><td>2.3.2</td></tr>
+       
+<tr><td>delete-9</td>
+<td>A delete expression where the target expression is set to "()".</td><td>2.3.2</td></tr>
+    
+<tr><td>delete-10</td>
+<td>A delete expression where the target expression is a complex one.</td><td>2.3.2</td></tr>
+
+<tr><td>delete-11</td>
+<td>Evaluates a delete expression used with FLWOR expression where the let clause is an updating expression.</td><td>2.3.2, 2.4.1</td></tr>
+   
+<tr><td>delete-12</td>
+<td>Evaluates a delete expression used with FLWOR expression where the for clause is an updating expression.</td><td>2.3.2, 2.4.1</td></tr>
+   
+<tr><td>delete-13</td>
+<td>Evaluates a delete expression used with FLWOR expression where the "where" clause is an updating expression.</td><td>2.3.2, 2.4.1</td></tr>
+ 
+<tr><td>delete-14</td>
+<td>Evaluates a delete expression used with FLWOR expression where the "order by" clause is an updating expression.</td><td>2.3.2, 2.4.1</td></tr>
+   
+<tr><td>delete-15</td>
+<td>Evaluates a delete expression used with typeswitch expression where the operand is an updating expression.</td><td>2.3.2, 2.4.2</td></tr>
+     
+<tr><td>delete-16</td>
+<td>Evaluates a delete expression used with typeswitch expression where a branch (a case) is an updating expression.  The other branches are set to "()".</td><td>2.3.2, 2.4.2</td></tr>
+  
+<tr><td>delete-17</td>
+<td>Evaluates a delete expression used with typeswitch expression where a branch (the default) is an updating expression.  The other branches are set to "()".</td><td>2.3.2, 2.4.2</td></tr>
+  
+<tr><td>delete-18</td>
+<td>Evaluation of a delete expression used with typeswitch expression where branch (a "case") is an updating expression.  All other branches return "fn:error()".</td><td>2.3.2, 2.4.2</td></tr>
+         
+<tr><td>delete-19</td>
+<td>Evaluation of a delete expression used with typeswitch expression where branch (the "defaulr") is an updating expression.  All other branches return "fn:error()".</td><td>2.3.2, 2.4.2</td></tr>
+ 
+<tr><td>delete-20</td>
+<td>Evaluation of a delete expression used with typeswitch expression where branch (the "case") is an updating expression.  All other branches return a string.</td><td>2.3.2, 2.4.2</td></tr>
+  
+<tr><td>delete-21</td>
+<td>Evaluation of a delete expression used with typeswitch expression where branch (the "defaulr") is an updating expression.  All other branches return string.</td><td>2.3.2, 2.4.2</td></tr>
+  
+<tr><td>delete-22</td>
+<td>Evaluation of a delete expression used with conditional expression where a branch (the "then") is an updating expression.  The "else" returns the empty sequence.</td><td>2.3.2, 2.4.3</td></tr>
+    
+<tr><td>delete-23</td>
+<td>Evaluation of a delete expression used with conditional expression where a branch (the "else") is an updating expression.  The "then" returns the empty sequence.</td><td>2.3.2, 2.4.3</td></tr>
+  
+<tr><td>delete-24</td>
+<td>Evaluation of a delete expression used with conditional expression where a branch (the "then") is an updating expression.  The "else" returns fn:error().</td><td>2.3.2, 2.4.3</td></tr>
+
+<tr><td>delete-25</td>
+<td>Evaluation of a delete expression used with conditional expression where a branch (the "else") is an updating expression.  The "then" returns fn:error().</td><td>2.3.2, 2.4.3</td></tr>
+         
+<tr><td>delete-26</td>
+<td>Evaluation of a delete expression used with conditional expression where a branch (the "then") is an updating expression. The "else" print a string</td><td>2.3.2, 2.4.3</td></tr>
+  
+<tr><td>delete-27</td>
+<td>Evaluation of a delete expression used with conditional expression where a branch (the "else") is an updating expression. The "then" print a string</td><td>2.3.2, 2.4.3</td></tr>
+  
+<tr><td>delete-28</td>
+<td>Evaluation a delete expression used with comma expression where both expressions are updating expressions.</td><td>2.3.2, 2.4.4</td></tr>
+     
+<tr><td>delete-29</td>
+<td>Evaluation of a delete expression used with comma expression where first expression is an updating expression and the secon one is ().</td><td>2.3.2, 2.4.4</td></tr>
+     
+<tr><td>delete-30</td>
+<td>Evaluation of a delete expression used with comma expression where first expression is () and second expression is an updating expression.</td><td>2.3.2, 2.4.4</td></tr>
+
+<tr><td>delete-31</td>
+<td>Evaluation of a delete expression used with comma expression where first expression is an updating expression and the second one a call to fn:error().</td><td>2.3.2, 2.4.4</td></tr>
+   
+<tr><td>delete-32</td>
+<td>Evaluation of a delete expression used with comma expression where second expression is an updating expression and the first one a call to fn:error().</td><td>2.3.2, 2.4.4</td></tr>
+                
+<tr><td>delete-33</td>
+<td>Evaluation of a delete expression used with comma expression where first expression is an updating expression and the second one is a mathematical expression.</td><td>2.3.2, 2.4.4</td></tr>
+   
+<tr><td>delete-34</td>
+<td>Evaluation of a delete expression used with comma expression where first expression is a mathematical expression and the second one is an updating expression.</td><td>2.3.2, 2.4.4</td></tr>
+  
+<tr><td>delete-35</td>
+<td>Evaluates a delete expression used with an updating function and enclosed expression is also updating (delete) expression.</td><td>2.3.2, 2.4.6</td></tr>
+ 
+<tr><td>delete-36</td>
+<td>Evaluates a delete expression used with non updating/non external function and enclosed expression is also updating (delete)expression.</td><td>2.3.2, 2.4.6</td></tr>
+
+<tr><td>delete-37</td>
+<td>Evaluates a delete expression as a parameter to a function call.</td><td>2.3.2, 2.4.6</td></tr>
+</table>
+<center><h2><b>Insert Expressions</b></h2></center>
+<p></p>
+
+<table frame = "border" style="solid" border = "1" width = "550" align="center">
+<tr>
+<td><h4><center>Test Name</center></h4></td>
+<td><h4><center>Feature Tested</center></h4></td>
+<td><h4><center>Section Number</center></h4></td>
+</tr>
+<tr><td>insert-1</td>
+<td>Evaluates a simple insert expression with "after" clause only.  Inserts an element.</td>
+<td>2.3.1</td></tr>           
+<tr><td>insert-2</td>
+<td>Evaluates a simple insert expression with "after" clause only.  Inserts an element.</td>
+<td>2.3.1</td></tr>   
+<tr><td>insert-3</td>
+<td>Evaluates a simple insert expression with "as first" and "into" clauses.  Inserts an element.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-4</td>
+<td>Evaluates a simple insert expression with "as last" and "into" clauses.  Inserts an element.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-5</td>
+<td>Evaluates a simple insert expression with "into" clause only.  Inserts an element.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-6</td>
+<td>Evaluates a simple insert expression with "after" clause only.  Inserts an attribute.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-7</td>
+<td>Evaluates a simple insert expression with "before" clause only.  Inserts an attribute.</td>
+<td>2.3.1</td></tr>     
+<tr><td>insert-8</td>
+<td>Evaluates a simple insert expression with "as first" and "into" clauses.  Inserts an attribute.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-9</td>
+<td>Evaluates a simple insert expression with "as last" and "into" clauses.  Inserts an attribute.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-10</td>
+<td>Evaluates a simple insert expression with "into" clause only.  Inserts an attribute.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-11</td>
+<td>Evaluates a simple insert expression with "after" clause only.  Inserts a comment.</td>
+<td>2.3.1</td></tr> 
+<tr><td>insert-12</td>
+<td>Evaluates a simple insert expression with "before" clause only.  Inserts a comment.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-13</td>
+<td>Evaluates a simple insert expression with "as first" and "into" clauses.  Inserts a comment.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-14</td>
+<td>Evaluates a simple insert expression with "as first" and "into" clauses.  Inserts a comment.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-15</td>
+<td>Evaluates a simple insert expression with "into" clause only.  Inserts a comment.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-16</td>
+<td>Evaluates a simple insert expression with "before" clause only.  Inserts an element into a directly constructed element node.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-17</td>
+<td>Evaluates a simple insert expression with "after" clause only.  Inserts an element into a directly constructed element node.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-18</td>
+<td>Evaluates a simple insert expression with "as first" and "into" clauses.  Inserts an element into a directly constructed element node.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-19</td>
+<td>Evaluates a simple insert expression with "as last" and "into" clauses.  Inserts an element into a directly constructed element node.</td>
+<td>2.3.1</td></tr>   
+<tr><td>insert-20</td>
+<td>Evaluates a simple insert expression with "into" clause only.  Inserts an element into a directly constructed element node.</td>
+<td>2.3.1</td></tr> 
+<tr><td>insert-21</td>
+<td>Evaluates a simple insert expression with "after" only. Insert a sequence of element nodes into a directly constructed element node.</td>
+<td>2.3.1</td></tr>    
+<tr><td>insert-23</td>
+<td>Evaluates a simple insert expression where source expression is an updating expression.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-24</td>
+<td>Evaluates a simple insert expression where target expression is an updating expression.</td>
+<td>2.3.1</td></tr>  
+<tr><td>insert-25</td>
+<td>Evaluates a simple insert expression where both source and target expressions are updating expressions.</td>
+<td>2.3.1</td></tr>         
+<tr><td>insert-26</td>
+<td>Evaluates an insert expression where the source sequence have an attribute node following an element node.</td>
+<td>2.3.1</td></tr>  
+<tr><td>insert-27</td>
+<td>Evaluates an insert expression where the target expression is a sequence of nodes.</td>
+<td>2.3.1</td></tr>      
+<tr><td>insert-28</td>
+<td>Evaluates an insert expression where the target expression is the empty sequence.</td>
+<td>2.3.1</td></tr>  
+<tr><td>insert-29</td>
+<td>Evaluates an insert expression where the target expression evaluates to a number.</td>
+<td>2.3.1</td></tr>  
+<tr><td>insert-30</td>
+<td>Evaluates an insert expression where the source expression evaluates to a number.</td>
+<td>2.3.1</td></tr>
+<tr><td>insert-31</td>
+<td>Evaluates an insert expression where the target expression is a complex expression.</td>
+<td>2.3.1</td></tr>     
+<tr><td>insert-32</td>
+<td>Evaluates an insert expression used with FLWOR expression where the let clause is an updating expression.</td>
+<td>2.3.1, 2.4.1</td></tr>         
+<tr><td>insert-33</td>
+<td>Evaluates an insert expression used with FLWOR expression where the for clause is an updating expression.</td>
+<td>2.3.1, 2.4.1</td></tr>   
+<tr><td>insert-34</td>
+<td>Evaluates an insert expression used with FLWOR expression where the "where" clause is an updating expression.</td>
+<td>2.3.1, 2.4.1</td></tr>      
+<tr><td>insert-35</td>
+<td>Evaluates an insert expression used with FLWOR expression where the "order by" clause is an updating expression.</td>
+<td>2.3.1, 2.4.1</td></tr>
+<tr><td>insert-36</td>
+<td>Evaluates an insert expression used with typeswitch expression where the operand is an updating expression.</td>
+<td>2.3.1, 2.4.1</td></tr>  
+<tr><td>insert-37</td>
+<td>Evaluates an insert expression used with typeswitch expression where a branch (a "case") is an updating expression. Other branches return ().</td>
+<td>2.3.1, 2.4.2</td></tr>    
+<tr><td>insert-38</td>
+<td>Evaluates an insert expression used with typeswitch expression where a branch (the "default") is an updating expression. Other branches return ().</td>
+<td>2.3.1, 2.4.2</td></tr>
+<tr><td>insert-39</td>
+<td>Evaluates an insert expression used with typeswitch expression where a branch (a "case") is an updating expression. Other branches return fn:error().</td>
+<td>2.3.1, 2.4.2</td></tr>     
+<tr><td>insert-40</td>
+<td>Evaluates an insert expression used with typeswitch expression where a branch (the "default") is an updating expression. Other branches return fn:error().</td>
+<td>2.3.1, 2.4.2</td></tr>
+<tr><td>insert-41</td>
+<td>Evaluates an insert expression used with typeswitch expression where a branch (a "case") is an updating expression. Other branches return a string.</td>
+<td>2.3.1, 2.4.2</td></tr>
+<tr><td>insert-42</td>
+<td>Evaluates an insert expression used with typeswitch expression where a branch (the "default") is an updating expression. Other branches return a string.</td>
+<td>2.3.1, 2.4.2</td></tr>
+<tr><td>insert-43</td>
+<td>Evaluates an insert expression used with conditional expression where a branch (the "then") is an updating expression. Other branch return ().</td>
+<td>2.3.1, 2.4.3</td></tr> 
+<tr><td>insert-44</td>
+<td>Evaluates an insert expression used with conditional expression where a branch (the "else") is an updating expression. Other branch returns ().</td>
+<td>2.3.1, 2.4.3</td></tr>
+<tr><td>insert-45</td>
+<td>Evaluates an insert expression used with conditional expression where a branch (the "then") is an updating expression. Other branch calls fn:error().</td>
+<td>2.3.1, 2.4.3</td></tr>
+<tr><td>insert-46</td>
+<td>Evaluates an insert expression used with conditional expression where a branch (the "else") is an updating expression. Other branch calls fn:error().</td>
+<td>2.3.1, 2.4.3</td></tr>
+<tr><td>insert-47</td>
+<td>Evaluates an insert expression used with conditional expression where a branch (the "then") is an updating expression. Other branch print a string.</td>
+<td>2.3.1, 2.4.3</td></tr>       
+<tr><td>insert-48</td>
+<td>Evaluates an insert expression used with conditional expression where a branch (the "else") is an updating expression. Other branch print a string.</td>
+<td>2.3.1, 2.4.3</td></tr>
+<tr><td>insert-49</td>
+<td>Evaluates an insert expression used with comma expression where a both expressions are updating expressions.</td>
+<td>2.3.1, 2.4.4</td></tr>
+<tr><td>insert-50</td>
+<td>Evaluates an insert expression used with comma expression where first expression is an updating expression and second one is ().</td>
+<td>2.3.1, 2.4.4</td></tr>
+<tr><td>insert-51</td>
+<td>Evaluates an insert expression used with comma expression where first expression is () and second expression is an updating expression.</td>
+<td>2.3.1, 2.4.4</td></tr>
+<tr><td>insert-52</td>
+<td>Evaluates an insert expression used with comma expression where first expression is an updating expression and second one is call to fn:error().</td>
+<td>2.3.1, 2.4.4</td></tr>         
+<tr><td>insert-53</td>
+<td>Evaluates an insert expression used with comma expression where first expression is a call to fn:error() and second expression is an updating expression.</td>
+<td>2.3.1, 2.4.4</td></tr>
+<tr><td>insert-54</td>
+<td>Evaluates an insert expression used with comma expression where first expression is an updating expression and second one a mathematical expression.</td>
+<td>2.3.1, 2.4.4</td></tr>  
+<tr><td>insert-55</td>
+<td>Evaluates an insert expression used with comma expression where first expression is mathematical expression and second one is an updating expression.</td>
+<td>2.3.1, 2.4.4</td></tr>  
+<tr><td>insert-56</td>
+<td>Evaluates an insert expression used with an updating function and enclosed expression is also updating expression.</td>
+<td>2.3.1, 2.4.6</td></tr>  
+<tr><td>insert-57</td>
+<td>Evaluates an insert expression used with non updating/non external function and enclosed expression is also updating expression.</td>
+<td>2.3.1, 2.4.6</td></tr>            
+<tr><td>insert-58</td>
+<td>Evaluates an insert expression used with an updating/non external function and enclosed expression is an empty sequence.</td>
+<td>2.3.1, 2.4.6</td></tr>  
+<tr><td>insert-59</td>
+<td>Evaluates an insert expression used with an updating/non external function and enclosed expression is a call to fn:error.</td>
+<td>2.3.1, 2.4.6</td></tr>  
+<tr><td>insert-60</td>
+<td>Evaluates an insert expression used with an updating/non external function and enclosed expression is a mathematical expression.</td>
+<td>2.3.1, 2.4.6</td></tr>
+<tr><td>insert-61</td>
+<td>Evaluates an insert expression as an parameter to a function call.</td>
+<td>2.3.1, 2.4.6</td></tr>   
+</table>
+</body>
+</html>
