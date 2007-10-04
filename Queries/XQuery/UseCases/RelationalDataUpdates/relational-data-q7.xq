@@ -10,4 +10,4 @@ declare variable $items external;
   <comment>This is a bargain !</comment>
 as last into $items/items/item_tuple[itemno=1002] 
 
-(:state-1-end :) 
+(:state-1-end :)
