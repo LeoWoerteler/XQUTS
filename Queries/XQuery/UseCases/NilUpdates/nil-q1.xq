@@ -8,7 +8,7 @@ declare variable $employees external;
 (:state-1-start :)
 
 for $e in $employees//employee
-where $e/@manager = true()
+where $e/@mgr = true()
 return
      copy $emp := $e
       modify (
