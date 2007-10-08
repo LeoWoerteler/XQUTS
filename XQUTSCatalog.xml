@@ -1544,7 +1544,7 @@
              <state time="0">
              	<query name="id-replace-expr-016" date="2007-06-04"/>                     
              	<input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-             	<expected-error>XUDY0010</expected-error>             	
+             	<expected-error>XUTY0011</expected-error>             	
              </state>
            </test-case>  
            <test-case  name="id-replace-expr-017" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
