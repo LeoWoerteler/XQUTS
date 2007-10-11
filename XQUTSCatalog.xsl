@@ -1,14 +1,14 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:test="http://www.w3.org/2005/02/query-test-update">
    <xsl:key name="citation-spec" match="/test-suite/citations/citation-spec" use="@name"/>
-
-      <xsl:variable name="TargetLanguage" select="/test:test-suite/@targetLanguage" />
-      <xsl:variable name="XQueryQueryOffsetPath" select="/test:test-suite/@XQueryQueryOffsetPath" />
-      <xsl:variable name="XQueryXQueryOffsetPath" select="/test:test-suite/@XQueryXQueryOffsetPath" />
-      <xsl:variable name="ResultOffsetPath" select="/test:test-suite/@ResultOffsetPath" />
-      <xsl:variable name="XQueryFileExtension" select="/test:test-suite/@XQueryFileExtension" />
-      <xsl:variable name="XQueryXFileExtension" select="/test:test-suite/@XQueryXFileExtension" />
-      <xsl:variable name="SourceOffsetPath" select="/test:test-suite/@SourceOffsetPath" />
-
+   
+   <xsl:variable name="TargetLanguage" select="/test:test-suite/@targetLanguage" />
+   <xsl:variable name="XQueryQueryOffsetPath" select="/test:test-suite/@XQueryQueryOffsetPath" />
+   <xsl:variable name="XQueryXQueryOffsetPath" select="/test:test-suite/@XQueryXQueryOffsetPath" />
+   <xsl:variable name="ResultOffsetPath" select="/test:test-suite/@ResultOffsetPath" />
+   <xsl:variable name="XQueryFileExtension" select="/test:test-suite/@XQueryFileExtension" />
+   <xsl:variable name="XQueryXFileExtension" select="/test:test-suite/@XQueryXFileExtension" />
+   <xsl:variable name="SourceOffsetPath" select="/test:test-suite/@SourceOffsetPath" />
+   
    <xsl:template match="/">
       <html>
          <head>
@@ -239,6 +239,8 @@
          </body>
       </html>
    </xsl:template>
+   
+   
    <xsl:template match="test:test-group">
       <A>
          <xsl:attribute name="name">
@@ -283,7 +285,8 @@
       <xsl:apply-templates select="test:test-case" />
       <xsl:apply-templates select="test:test-group" />
    </xsl:template>
-
+   
+   
    <xsl:template match="test:test-case">
       <xsl:variable name="FilePath" select="@FilePath" />
       <table width="80%" bgcolor="tan">
@@ -379,84 +382,98 @@
             </xsl:for-each>
          </xsl:if>
          
-         <tr>
-            <td colspan="2">
-               <B>Query:</B>
-            </td>
-            <td>
-               <xsl:if test="@is-XPath2='true'">
-                  (XPath 2.0)
-               </xsl:if>
-            </td>
-         </tr>
-                  <xsl:choose>
-                      <xsl:when test="$TargetLanguage='QueryUpdate'">
-                        <xsl:choose>
-                          <xsl:when test="test:state">
-                           <tr>
-                            <td colspan="3">
-                             <A>                          
-                           <xsl:attribute name="href">
-                            <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:state/test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>
-                           </xsl:attribute>
-                           <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:state/test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>  
+         <xsl:choose>
+            <xsl:when test="$TargetLanguage='QueryUpdate'">
+               <xsl:choose>
+                  <xsl:when test="test:state">
+                     <tr>
+                        <td colspan="3">
+                           <A>                          
+                              <xsl:attribute name="href">
+                                 <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:state/test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>
+                              </xsl:attribute>
+                              <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:state/test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>  
                            </A>     
-                           </td>
-                           </tr>                            
-                          </xsl:when>
-                         <xsl:otherwise>
-                           <tr>
-                            <td colspan="3">
-                             <A>                      
-                          <xsl:attribute name="href">
-                            <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>
-                          </xsl:attribute>
-                          <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>
+                        </td>
+                     </tr>                            
+                  </xsl:when>
+                  <xsl:otherwise>
+                     <tr>
+                        <td colspan="3">
+                           <A>                      
+                              <xsl:attribute name="href">
+                                 <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>
+                              </xsl:attribute>
+                              <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>
                            </A>     
+                        </td>
+                     </tr>                           
+                  </xsl:otherwise>
+               </xsl:choose>
+            </xsl:when>
+            <xsl:otherwise>
+               <xsl:choose>
+                  <xsl:when test="test:state">
+                     <xsl:for-each select = "test:state">
+                        
+                        <tr>
+                           <td>
+                              <hr/>
                            </td>
-                           </tr>                           
-                         </xsl:otherwise>
-                        </xsl:choose>
-                      </xsl:when>
-                     <xsl:otherwise>
-                        <xsl:choose>
-                          <xsl:when test="test:state">
-                          <xsl:for-each select = "test:state">
-                           <tr>
-                            <td colspan="3">
-                             <A>                         
-                           <xsl:attribute name="href">
-                             <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>
-                            </xsl:attribute>
-                            <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>  
-                           </A>     
+                           <td align="center">
+                              <b>
+                                 <xsl:value-of select="concat('State (time = ', @time, ')')"/>
+                              </b>
                            </td>
-                           </tr>
-                           <xsl:if test = "test:input-file">
-                            <xsl:call-template name = "getInputs"/>
-                           </xsl:if>
-                           <xsl:if test = "test:output-file">
-                            <xsl:call-template name = "getOutputs">                                            
+                           <td>
+                              <hr/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="2">
+                              <B>Query:</B>
+                           </td>
+                           <td>
+                              <xsl:if test="@is-XPath2='true'">
+                                 (XPath 2.0)
+                              </xsl:if>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="3">
+                              <A>                         
+                                 <xsl:attribute name="href">
+                                    <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>
+                                 </xsl:attribute>
+                                 <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>  
+                              </A>     
+                           </td>
+                        </tr>
+                        <xsl:if test = "test:input-file">
+                           <xsl:call-template name = "getInputs"/>
+                        </xsl:if>
+                        <xsl:if test = "test:output-file | test:expected-error">
+                           <xsl:call-template name = "getOutputs">                                            
                               <xsl:with-param name = "FilePath"><xsl:value-of select = "$FilePath"/></xsl:with-param>
-                            </xsl:call-template>                                                       
-                          </xsl:if>
-                          </xsl:for-each>
-                          </xsl:when>
-                         <xsl:otherwise>
-                           <tr>
-                            <td colspan="3">
-                             <A>                                     
-                          <xsl:attribute name="href">
-                           <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>
-                          </xsl:attribute>
-                          <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>
+                           </xsl:call-template>                                                       
+                        </xsl:if>
+                     </xsl:for-each>
+                  </xsl:when>
+                  <xsl:otherwise>
+                     <tr>
+                        <td colspan="3">
+                           <A>                                     
+                              <xsl:attribute name="href">
+                                 <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>
+                              </xsl:attribute>
+                              <xsl:value-of select="$XQueryQueryOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="test:query/@name"/><xsl:value-of select="$XQueryFileExtension"/>
                            </A>     
-                           </td>
-                           </tr>                           
-                         </xsl:otherwise>
-                        </xsl:choose>
-                     </xsl:otherwise>
-                  </xsl:choose>
+                        </td>
+                     </tr>                           
+                  </xsl:otherwise>
+               </xsl:choose>
+            </xsl:otherwise>
+         </xsl:choose>
          <xsl:if test="test:module">
             <tr>
                <td colspan="3">
@@ -483,12 +500,12 @@
             </xsl:for-each>
          </xsl:if>
          <xsl:if test = "test:input-file">
-          <xsl:call-template name = "getInputs"/>      
+            <xsl:call-template name = "getInputs"/>      
          </xsl:if>
-         <xsl:if test = "test:output-file">
-          <xsl:call-template name = "getOutputs">
-           <xsl:with-param name = "FilePath"><xsl:value-of select = "$FilePath"/></xsl:with-param>         
-          </xsl:call-template>
+         <xsl:if test = "test:output-file | test:expected-error">
+            <xsl:call-template name = "getOutputs">
+               <xsl:with-param name = "FilePath"><xsl:value-of select = "$FilePath"/></xsl:with-param>         
+            </xsl:call-template>
          </xsl:if>
          <xsl:for-each select="test:expected-error">
             <tr>
@@ -504,6 +521,8 @@
       </table>
       <p/>
    </xsl:template>
+   
+   
    <xsl:template match="test:citation-spec">
       <tr>
          <td>
@@ -529,6 +548,8 @@
          </td>
       </tr>
    </xsl:template>
+   
+   
    <xsl:template match="test:implementation-defined-item">
       <tr>
          <td valign="top">
@@ -557,6 +578,8 @@
          </table>
       </blockquote>
    </xsl:template>
+   
+   
    <xsl:template match="test:context-property">
       <tr>
          <td>
@@ -573,62 +596,83 @@
          <td />
       </tr>
    </xsl:template>
+   
+   
    <xsl:template name = "getInputs">
+      <tr>
+         <td colspan="3">
+            <B>Inputs:</B>
+         </td>
+      </tr>    
+      <xsl:for-each select="test:input-file">
          <tr>
-            <td colspan="3">
-               <B>Inputs:</B>
+            <td>
+               Name:
+               <xsl:value-of select="@variable"/>
             </td>
-         </tr>    
-         <xsl:for-each select="test:input-file">
-            <tr>
-               <td>
-                  Role:
-                  <A>
-                     <xsl:attribute name="href">#<xsl:value-of select="@role"/></xsl:attribute>
-                     <xsl:value-of select="@role"/>
-                  </A>
-               </td>
-               <td colspan="2">
-                  Source ID:
-                  <A>
-                     <xsl:attribute name="href">#<xsl:value-of select="."/></xsl:attribute>
-                     <xsl:value-of select="."/>
-                  </A>
-               </td>
-            </tr>
-         </xsl:for-each>   
+            <td>
+               Role:
+               <A>
+                  <xsl:attribute name="href">#<xsl:value-of select="@role"/></xsl:attribute>
+                  <xsl:value-of select="@role"/>
+               </A>
+            </td>
+            <td>
+               Source ID:
+               <A>
+                  <xsl:attribute name="href">#<xsl:value-of select="."/></xsl:attribute>
+                  <xsl:value-of select="."/>
+               </A>
+            </td>
+         </tr>
+      </xsl:for-each>   
    </xsl:template>
+   
+   
    <xsl:template name = "getOutputs">
-    <xsl:param name = "FilePath"/>     
-        <xsl:for-each select="test:output-file">      
+      <xsl:param name = "FilePath"/>     
+      <xsl:variable name="here" select="." />
+      <tr>
+         <td colspan="3">
+            <B>Outputs:</B>
+         </td>
+      </tr>         
+      <xsl:for-each select="test:output-file">      
+         <tr>
+            <td>
+               Role:
+               <A>
+                  <xsl:attribute name="href">#<xsl:value-of select="@role"/></xsl:attribute>
+                  <xsl:value-of select="@role"/>
+               </A>
+            </td>
+            <td>
+               Comparator:
+               <A>
+                  <xsl:attribute name="href">#<xsl:value-of select="@compare"/></xsl:attribute>
+                  <xsl:value-of select="@compare"/>
+               </A>
+            </td>
+            <td>
+               <A>
+                  <xsl:attribute name="href">
+                     <xsl:value-of select="$ResultOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="."/></xsl:attribute>
+                  Results/<xsl:value-of select="$FilePath"/><xsl:value-of select="."/>
+               </A>
+            </td>
+         </tr>
+      </xsl:for-each>   
+      <xsl:for-each select="$here/test:expected-error">
          <tr>
             <td colspan="3">
-               <B>Outputs:</B>
+               Error:
+               <A>
+                  <xsl:attribute name="href">http://www.w3.org/TR/xquery/#ERR<xsl:value-of select="."/></xsl:attribute>
+                  err:<xsl:value-of select="."/>
+               </A>
             </td>
-         </tr>         
-            <tr>
-               <td>
-                  Role:
-                  <A>
-                     <xsl:attribute name="href">#<xsl:value-of select="@role"/></xsl:attribute>
-                     <xsl:value-of select="@role"/>
-                  </A>
-               </td>
-               <td>
-                  Comparator:
-                  <A>
-                     <xsl:attribute name="href">#<xsl:value-of select="@compare"/></xsl:attribute>
-                     <xsl:value-of select="@compare"/>
-                  </A>
-               </td>
-               <td>
-                  <A>
-                     <xsl:attribute name="href">
-                        <xsl:value-of select="$ResultOffsetPath"/><xsl:value-of select="$FilePath"/><xsl:value-of select="."/></xsl:attribute>
-                     Results/<xsl:value-of select="$FilePath"/><xsl:value-of select="."/>
-                  </A>
-               </td>
-            </tr>
-         </xsl:for-each>   
+         </tr>
+      </xsl:for-each>
    </xsl:template>
+   
 </xsl:stylesheet>
