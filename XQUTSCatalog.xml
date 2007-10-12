@@ -2138,7 +2138,59 @@
              	<input-file role="principal-data" variable="input-context">employeesNIST</input-file>
              	<expected-error>XUTY0013</expected-error>
              </state>
-           </test-case>                                
+           </test-case>
+           <test-case name="id-transform-expr-028" FilePath="TransformExpressions/" scenario="standard" Creator="Jenise Reyes">
+             <description>Evaluates a transform expression, which inserts a node to insure the original data is not modified.</description>
+             <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="#id-transform"/>
+             <state time="0">
+             	<query name="id-transform-expr-028" date="2007-10-12"/>
+             	<input-file role="principal-data" variable="input-context">works-mod</input-file>
+             </state>
+             <state time="1">
+             	<query name="id-transform-expr-028-test" date="2007-10-12"/>
+             	<input-file role="principal-data" variable="input-context">works-mod</input-file>
+            	<output-file role="principal" compare="Fragment">id-transform-expr-028.xml</output-file>
+             </state>
+           </test-case>
+           <test-case name="id-transform-expr-029" FilePath="TransformExpressions/" scenario="standard" Creator="Jenise Reyes">
+             <description>Evaluates a transform expression, which deletes a node to insure the original data is not modified.</description>
+             <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="#id-transform"/>
+             <state time="0">
+             	<query name="id-transform-expr-029" date="2007-10-12"/>
+             	<input-file role="principal-data" variable="input-context">works-mod</input-file>
+             </state>
+             <state time="1">
+             	<query name="id-transform-expr-029-test" date="2007-10-12"/>
+             	<input-file role="principal-data" variable="input-context">works-mod</input-file>
+            	<output-file role="principal" compare="Fragment">id-transform-expr-029.xml</output-file>
+             </state>
+           </test-case>
+           <test-case name="id-transform-expr-030" FilePath="TransformExpressions/" scenario="standard" Creator="Jenise Reyes">
+             <description>Evaluates a transform expression, which contains a replace expression to insure the original data is not modified.</description>
+             <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="#id-transform"/>
+             <state time="0">
+             	<query name="id-transform-expr-030" date="2007-10-12"/>
+             	<input-file role="principal-data" variable="input-context">works-mod</input-file>
+             </state>
+             <state time="1">
+             	<query name="id-transform-expr-030-test" date="2007-10-12"/>
+             	<input-file role="principal-data" variable="input-context">works-mod</input-file>
+            	<output-file role="principal" compare="Fragment">id-transform-expr-030.xml</output-file>
+             </state>
+           </test-case>
+           <test-case name="id-transform-expr-031" FilePath="TransformExpressions/" scenario="standard" Creator="Jenise Reyes">
+             <description>Evaluates a transform expression, which contains a rename expression to insure the original data is not modified.</description>
+             <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="#id-transform"/>
+             <state time="0">
+             	<query name="id-transform-expr-031" date="2007-10-12"/>
+             	<input-file role="principal-data" variable="input-context">works-mod</input-file>
+             </state>
+             <state time="1">
+             	<query name="id-transform-expr-031-test" date="2007-10-12"/>
+             	<input-file role="principal-data" variable="input-context">works-mod</input-file>
+            	<output-file role="principal" compare="Fragment">id-transform-expr-031.xml</output-file>
+             </state>
+           </test-case>
     </test-group>    
     <test-group name = "ExtensionExistingFunctions">
       <GroupInfo>
