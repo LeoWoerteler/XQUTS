@@ -47,6 +47,10 @@
               <xqx:xpathAxis>child</xqx:xpathAxis>
               <xqx:nameTest>AIRPORTS</xqx:nameTest>
             </xqx:stepExpr>
+            <xqx:stepExpr>
+              <xqx:xpathAxis>child</xqx:xpathAxis>
+              <xqx:nameTest>AIRPORT</xqx:nameTest>
+            </xqx:stepExpr>
           </xqx:pathExpr>
         </xqx:varValue>
       </xqx:varDecl>

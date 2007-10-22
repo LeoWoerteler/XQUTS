@@ -9,5 +9,5 @@
    <n:name>Åke Jógvan Øyvind</n:name>
   </n:passenger>
  </env:Header>
- <env:Body><p:itineraryClarification xmlns:p="http://travelcompany.example.org/reservation/travel"><p:departure><p:departing><error> No airports found for New York!</error></p:departing><p:arriving><error> No airports found for Los Angeles!</error></p:arriving></p:departure><p:return><p:departing><error> No airports found for Los Angeles!</error></p:departing><p:arriving><error> No airports found for New York!</error></p:arriving></p:return></p:itineraryClarification></env:Body>
+ <env:Body><p:itineraryClarification xmlns:p="http://travelcompany.example.org/reservation/travel"><p:departure><p:departing><airportChoices>JFK   LGA   EWR  </airportChoices></p:departing><p:arriving/></p:departure><p:return><p:departing/><p:arriving><airportChoices>JFK   LGA   EWR  </airportChoices></p:arriving></p:return></p:itineraryClarification></env:Body>
 </env:Envelope>

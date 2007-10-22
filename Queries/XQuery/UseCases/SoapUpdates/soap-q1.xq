@@ -15,7 +15,7 @@ declare variable $airportsDoc external;
 declare variable $msg external;
 (: end-indent :)
 
-declare variable $airports := $airportsDoc/AIRPORTS;
+declare variable $airports := $airportsDoc/AIRPORTS/AIRPORT;
 
 (:state-1-start :)   
                                      
