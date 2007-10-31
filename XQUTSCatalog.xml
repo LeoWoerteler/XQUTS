@@ -1940,7 +1940,7 @@
              	<output-file role="principal" compare="Fragment">id-transform-expr-05.xml</output-file>
              </state>
            </test-case>  
-           <test-case  name="id-transform-expr-06" FilePath="TransformExpressions/" scenario="standard" Creator="Carmelo Montanez">
+           <test-case  name="id-transform-expr-06" FilePath="TransformExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
              <description>Evaluates a transform expression where multiple element nodes are bounded.</description>
              <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="#id-transform"/>  
              <state time="0">
@@ -1968,7 +1968,7 @@
              	<output-file role="principal" compare="Fragment">id-transform-expr-08.xml</output-file>
              </state>
            </test-case>  
-           <test-case  name="id-transform-expr-09" FilePath="TransformExpressions/" scenario="standard" Creator="Carmelo Montanez">
+           <test-case  name="id-transform-expr-09" FilePath="TransformExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
              <description>Evaluates a transform expression where the modify clause contains a call to fn:error()</description>
              <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="#id-transform"/>
              <state time="0">
