@@ -834,9 +834,9 @@
                      <xsl:for-each select="ancestor::xqts:test-group">&#xA0;&#xA0;&#xA0;&#xA0;</xsl:for-each>
                      <font size="-2">
                         <xsl:text>&#xA0;&#xA0;&#xA0;&#xA0;(</xsl:text>
-                        <a href='{concat("http://dev.w3.org/cvsweb/~checkout~/2007/xquery-update-10-test-suite/XQUTSCatalog.xml#", $test-name)}'>catalog</a>
+                        <a href='{concat("http://dev.w3.org/2007/xquery-update-10-test-suite/XQUTSCatalog.xml#", $test-name)}'>catalog</a>
                         <xsl:text>, </xsl:text>
-                        <a href='{concat("http://dev.w3.org/cvsweb/~checkout~/2007/xquery-update-10-test-suite/",$XQueryQueryOffsetPath, $FilePath, @name, $XQueryFileExtension)}'>query</a>
+                        <a href='{concat("http://dev.w3.org/2007/xquery-update-10-test-suite/",$XQueryQueryOffsetPath, $FilePath, @name, $XQueryFileExtension)}'>query</a>
                         <xsl:text>)</xsl:text>
                      </font>
                   </br>
