@@ -4,7 +4,7 @@
    xmlns="http://www.w3.org/2005/02/query-test-update"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    CatalogDesignDate="2003-04-03"
-   version="0.1.0"
+   version="0.7"
    SourceOffsetPath="./"
    ResultOffsetPath="ExpectedTestResults/"
    XQueryQueryOffsetPath="Queries/XQuery/" 
@@ -200,365 +200,11 @@
    <context-properties>
      <context-property context-type = "static" name = "SpaceHolderfornow"/>
    </context-properties>
-  <test-group name="UpdateFacility">
+  <test-group name="Minimal Conformance">
      <GroupInfo>
-         <title>Update Facility Tests</title>
+         <title>Minimal Conformance</title>
          <description/>
     </GroupInfo>
-   <test-group name="UseCases">
-     <GroupInfo>
-         <title>XML Query Update Use Cases</title>
-         <description/>
-      </GroupInfo>
-      <test-group name="RelationalDataUpdates">
-        <GroupInfo>
-            <title>Use Cases "R" - Updating Relational Data</title>
-            <description/>
-         </GroupInfo>
-          <test-case  name="relational-data-q1" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Update Use Case # 1</description>
-           <spec-citation spec="XQUPDATE" section-number="1.1.4.1" section-title="Q1" section-pointer="rdb-updates-results-u1"/>
-           <state time="0">
-            <query name="relational-data-q1" date="2005-02-03"/>
-            <input-file role="principal-data" variable="users">users</input-file>
-           </state>
-           <state time="1">
-            <query name="relational-data-q1-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="users">users</input-file>
-            <output-file role="principal" compare="Fragment">relational-data-q1-results.xml</output-file>
-           </state>
-          </test-case>  
-          <test-case  name="relational-data-q2" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Update Use Case # 2</description>
-           <spec-citation spec="XQUPDATE" section-number="1.1.4.2" section-title="Q2" section-pointer="rdb-updates-results-u2"/>
-           <state time="0">
-            <query name="relational-data-q2" date="2006-08-05"/>
-            <input-file role="principal-data" variable="users">users2</input-file>
-            <input-file role="principal-data" variable="bids">bids</input-file>            
-           </state>
-           <state time="1">
-            <query name="relational-data-q2-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="users">users2</input-file>
-            <input-file role="principal-data" variable="bids">bids</input-file>           
-            <output-file role="principal" compare="Fragment">relational-data-q2-results.xml</output-file>
-           </state>
-          </test-case>
-          <test-case  name="relational-data-q3" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Update Use Case # 3</description>
-           <spec-citation spec="XQUPDATE" section-number="1.1.4.3" section-title="Q3" section-pointer="rdb-updates-results-u3"/>
-           <state time="0">
-            <query name="relational-data-q3" date="2006-08-05"/>
-            <input-file role="principal-data" variable="users">users2</input-file>
-            <input-file role="principal-data" variable="bids">bids</input-file>
-           </state>
-           <state time="1">
-            <query name="relational-data-q3-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="users">users2</input-file>
-            <input-file role="principal-data" variable="bids">bids</input-file>
-            <output-file role="principal" compare="Fragment">relational-data-q3-results.xml</output-file>
-           </state>
-          </test-case>
-          <test-case  name="relational-data-q4" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Update Use Case # 4</description>
-           <spec-citation spec="XQUPDATE" section-number="1.1.4.4" section-title="Q4" section-pointer="rdb-updates-results-u4"/>
-           <state time="0">
-            <query name="relational-data-q4" date="2006-08-05"/>
-            <input-file role="principal-data" variable="users">users2</input-file>
-           </state>
-           <state time="1">
-            <query name="relational-data-q4-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="users">users2</input-file>
-            <output-file role="principal" compare="Fragment">relational-data-q4-results.xml</output-file>
-           </state>
-          </test-case>
-          <test-case  name="relational-data-q5-1" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Update Use Case # 5</description>
-           <spec-citation spec="XQUPDATE" section-number="1.1.4.5" section-title="Q5" section-pointer="rdb-updates-results-u5"/>
-           <state time="0">
-            <query name="relational-data-q5-1" date="2006-08-05"/>
-            <input-file role="principal-data" variable="users">users2</input-file>
-            <input-file role="principal-data" variable="bids">bids</input-file>
-           </state>
-           <state time="1">
-            <query name="relational-data-q5-1-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="users">users2</input-file>
-            <input-file role="principal-data" variable="bids">bids</input-file>
-            <output-file role="principal" compare="Text">relational-data-q5-results-1.txt</output-file>
-           </state>
-          </test-case>  
-          <test-case  name="relational-data-q5-2" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Update Use Case # 5</description>
-           <spec-citation spec="XQUPDATE" section-number="1.1.4.5" section-title="Q5" section-pointer="rdb-updates-results-u5"/>
-           <state time="0">
-            <query name="relational-data-q5-2" date="2006-08-05"/>
-            <input-file role="principal-data" variable="users">users2</input-file>
-            <input-file role="principal-data" variable="bids">bids</input-file>
-           </state>
-           <state time="1">
-            <query name="relational-data-q5-2-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="users">users2</input-file>
-            <input-file role="principal-data" variable="bids">bids</input-file>
-            <output-file role="principal" compare="Fragment">relational-data-q5-results-2.xml</output-file>
-           </state>
-          </test-case>           
-          <test-case  name="relational-data-q6-1" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Update Use Case # 6</description>
-           <spec-citation spec="XQUPDATE" section-number="1.1.4.6" section-title="Q6" section-pointer="rdb-updates-results-u6"/>
-           <state time="0">
-            <query name="relational-data-q6-1" date="2006-08-05"/>
-            <input-file role="principal-data" variable="users">users</input-file>
-            <input-file role="principal-data" variable="items">items</input-file>
-            <input-file role="principal-data" variable="bids">bids</input-file>
-           </state>
-           <state time="1">
-            <query name="relational-data-q6-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="users">users</input-file>
-            <input-file role="principal-data" variable="items">items</input-file>            
-            <input-file role="principal-data" variable="bids">bids</input-file>
-            <output-file role="principal" compare="Fragment">relational-data-q6-results-1.xml</output-file>
-           </state>
-          </test-case>
-          <test-case  name="relational-data-q6-2" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Update Use Case # 6 - Alternate method</description>
-           <spec-citation spec="XQUPDATE" section-number="1.1.4.6" section-title="Q6" section-pointer="rdb-updates-results-u6"/>
-           <state time="0">
-            <query name="relational-data-q6-2" date="2006-08-05"/>
-            <input-file role="principal-data" variable="users">users</input-file>
-            <input-file role="principal-data" variable="items">items</input-file>
-            <input-file role="principal-data" variable="bids">bids</input-file>
-           </state>
-           <state time="1">
-            <query name="relational-data-q6-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="users">users</input-file>
-            <input-file role="principal-data" variable="items">items</input-file>            
-            <input-file role="principal-data" variable="bids">bids</input-file>
-            <output-file role="principal" compare="Fragment">relational-data-q6-results-1.xml</output-file>
-           </state>
-          </test-case>   
-          <test-case  name="relational-data-q7" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Update Use Case # 7</description>
-           <spec-citation spec="XQUPDATE" section-number="1.1.4.7" section-title="Q7" section-pointer="rdb-updates-results-u7"/>
-           <state time="0">
-            <query name="relational-data-q7" date="2006-08-05"/>
-            <input-file role="principal-data" variable="items">items</input-file>
-            <output-file role="principal" compare="Fragment">relational-data-q7-results-1.xml</output-file>
-            <expected-error>*</expected-error>            
-           </state>
-           <state time="1">
-            <query name="relational-data-q7-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="items">items</input-file>
-            <output-file role="principal" compare="Fragment">relational-data-q7-results-2.xml</output-file>
-           </state>
-          </test-case>    
-          <test-case  name="relational-data-q8" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Update Use Case # 8</description>
-           <spec-citation spec="XQUPDATE" section-number="1.1.4.8" section-title="Q8" section-pointer="rdb-updates-results-q8"/>
-           <state time="0">
-            <query name="relational-data-q8" date="2006-08-05"/>
-            <input-file role="principal-data" variable="users">users2</input-file>
-            <input-file role="principal-data" variable="bids">bids</input-file>
-            <output-file role="principal" compare="Fragment">relational-data-q8-results-1.xml</output-file>            
-            <expected-error>*</expected-error>            
-           </state>
-           <state time="1">
-            <query name="relational-data-q8-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="users">users2</input-file>
-            <input-file role="principal-data" variable="bids">bids</input-file>            
-            <output-file role="principal" compare="Fragment">relational-data-q8-results-2.xml</output-file>
-            <output-file role="principal" compare="Fragment">relational-data-q8-results-3.xml</output-file>
-           </state>
-          </test-case>    
-          <test-case  name="relational-data-q9" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Update Use Case # 9</description>
-           <spec-citation spec="XQUPDATE" section-number="1.1.4.9" section-title="Q9" section-pointer="rdb-updates-results-u9"/>
-           <state time="0">
-            <query name="relational-data-q9" date="2006-08-05"/>
-            <input-file role="principal-data" variable="users">users2</input-file>
-            <input-file role="principal-data" variable="bids">bids</input-file>  
-            <output-file role="principal" compare="Fragment">relational-data-q9-results-1.xml</output-file>                       
-            <expected-error>*</expected-error>                       
-           </state>
-           <state time="1">
-            <query name="relational-data-q9-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="users">users2</input-file>
-            <input-file role="principal-data" variable="bids">bids</input-file>
-            <output-file role="principal" compare="Fragment">relational-data-q9-results-2.xml</output-file>
-            <output-file role="principal" compare="Fragment">relational-data-q9-results-3.xml</output-file>
-           </state>
-          </test-case>
-        </test-group> 
-        <test-group name="AddressBookUpdates">
-         <GroupInfo>
-            <title>Use Cases "address Book" - Synchronizing address book entries</title>
-            <description/>
-         </GroupInfo>          
-          <test-case  name="address-book-q1" FilePath="UseCases/AddressBookUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Address Book Use case # 1</description>
-           <spec-citation spec="XQUPDATE" section-number="1.2.2" section-title="Q1" section-pointer="addrbook-q1"/>
-           <state time="0">
-            <query name="address-book-q1" date="2006-08-05"/>
-            <input-file role="principal-data" variable="archive">archive</input-file>
-            <input-file role="principal-data" variable="copy1">copy1</input-file>   
-            <input-file role="principal-data" variable="copy2">copy2</input-file>                     
-            <input-file role="principal-data" variable="log">log</input-file>            
-            <expected-error>XUDY0017</expected-error>
-           </state>
-<!--            <state time="1"> -->
-<!--             <query name="address-book-q1-test" date="2007-02-01"/>      -->
-<!--             <output-file role="principal" compare="Fragment">address-book-q1-results.xml</output-file> -->
-<!--            </state> -->
-          </test-case>
-        </test-group>
-        <test-group name="SoapUpdates">
-         <GroupInfo>
-            <title>Use Cases "Soap" - processing messages</title>
-            <description/>
-         </GroupInfo>             
-          <test-case  name="soap-q1" FilePath="UseCases/SoapUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Soap Use case # 1</description>
-           <spec-citation spec="XQUPDATE" section-number="1.3.2" section-title="Q1" section-pointer="soap-q1"/>
-           <state time="0">
-            <query name="soap-q1" date="2006-08-05"/>
-            <input-file role="principal-data" variable="airportsDoc">airports</input-file>
-            <input-file role="principal-data" variable="msg">soapMsg</input-file>
-            <output-file role="principal" compare="Fragment">soap-q1-results.xml</output-file>
-           </state>
-          </test-case>
-        </test-group>  
-        <test-group name="NamespacesUpdates">
-         <GroupInfo>
-            <title>Use Cases "Namespaces" - moving elements from one namespace to another</title>
-            <description/>
-         </GroupInfo>           
-          <test-case  name="namespaces-q1" FilePath="UseCases/NamespacesUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>namespaces Use case # 1</description>
-           <spec-citation spec="XQUPDATE" section-number="1.4.4" section-title="Q1" section-pointer="ns-q1"/>
-           <state time="0">
-            <query name="namespaces-q1" date="2006-08-05"/>
-            <input-file role="principal-data" variable="grant">grant</input-file>
-           </state>
-           <state time="1">
-            <query name="namespaces-q1-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="grant">grant</input-file>
-            <output-file role="principal" compare="Fragment">namespaces-q1-results.xml</output-file>
-           </state>
-          </test-case>   
-        </test-group>
-        <test-group name="PartsUpdates">
-         <GroupInfo>
-            <title>Use Cases "Parts" - modifying recursive documents</title>
-            <description/>
-         </GroupInfo>          
-          <test-case  name="parts-q1" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Parts Use case # 1</description>
-           <spec-citation spec="XQUPDATE" section-number="1.5.2" section-title="Q1" section-pointer="use-case-parts-q1"/>
-           <state time="0">
-            <query name="parts-q1" date="2006-08-05"/>
-            <input-file role="principal-data" variable="part-tree">part-tree</input-file>          
-           </state>
-           <state time="1">
-            <query name="parts-q1-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="part-tree">part-tree</input-file>            
-            <output-file role="principal" compare="Fragment">parts-q1-results.xml</output-file>
-           </state>
-          </test-case>  
-          <test-case  name="parts-q2" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Parts Use case # 2</description>
-           <spec-citation spec="XQUPDATE" section-number="1.5.3" section-title="Q2" section-pointer="use-case-parts-q2"/>
-           <state time="0">
-            <query name="parts-q2" date="2006-08-05"/>
-            <input-file role="principal-data" variable="part-tree">part-tree</input-file>          
-           </state>
-           <state time="1">
-            <query name="parts-q2-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="part-tree">part-tree</input-file>            
-            <output-file role="principal" compare="Fragment">parts-q2-results.xml</output-file>
-           </state>
-          </test-case>  
-          <test-case  name="parts-q3-1" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Parts Use case # 3</description>
-           <spec-citation spec="XQUPDATE" section-number="1.5.4" section-title="Q3" section-pointer="use-case-parts-q3"/>
-           <state time="0">
-            <query name="parts-q3-1" date="2006-08-05"/>
-            <input-file role="principal-data" variable="part-tree">part-tree</input-file>    
-            <input-file role="principal-data" variable="part-list">part-list</input-file>                   
-           </state>
-           <state time="1">
-            <query name="parts-q3-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="part-list">part-list</input-file>            
-            <output-file role="principal" compare="Fragment">parts-q3-results.xml</output-file>
-           </state>
-          </test-case>  
-          <test-case  name="parts-q3-2" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Parts Use case # 3 (alternate solution)</description>
-           <spec-citation spec="XQUPDATE" section-number="1.5.4" section-title="Q3" section-pointer="use-case-parts-q3"/>
-           <state time="0">
-            <query name="parts-q3-2" date="2006-08-05"/>
-            <input-file role="principal-data" variable="part-list">part-list</input-file>    
-            <input-file role="principal-data" variable="part-tree">part-tree</input-file>                   
-           </state>
-           <state time="1">
-            <query name="parts-q3-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="part-list">part-list</input-file>            
-            <output-file role="principal" compare="Fragment">parts-q3-results.xml</output-file>
-           </state>
-          </test-case>      
-          <test-case  name="parts-q4-1" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Parts Use case # 4</description>
-           <spec-citation spec="XQUPDATE" section-number="1.5.5" section-title="Q4" section-pointer="use-case-parts-q4"/>
-           <state time="0">
-            <query name="parts-q4-1" date="2006-08-05"/>    
-            <input-file role="principal-data" variable="part-tree">part-tree</input-file>                   
-           </state>
-           <state time="1">
-            <query name="parts-q4-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="part-tree">part-tree</input-file>            
-            <output-file role="principal" compare="Fragment">parts-q4-results.xml</output-file>
-           </state>
-          </test-case>   
-          <test-case  name="parts-q4-2" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Parts Use case # 4.  Alternate solution.</description>
-           <spec-citation spec="XQUPDATE" section-number="1.5.5" section-title="Q4" section-pointer="use-case-parts-q4"/>
-           <state time="0">
-            <query name="parts-q4-2" date="2006-08-05"/>    
-            <input-file role="principal-data" variable="part-tree">part-tree</input-file>                   
-           </state>
-           <state time="1">
-            <query name="parts-q4-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="part-tree">part-tree</input-file>            
-            <output-file role="principal" compare="Fragment">parts-q4-results.xml</output-file>
-           </state>
-          </test-case>             
-          <test-case  name="parts-q6" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Parts Use case # 6</description>
-           <spec-citation spec="XQUPDATE" section-number="1.5.6" section-title="Q6" section-pointer="use-case-parts-q6"/>
-           <state time="0">
-            <query name="parts-q6" date="2006-08-05"/>    
-            <input-file role="principal-data" variable="part-tree">part-tree</input-file>                   
-           </state>
-           <state time="1">
-            <query name="parts-q6-test" date="2007-02-01"/>
-            <input-file role="principal-data" variable="part-tree">part-tree</input-file>            
-            <output-file role="principal" compare="Fragment">parts-q6-results.xml</output-file>
-           </state>
-          </test-case>
-        </test-group>
-        <test-group name="NilUpdates">
-         <GroupInfo>
-            <title>Use Cases "Nil"</title>
-            <description/>
-         </GroupInfo>           
-          <test-case  name="nil-q1" FilePath="UseCases/NilUpdates/" scenario="standard" Creator="Update Task Force">
-           <description>Nil Use case # 1</description>
-           <spec-citation spec="XQUPDATE" section-number="1.6.3" section-title="Q1" section-pointer="use-case-nil-q1"/>
-           <state time="0">
-            <query name="nil-q1" date="2006-08-05"/>    
-            <input-file role="principal-data" variable="employees">employees</input-file>                          
-            <output-file role="principal" compare="Fragment">nil-q1-results.xml</output-file>
-           </state>
-          </test-case>           
-      </test-group>
-    </test-group>
     <test-group name="InsertExpressions">
         <GroupInfo>
             <title>Insert Expressions</title>
@@ -4311,4 +3957,370 @@
       </test-group>                                    
      </test-group>
   </test-group>
+  <test-group name="Optional" featureOwner="Jonathan Robie">
+    <GroupInfo>
+      <title>Optional Features</title>
+      <description/>
+    </GroupInfo>
+    <test-group name="StaticTyping" featureOwner="Jonathan Robie">
+      <GroupInfo>
+        <title>Update Facility Static Typing Feature</title>
+        <description/>
+      </GroupInfo>
+    </test-group>
+  </test-group>
+   <test-group name="UseCases">
+     <GroupInfo>
+         <title>Use Cases</title>
+         <description/>
+      </GroupInfo>
+      <test-group name="RelationalDataUpdates">
+        <GroupInfo>
+            <title>Use Cases "R" - Updating Relational Data</title>
+            <description/>
+         </GroupInfo>
+          <test-case  name="relational-data-q1" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Update Use Case # 1</description>
+           <spec-citation spec="XQUPDATE" section-number="1.1.4.1" section-title="Q1" section-pointer="rdb-updates-results-u1"/>
+           <state time="0">
+            <query name="relational-data-q1" date="2005-02-03"/>
+            <input-file role="principal-data" variable="users">users</input-file>
+           </state>
+           <state time="1">
+            <query name="relational-data-q1-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="users">users</input-file>
+            <output-file role="principal" compare="Fragment">relational-data-q1-results.xml</output-file>
+           </state>
+          </test-case>  
+          <test-case  name="relational-data-q2" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Update Use Case # 2</description>
+           <spec-citation spec="XQUPDATE" section-number="1.1.4.2" section-title="Q2" section-pointer="rdb-updates-results-u2"/>
+           <state time="0">
+            <query name="relational-data-q2" date="2006-08-05"/>
+            <input-file role="principal-data" variable="users">users2</input-file>
+            <input-file role="principal-data" variable="bids">bids</input-file>            
+           </state>
+           <state time="1">
+            <query name="relational-data-q2-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="users">users2</input-file>
+            <input-file role="principal-data" variable="bids">bids</input-file>           
+            <output-file role="principal" compare="Fragment">relational-data-q2-results.xml</output-file>
+           </state>
+          </test-case>
+          <test-case  name="relational-data-q3" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Update Use Case # 3</description>
+           <spec-citation spec="XQUPDATE" section-number="1.1.4.3" section-title="Q3" section-pointer="rdb-updates-results-u3"/>
+           <state time="0">
+            <query name="relational-data-q3" date="2006-08-05"/>
+            <input-file role="principal-data" variable="users">users2</input-file>
+            <input-file role="principal-data" variable="bids">bids</input-file>
+           </state>
+           <state time="1">
+            <query name="relational-data-q3-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="users">users2</input-file>
+            <input-file role="principal-data" variable="bids">bids</input-file>
+            <output-file role="principal" compare="Fragment">relational-data-q3-results.xml</output-file>
+           </state>
+          </test-case>
+          <test-case  name="relational-data-q4" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Update Use Case # 4</description>
+           <spec-citation spec="XQUPDATE" section-number="1.1.4.4" section-title="Q4" section-pointer="rdb-updates-results-u4"/>
+           <state time="0">
+            <query name="relational-data-q4" date="2006-08-05"/>
+            <input-file role="principal-data" variable="users">users2</input-file>
+           </state>
+           <state time="1">
+            <query name="relational-data-q4-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="users">users2</input-file>
+            <output-file role="principal" compare="Fragment">relational-data-q4-results.xml</output-file>
+           </state>
+          </test-case>
+          <test-case  name="relational-data-q5-1" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Update Use Case # 5</description>
+           <spec-citation spec="XQUPDATE" section-number="1.1.4.5" section-title="Q5" section-pointer="rdb-updates-results-u5"/>
+           <state time="0">
+            <query name="relational-data-q5-1" date="2006-08-05"/>
+            <input-file role="principal-data" variable="users">users2</input-file>
+            <input-file role="principal-data" variable="bids">bids</input-file>
+           </state>
+           <state time="1">
+            <query name="relational-data-q5-1-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="users">users2</input-file>
+            <input-file role="principal-data" variable="bids">bids</input-file>
+            <output-file role="principal" compare="Text">relational-data-q5-results-1.txt</output-file>
+           </state>
+          </test-case>  
+          <test-case  name="relational-data-q5-2" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Update Use Case # 5</description>
+           <spec-citation spec="XQUPDATE" section-number="1.1.4.5" section-title="Q5" section-pointer="rdb-updates-results-u5"/>
+           <state time="0">
+            <query name="relational-data-q5-2" date="2006-08-05"/>
+            <input-file role="principal-data" variable="users">users2</input-file>
+            <input-file role="principal-data" variable="bids">bids</input-file>
+           </state>
+           <state time="1">
+            <query name="relational-data-q5-2-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="users">users2</input-file>
+            <input-file role="principal-data" variable="bids">bids</input-file>
+            <output-file role="principal" compare="Fragment">relational-data-q5-results-2.xml</output-file>
+           </state>
+          </test-case>           
+          <test-case  name="relational-data-q6-1" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Update Use Case # 6</description>
+           <spec-citation spec="XQUPDATE" section-number="1.1.4.6" section-title="Q6" section-pointer="rdb-updates-results-u6"/>
+           <state time="0">
+            <query name="relational-data-q6-1" date="2006-08-05"/>
+            <input-file role="principal-data" variable="users">users</input-file>
+            <input-file role="principal-data" variable="items">items</input-file>
+            <input-file role="principal-data" variable="bids">bids</input-file>
+           </state>
+           <state time="1">
+            <query name="relational-data-q6-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="users">users</input-file>
+            <input-file role="principal-data" variable="items">items</input-file>            
+            <input-file role="principal-data" variable="bids">bids</input-file>
+            <output-file role="principal" compare="Fragment">relational-data-q6-results-1.xml</output-file>
+           </state>
+          </test-case>
+          <test-case  name="relational-data-q6-2" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Update Use Case # 6 - Alternate method</description>
+           <spec-citation spec="XQUPDATE" section-number="1.1.4.6" section-title="Q6" section-pointer="rdb-updates-results-u6"/>
+           <state time="0">
+            <query name="relational-data-q6-2" date="2006-08-05"/>
+            <input-file role="principal-data" variable="users">users</input-file>
+            <input-file role="principal-data" variable="items">items</input-file>
+            <input-file role="principal-data" variable="bids">bids</input-file>
+           </state>
+           <state time="1">
+            <query name="relational-data-q6-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="users">users</input-file>
+            <input-file role="principal-data" variable="items">items</input-file>            
+            <input-file role="principal-data" variable="bids">bids</input-file>
+            <output-file role="principal" compare="Fragment">relational-data-q6-results-1.xml</output-file>
+           </state>
+          </test-case>   
+          <test-case  name="relational-data-q7" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Update Use Case # 7</description>
+           <spec-citation spec="XQUPDATE" section-number="1.1.4.7" section-title="Q7" section-pointer="rdb-updates-results-u7"/>
+           <state time="0">
+            <query name="relational-data-q7" date="2006-08-05"/>
+            <input-file role="principal-data" variable="items">items</input-file>
+            <output-file role="principal" compare="Fragment">relational-data-q7-results-1.xml</output-file>
+            <expected-error>*</expected-error>            
+           </state>
+           <state time="1">
+            <query name="relational-data-q7-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="items">items</input-file>
+            <output-file role="principal" compare="Fragment">relational-data-q7-results-2.xml</output-file>
+           </state>
+          </test-case>    
+          <test-case  name="relational-data-q8" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Update Use Case # 8</description>
+           <spec-citation spec="XQUPDATE" section-number="1.1.4.8" section-title="Q8" section-pointer="rdb-updates-results-q8"/>
+           <state time="0">
+            <query name="relational-data-q8" date="2006-08-05"/>
+            <input-file role="principal-data" variable="users">users2</input-file>
+            <input-file role="principal-data" variable="bids">bids</input-file>
+            <output-file role="principal" compare="Fragment">relational-data-q8-results-1.xml</output-file>            
+            <expected-error>*</expected-error>            
+           </state>
+           <state time="1">
+            <query name="relational-data-q8-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="users">users2</input-file>
+            <input-file role="principal-data" variable="bids">bids</input-file>            
+            <output-file role="principal" compare="Fragment">relational-data-q8-results-2.xml</output-file>
+            <output-file role="principal" compare="Fragment">relational-data-q8-results-3.xml</output-file>
+           </state>
+          </test-case>    
+          <test-case  name="relational-data-q9" FilePath="UseCases/RelationalDataUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Update Use Case # 9</description>
+           <spec-citation spec="XQUPDATE" section-number="1.1.4.9" section-title="Q9" section-pointer="rdb-updates-results-u9"/>
+           <state time="0">
+            <query name="relational-data-q9" date="2006-08-05"/>
+            <input-file role="principal-data" variable="users">users2</input-file>
+            <input-file role="principal-data" variable="bids">bids</input-file>  
+            <output-file role="principal" compare="Fragment">relational-data-q9-results-1.xml</output-file>                       
+            <expected-error>*</expected-error>                       
+           </state>
+           <state time="1">
+            <query name="relational-data-q9-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="users">users2</input-file>
+            <input-file role="principal-data" variable="bids">bids</input-file>
+            <output-file role="principal" compare="Fragment">relational-data-q9-results-2.xml</output-file>
+            <output-file role="principal" compare="Fragment">relational-data-q9-results-3.xml</output-file>
+           </state>
+          </test-case>
+        </test-group> 
+        <test-group name="AddressBookUpdates">
+         <GroupInfo>
+            <title>Use Cases "address Book" - Synchronizing address book entries</title>
+            <description/>
+         </GroupInfo>          
+          <test-case  name="address-book-q1" FilePath="UseCases/AddressBookUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Address Book Use case # 1</description>
+           <spec-citation spec="XQUPDATE" section-number="1.2.2" section-title="Q1" section-pointer="addrbook-q1"/>
+           <state time="0">
+            <query name="address-book-q1" date="2006-08-05"/>
+            <input-file role="principal-data" variable="archive">archive</input-file>
+            <input-file role="principal-data" variable="copy1">copy1</input-file>   
+            <input-file role="principal-data" variable="copy2">copy2</input-file>                     
+            <input-file role="principal-data" variable="log">log</input-file>            
+            <expected-error>XUDY0017</expected-error>
+           </state>
+<!--            <state time="1"> -->
+<!--             <query name="address-book-q1-test" date="2007-02-01"/>      -->
+<!--             <output-file role="principal" compare="Fragment">address-book-q1-results.xml</output-file> -->
+<!--            </state> -->
+          </test-case>
+        </test-group>
+        <test-group name="SoapUpdates">
+         <GroupInfo>
+            <title>Use Cases "Soap" - processing messages</title>
+            <description/>
+         </GroupInfo>             
+          <test-case  name="soap-q1" FilePath="UseCases/SoapUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Soap Use case # 1</description>
+           <spec-citation spec="XQUPDATE" section-number="1.3.2" section-title="Q1" section-pointer="soap-q1"/>
+           <state time="0">
+            <query name="soap-q1" date="2006-08-05"/>
+            <input-file role="principal-data" variable="airportsDoc">airports</input-file>
+            <input-file role="principal-data" variable="msg">soapMsg</input-file>
+            <output-file role="principal" compare="Fragment">soap-q1-results.xml</output-file>
+           </state>
+          </test-case>
+        </test-group>  
+        <test-group name="NamespacesUpdates">
+         <GroupInfo>
+            <title>Use Cases "Namespaces" - moving elements from one namespace to another</title>
+            <description/>
+         </GroupInfo>           
+          <test-case  name="namespaces-q1" FilePath="UseCases/NamespacesUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>namespaces Use case # 1</description>
+           <spec-citation spec="XQUPDATE" section-number="1.4.4" section-title="Q1" section-pointer="ns-q1"/>
+           <state time="0">
+            <query name="namespaces-q1" date="2006-08-05"/>
+            <input-file role="principal-data" variable="grant">grant</input-file>
+           </state>
+           <state time="1">
+            <query name="namespaces-q1-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="grant">grant</input-file>
+            <output-file role="principal" compare="Fragment">namespaces-q1-results.xml</output-file>
+           </state>
+          </test-case>   
+        </test-group>
+        <test-group name="PartsUpdates">
+         <GroupInfo>
+            <title>Use Cases "Parts" - modifying recursive documents</title>
+            <description/>
+         </GroupInfo>          
+          <test-case  name="parts-q1" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Parts Use case # 1</description>
+           <spec-citation spec="XQUPDATE" section-number="1.5.2" section-title="Q1" section-pointer="use-case-parts-q1"/>
+           <state time="0">
+            <query name="parts-q1" date="2006-08-05"/>
+            <input-file role="principal-data" variable="part-tree">part-tree</input-file>          
+           </state>
+           <state time="1">
+            <query name="parts-q1-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="part-tree">part-tree</input-file>            
+            <output-file role="principal" compare="Fragment">parts-q1-results.xml</output-file>
+           </state>
+          </test-case>  
+          <test-case  name="parts-q2" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Parts Use case # 2</description>
+           <spec-citation spec="XQUPDATE" section-number="1.5.3" section-title="Q2" section-pointer="use-case-parts-q2"/>
+           <state time="0">
+            <query name="parts-q2" date="2006-08-05"/>
+            <input-file role="principal-data" variable="part-tree">part-tree</input-file>          
+           </state>
+           <state time="1">
+            <query name="parts-q2-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="part-tree">part-tree</input-file>            
+            <output-file role="principal" compare="Fragment">parts-q2-results.xml</output-file>
+           </state>
+          </test-case>  
+          <test-case  name="parts-q3-1" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Parts Use case # 3</description>
+           <spec-citation spec="XQUPDATE" section-number="1.5.4" section-title="Q3" section-pointer="use-case-parts-q3"/>
+           <state time="0">
+            <query name="parts-q3-1" date="2006-08-05"/>
+            <input-file role="principal-data" variable="part-tree">part-tree</input-file>    
+            <input-file role="principal-data" variable="part-list">part-list</input-file>                   
+           </state>
+           <state time="1">
+            <query name="parts-q3-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="part-list">part-list</input-file>            
+            <output-file role="principal" compare="Fragment">parts-q3-results.xml</output-file>
+           </state>
+          </test-case>  
+          <test-case  name="parts-q3-2" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Parts Use case # 3 (alternate solution)</description>
+           <spec-citation spec="XQUPDATE" section-number="1.5.4" section-title="Q3" section-pointer="use-case-parts-q3"/>
+           <state time="0">
+            <query name="parts-q3-2" date="2006-08-05"/>
+            <input-file role="principal-data" variable="part-list">part-list</input-file>    
+            <input-file role="principal-data" variable="part-tree">part-tree</input-file>                   
+           </state>
+           <state time="1">
+            <query name="parts-q3-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="part-list">part-list</input-file>            
+            <output-file role="principal" compare="Fragment">parts-q3-results.xml</output-file>
+           </state>
+          </test-case>      
+          <test-case  name="parts-q4-1" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Parts Use case # 4</description>
+           <spec-citation spec="XQUPDATE" section-number="1.5.5" section-title="Q4" section-pointer="use-case-parts-q4"/>
+           <state time="0">
+            <query name="parts-q4-1" date="2006-08-05"/>    
+            <input-file role="principal-data" variable="part-tree">part-tree</input-file>                   
+           </state>
+           <state time="1">
+            <query name="parts-q4-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="part-tree">part-tree</input-file>            
+            <output-file role="principal" compare="Fragment">parts-q4-results.xml</output-file>
+           </state>
+          </test-case>   
+          <test-case  name="parts-q4-2" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Parts Use case # 4.  Alternate solution.</description>
+           <spec-citation spec="XQUPDATE" section-number="1.5.5" section-title="Q4" section-pointer="use-case-parts-q4"/>
+           <state time="0">
+            <query name="parts-q4-2" date="2006-08-05"/>    
+            <input-file role="principal-data" variable="part-tree">part-tree</input-file>                   
+           </state>
+           <state time="1">
+            <query name="parts-q4-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="part-tree">part-tree</input-file>            
+            <output-file role="principal" compare="Fragment">parts-q4-results.xml</output-file>
+           </state>
+          </test-case>             
+          <test-case  name="parts-q6" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Parts Use case # 6</description>
+           <spec-citation spec="XQUPDATE" section-number="1.5.6" section-title="Q6" section-pointer="use-case-parts-q6"/>
+           <state time="0">
+            <query name="parts-q6" date="2006-08-05"/>    
+            <input-file role="principal-data" variable="part-tree">part-tree</input-file>                   
+           </state>
+           <state time="1">
+            <query name="parts-q6-test" date="2007-02-01"/>
+            <input-file role="principal-data" variable="part-tree">part-tree</input-file>            
+            <output-file role="principal" compare="Fragment">parts-q6-results.xml</output-file>
+           </state>
+          </test-case>
+        </test-group>
+        <test-group name="NilUpdates">
+         <GroupInfo>
+            <title>Use Cases "Nil"</title>
+            <description/>
+         </GroupInfo>           
+          <test-case  name="nil-q1" FilePath="UseCases/NilUpdates/" scenario="standard" Creator="Update Task Force">
+           <description>Nil Use case # 1</description>
+           <spec-citation spec="XQUPDATE" section-number="1.6.3" section-title="Q1" section-pointer="use-case-nil-q1"/>
+           <state time="0">
+            <query name="nil-q1" date="2006-08-05"/>    
+            <input-file role="principal-data" variable="employees">employees</input-file>                          
+            <output-file role="principal" compare="Fragment">nil-q1-results.xml</output-file>
+           </state>
+          </test-case>           
+      </test-group>
+    </test-group>
 </test-suite>
