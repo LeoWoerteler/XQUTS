@@ -290,6 +290,7 @@
    <xsl:template match="test:test-case">
       <xsl:variable name="FilePath" select="@FilePath" />
       <table width="80%" bgcolor="tan">
+         <a name="{@name}"/>
          <tr>
             <td>
                <b>
