@@ -3878,6 +3878,492 @@
              </state>
            </test-case>                                       
       </test-group>   
+      <test-group name="Static-typing-xqupd">
+         <GroupInfo>
+             <title>Tests for static typing for xquery update facility expression.</title>
+             <description/>
+          </GroupInfo>               
+          <test-case  name="statictyp-xqupd-01" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with delete expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.2" section-title="Delete" section-pointer="#id-update-typing-delete"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-01" date="2008-03-22"/>
+                 <expected-error>XUTY0007</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-02" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with delete expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.2" section-title="Delete" section-pointer="#id-update-typing-delete"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-02" date="2008-03-22"/>
+                 <expected-error>XUTY0007</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-03" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert into expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-03" date="2008-03-22"/>
+                 <expected-error>XUTY0005</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-04" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert into expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-04" date="2008-03-22"/>
+                 <expected-error>XUTY0005</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-05" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert into expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-05" date="2008-03-22"/>
+                 <expected-error>XUTY0005</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-06" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert into expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-06" date="2008-03-22"/>
+                 <expected-error>XUTY0005</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-07" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert into expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-07" date="2008-03-22"/>
+                 <expected-error>XUTY0005</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-08" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert into expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-08" date="2008-03-22"/>
+                 <expected-error>XUTY0005</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-09" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert into expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-09" date="2008-03-22"/>
+                 <expected-error>XUTY0022</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-10" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert before expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-10" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-11" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert before expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-11" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-12" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert before expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-12" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-13" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert before expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-13" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-14" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert before expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-14" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-15" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert before expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-15" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-16" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert before expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-16" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-17" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with delete expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-17" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-18" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert after expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-18" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-19" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert after expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-19" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-20" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert after expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-20" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-21" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert after expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-21" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-22" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert after expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-22" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-23" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert after expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-23" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-24" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert after expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-24" date="2008-03-22"/>
+                 <expected-error>XUTY0006</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-25" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with insert into expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-25" date="2008-03-22"/>
+                 <expected-error>XUTY0022</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-26" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Delete" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-26" date="2008-03-22"/>
+                 <expected-error>XUTY0008</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-27" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-27" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-28" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-28" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-29" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-29" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-30" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-30" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-31" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-31" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-32" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-32" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-33" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-33" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-34" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-34" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-35" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-35" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-36" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-36" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-37" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-37" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-38" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-38" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-39" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-39" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-40" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-40" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-41" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-41" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-42" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-42" date="2008-03-22"/>
+                 <expected-error>XUTY0010</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-43" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-43" date="2008-03-22"/>
+                 <expected-error>XUTY0011</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-44" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-44" date="2008-03-22"/>
+                 <expected-error>XUTY0011</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-45" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-45" date="2008-03-22"/>
+                 <expected-error>XUTY0011</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-46" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-46" date="2008-03-22"/>
+                 <expected-error>XUTY0011</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-47" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-47" date="2008-03-22"/>
+                 <expected-error>XUTY0008</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-48" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-48" date="2008-03-22"/>
+                 <expected-error>XUTY0008</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-49" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-49" date="2008-03-22"/>
+                 <expected-error>XUTY0008</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-50" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with replace expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-50" date="2008-03-22"/>
+                 <expected-error>XUTY0008</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-51" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with rename expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-51" date="2008-03-22"/>
+                 <expected-error>XUTY0012</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-52" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with rename expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-52" date="2008-03-22"/>
+                 <expected-error>XUTY0012</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-53" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with rename expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-53" date="2008-03-22"/>
+                 <expected-error>XUTY0012</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-54" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with rename expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-54" date="2008-03-22"/>
+                 <expected-error>XUTY0012</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-55" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with rename expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-55" date="2008-03-22"/>
+                 <expected-error>XUTY0012</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-56" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with transform expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.5" section-title="Transform" section-pointer="#id-update-typing-transform"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-56" date="2008-03-22"/>
+                 <expected-error>XUTY0013</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-57" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with transform expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.5" section-title="Transform" section-pointer="#id-update-typing-transform"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-57" date="2008-03-22"/>
+                 <expected-error>XUTY0013</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-58" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with rename expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-58" date="2008-03-22"/>
+                 <expected-error>XQDY0074</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-59" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with rename expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-59" date="2008-03-22"/>
+                 <expected-error>XQDY0074</expected-error>
+              </state>
+            </test-case>
+            <test-case  name="statictyp-xqupd-60" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
+              <description>Evaluation of static typing feature with rename expression.</description>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <state time="0">
+                 <query name="statictyp-xqupd-60" date="2008-03-22"/>
+                 <expected-error>XQDY0074</expected-error>
+              </state>
+            </test-case>
+      </test-group>
       <test-group name="ParenthesizedExpressions">
         <GroupInfo>
             <title>Tests for Parenthesized Expressions.</title>
