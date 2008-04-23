@@ -9,7 +9,7 @@ declare variable $bids external;
 (:state-1-start :)
 
 let $uid := $users/users/user_tuple[name="Annabel Lee"]/userid
-let $topbid := max($bids/bids/bid_tuple[itemno=1007]/bid)
+let $topbid := max($bids/bids/bid_tuple[itemno=1007]/bid/xs:decimal(.))
 where $topbid*1.1 <= 500
 return 
   insert nodes 
