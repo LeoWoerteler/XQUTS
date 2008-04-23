@@ -184,7 +184,13 @@
       </source>       
       <source ID="works-mod" FileName="TestSources/works-mod.xml" Creator="Carmelo Montanez">
          <description last-mod="2005-02-11">One of the main XML File used by NIST tests.</description>
-      </source>       
+      </source>
+      <source ID="books" FileName="TestSources/books.xml" Creator="Michael Kay" schema="books-schema">
+         <description last-mod="2008-01-03">A list of books (used for schema-aware testing)</description>
+      </source>
+      <schema ID="books-schema" uri="http://ns.example.com/books" FileName="TestSources/books.xsd">
+         <description last-mod="2008-01-03">Schema for books.xml</description>
+      </schema>                
       <schema ID="XQUTSCatalogxsd" uri="http://www.w3.org/2005/02/query-test-update" FileName="XQUTSCatalog.xsd">
          <description last-mod="2005-04-14">Schema for Update Catalog</description>
       </schema>          	        
