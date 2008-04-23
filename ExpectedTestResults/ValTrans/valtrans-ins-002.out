@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ITEM xmlns="http://ns.example.com/books"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      CAT="MMP"
+      TAX="V"><!-- the first book --><?pi data?><TITLE>Pride and Prejudice</TITLE>
+   <AUTHOR>Jane Austen</AUTHOR>
+   <AUTHOR>Thursday Next</AUTHOR>
+   <PUBLISHER>Modern Library</PUBLISHER>
+   <PUB-DATE>2002-12-31</PUB-DATE>
+   <LANGUAGE>English</LANGUAGE>
+   <PRICE>4.95</PRICE>
+   <QUANTITY>187</QUANTITY>
+   <ISBN>0679601686</ISBN>
+   <PAGES>352</PAGES>
+   <DIMENSIONS UNIT="in">8.3 5.7 1.1</DIMENSIONS>
+   <WEIGHT UNIT="oz">6.1</WEIGHT>
+</ITEM>
