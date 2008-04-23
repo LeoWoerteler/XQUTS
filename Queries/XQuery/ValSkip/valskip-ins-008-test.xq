@@ -16,5 +16,5 @@ declare variable $books as document-node(element(BOOKLIST)) external;
   <d>{$books/BOOKLIST/BOOKS/ITEM[1]/AUTHOR[1]/@xml:id instance of attribute(*, xs:ID)}</d>   
   <e>{$books/BOOKLIST/BOOKS/ITEM[1]/PRICE instance of element(*, xs:decimal)}</e>  
   <f>{$books/BOOKLIST/BOOKS/ITEM[2] instance of schema-element(ITEM)}</f>
-  <id>{$books//id("unique")}</id>
+  <id>{$books//id("unique")/@xml:id}</id>
 </out>        
