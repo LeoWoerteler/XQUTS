@@ -16,6 +16,6 @@ declare function m1:update($books as document-node(schema-element(BOOKLIST))) {
 	  modify insert node <garbage>rubbish</garbage> as first into $book1copy
 	  return $book1copy
   
-}  
+}  ;
   
       
