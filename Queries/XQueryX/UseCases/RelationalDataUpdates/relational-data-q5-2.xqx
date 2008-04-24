@@ -112,6 +112,22 @@
                       <xqx:xpathAxis>child</xqx:xpathAxis>
                       <xqx:nameTest>bid</xqx:nameTest>
                     </xqx:stepExpr>
+                    <xqx:stepExpr>
+                      <xqx:filterExpr>
+                        <xqx:functionCallExpr>
+                          <xqx:functionName xqx:prefix="xs">decimal</xqx:functionName>
+                          <xqx:arguments>
+                            <xqx:pathExpr>
+                              <xqx:stepExpr>
+                                <xqx:filterExpr>
+                                  <xqx:contextItemExpr/>
+                                </xqx:filterExpr>
+                              </xqx:stepExpr>
+                            </xqx:pathExpr>
+                          </xqx:arguments>
+                        </xqx:functionCallExpr>
+                      </xqx:filterExpr>
+                    </xqx:stepExpr>
                   </xqx:pathExpr>
                 </xqx:arguments>
               </xqx:functionCallExpr>
