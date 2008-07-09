@@ -1,0 +1,64 @@
+<project name="XQuery Update Test Suite Error Coverage" default="all">
+
+   <description>
+      Show the error coverage of the test cases in the test suite.
+   </description>
+   
+
+   <property
+      name="sourceDocs"
+      value="http://www.w3.org/TR/"
+      />
+
+   <property
+      name="updateCatalog"
+      location="..\..\XQUTSCatalog.xml"
+      />
+
+
+   
+   <target name="all">
+      <mkdir dir="temp" />
+      <antcall target="getDocuments" />
+      <antcall target="getErrors" />
+      <antcall target="updateReport" />
+      <delete dir="temp" />
+   </target>
+   
+
+
+
+   <target name='getDocuments'>
+      <get src="${sourceDocs}xquery-update-10/" dest="temp/update.html"/>
+   </target>
+
+
+   <target name='getErrors'>
+      <style
+         in="temp/update.html"
+         basedir="."
+         style="GetErrors.xsl"
+         out="temp/updateErrors.xml"
+         force="yes">
+      </style>     
+   </target>
+   
+
+
+   <target name='updateReport'>
+      <tstamp>
+         <format property="now" pattern="MM/dd/yyyy HH:mm" />
+      </tstamp>
+      
+      <style
+         in="${updateCatalog}"
+         basedir="."
+         style="UpdateErrors.xsl"
+         out="UpdateErrors.html"
+         force="yes">
+         <param name="errors" expression="temp/updateErrors.xml"/> 
+         <param name="now" expression="${now}"/> 
+      </style>     
+   </target>
+   
+</project>
