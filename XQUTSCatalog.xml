@@ -999,7 +999,7 @@
            </test-case>                           
         <test-case name="complex-deletes-q1" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="#id-delete"/> 
+          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/> 
           <state time="0">
             <query name="complex-deletes-q1" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1017,7 +1017,7 @@
         </test-case>
         <test-case name="complex-deletes-q2" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="#id-delete"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
           <state time="0">
             <query name="complex-deletes-q2" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1035,7 +1035,7 @@
         </test-case>
         <test-case name="complex-deletes-q3" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="#id-delete"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
           <state time="0">
             <query name="complex-deletes-q3" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1053,7 +1053,7 @@
         </test-case>
         <test-case name="complex-deletes-q4" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="#id-delete"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
           <state time="0">
             <query name="complex-deletes-q4" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1071,7 +1071,7 @@
         </test-case>
         <test-case name="complex-deletes-q5" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="#id-delete"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
           <state time="0">
             <query name="complex-deletes-q5" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1089,7 +1089,7 @@
         </test-case>
         <test-case name="complex-deletes-q6" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="#id-delete"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
           <state time="0">
             <query name="complex-deletes-q6" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1107,7 +1107,7 @@
         </test-case>
         <test-case name="complex-deletes-q7" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="#id-delete"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
           <state time="0">
             <query name="complex-deletes-q7" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1125,7 +1125,7 @@
         </test-case>
         <test-case name="complex-deletes-q8" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="#id-delete"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
           <state time="0">
             <query name="complex-deletes-q8" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1143,7 +1143,7 @@
         </test-case>
         <test-case name="complex-deletes-q9" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="#id-delete"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
           <state time="0">
             <query name="complex-deletes-q9" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1161,7 +1161,7 @@
         </test-case>
         <test-case name="complex-deletes-q10" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="#id-delete"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
           <state time="0">
             <query name="complex-deletes-q10" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1179,7 +1179,7 @@
         </test-case>
         <test-case name="complex-deletes-q11" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="#id-delete"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
           <state time="0">
             <query name="complex-deletes-q11" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1197,7 +1197,7 @@
         </test-case>
         <test-case name="complex-deletes-q12" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="#id-delete"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
           <state time="0">
             <query name="complex-deletes-q12" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1215,7 +1215,7 @@
         </test-case>
         <test-case name="complex-deletes-q13" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="#id-delete"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
           <state time="0">
             <query name="complex-deletes-q13" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1233,7 +1233,7 @@
         </test-case>
         <test-case name="complex-deletes-q14" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="#id-delete"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
           <state time="0">
             <query name="complex-deletes-q14" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1569,8 +1569,8 @@
            </test-case>                                          
         <test-case name="complex-replacevalues-q1" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="#id-replace"/>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="#id-replacing-node-value"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
           <state time="0">
             <query name="complex-replacevalues-q1" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1588,8 +1588,8 @@
         </test-case>
         <test-case name="complex-replacevalues-q2" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="#id-replace"/>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="#id-replacing-node-value"/> 
+          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/> 
           <state time="0">
             <query name="complex-replacevalues-q2" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1607,8 +1607,8 @@
         </test-case>
         <test-case name="complex-replacevalues-q3" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="#id-replace"/>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="#id-replacing-node-value"/> 
+          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/> 
           <state time="0">
             <query name="complex-replacevalues-q3" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1626,8 +1626,8 @@
         </test-case>
         <test-case name="complex-replacevalues-q4" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="#id-replace"/>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="#id-replacing-node-value"/> 
+          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/> 
           <state time="0">
             <query name="complex-replacevalues-q4" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1645,8 +1645,8 @@
         </test-case>
         <test-case name="complex-replacevalues-q5" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="#id-replace"/>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="#id-replacing-node-value"/> 
+          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/> 
           <state time="0">
             <query name="complex-replacevalues-q5" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1664,8 +1664,8 @@
         </test-case>
         <test-case name="complex-replacevalues-q6" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="#id-replace"/>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="#id-replacing-node-value"/> 
+          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/> 
           <state time="0">
             <query name="complex-replacevalues-q6" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1683,8 +1683,8 @@
         </test-case>
         <test-case name="complex-replacevalues-q7" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="#id-replace"/>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="#id-replacing-node-value"/> 
+          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/> 
           <state time="0">
             <query name="complex-replacevalues-q7" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1702,8 +1702,8 @@
         </test-case>
         <test-case name="complex-replacevalues-q8" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="#id-replace"/>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="#id-replacing-node-value"/> 
+          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/> 
           <state time="0">
             <query name="complex-replacevalues-q8" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1721,8 +1721,8 @@
         </test-case>
         <test-case name="complex-replacevalues-q9" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="#id-replace"/>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="#id-replacing-node-value"/> 
+          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/> 
           <state time="0">
             <query name="complex-replacevalues-q9" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1740,8 +1740,8 @@
         </test-case>
         <test-case name="complex-replacevalues-q10" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="#id-replace"/>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="#id-replacing-node-value"/> 
+          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/> 
           <state time="0">
             <query name="complex-replacevalues-q10" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1759,8 +1759,8 @@
         </test-case>
         <test-case name="complex-replacevalues-q11" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="#id-replace"/>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="#id-replacing-node-value"/> 
+          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/> 
           <state time="0">
             <query name="complex-replacevalues-q11" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1778,8 +1778,8 @@
         </test-case>
         <test-case name="complex-replacevalues-q12" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="#id-replace"/>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="#id-replacing-node-value"/> 
+          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/> 
           <state time="0">
             <query name="complex-replacevalues-q12" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1797,8 +1797,8 @@
         </test-case>
         <test-case name="complex-replacevalues-q13" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="#id-replace"/>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="#id-replacing-node-value"/> 
+          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/> 
           <state time="0">
             <query name="complex-replacevalues-q13" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -1816,8 +1816,8 @@
         </test-case>
         <test-case name="complex-replacevalues-q14" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="#id-replace"/>
-          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="#id-replacing-node-value"/> 
+          <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/> 
           <state time="0">
             <query name="complex-replacevalues-q14" date="2008-01-03"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -2062,7 +2062,7 @@
            </test-case>                     
         <test-case name="complex-renames-q1" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="#id-rename"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
           <state time="0">
             <query name="complex-renames-q1" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -2080,7 +2080,7 @@
         </test-case>
         <test-case name="complex-renames-q2" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="#id-rename"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
           <state time="0">
             <query name="complex-renames-q2" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -2098,7 +2098,7 @@
         </test-case>
         <test-case name="complex-renames-q3" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="#id-rename"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
           <state time="0">
             <query name="complex-renames-q3" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -2116,7 +2116,7 @@
         </test-case>
         <test-case name="complex-renames-q4" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="#id-rename"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
           <state time="0">
             <query name="complex-renames-q4" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -2134,7 +2134,7 @@
         </test-case>
         <test-case name="complex-renames-q5" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="#id-rename"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
           <state time="0">
             <query name="complex-renames-q5" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -2152,7 +2152,7 @@
         </test-case>
         <test-case name="complex-renames-q6" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="#id-rename"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
           <state time="0">
             <query name="complex-renames-q6" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -2170,7 +2170,7 @@
         </test-case>
         <test-case name="complex-renames-q7" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="#id-rename"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
           <state time="0">
             <query name="complex-renames-q7" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -2188,7 +2188,7 @@
         </test-case>
         <test-case name="complex-renames-q8" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
           <description></description>
-          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="#id-rename"/>
+          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
           <state time="0">
             <query name="complex-renames-q8" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -4631,7 +4631,7 @@
       </GroupInfo>
       <test-case name="attribute-errors-q1" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q1" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4640,7 +4640,7 @@
       </test-case>  
       <test-case name="attribute-errors-q2" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q2" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4649,7 +4649,7 @@
       </test-case>  
       <test-case name="attribute-errors-q3" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q3" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4658,7 +4658,7 @@
       </test-case>  
       <test-case name="attribute-errors-q4" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q4" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4667,7 +4667,7 @@
       </test-case>  
       <test-case name="attribute-errors-q5" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q5" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4676,7 +4676,7 @@
       </test-case>  
       <test-case name="attribute-errors-q6" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q6" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4685,7 +4685,7 @@
       </test-case>  
       <test-case name="attribute-errors-q7" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q7" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4694,7 +4694,7 @@
       </test-case>  
       <test-case name="attribute-errors-q8" FilePath="UpdatePrimitives/AttributeErrors/" scenario="standard" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q8" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4707,7 +4707,7 @@
       </test-case>  
       <test-case name="attribute-errors-q9" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q9" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4716,7 +4716,7 @@
       </test-case>  
       <test-case name="attribute-errors-q10" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q10" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4725,7 +4725,7 @@
       </test-case>  
       <test-case name="attribute-errors-q11" FilePath="UpdatePrimitives/AttributeErrors/" scenario="standard" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q11" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4738,7 +4738,7 @@
       </test-case>  
       <test-case name="attribute-errors-q12" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q12" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4747,7 +4747,7 @@
       </test-case>  
       <test-case name="attribute-errors-q13" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q13" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4756,7 +4756,7 @@
       </test-case>  
       <test-case name="attribute-errors-q14" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q14" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4766,7 +4766,7 @@
       </test-case>  
       <test-case name="attribute-errors-q15" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q15" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4775,7 +4775,7 @@
       </test-case>  
       <test-case name="attribute-errors-q16" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="#id-upd-apply-updates"/>
+        <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
         <state time="0">
           <query name="attribute-errors-q16" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
@@ -4790,7 +4790,7 @@
       </GroupInfo>
       <test-case name="namespace-errors-q1" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="#id-insert"/>
+        <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="id-insert"/>
         <state time="0">
           <query name="namespace-errors-q1" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -4799,7 +4799,7 @@
       </test-case>  
       <test-case name="namespace-errors-q2" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="#id-insert"/>
+        <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="id-insert"/>
         <state time="0">
           <query name="namespace-errors-q2" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -4808,7 +4808,7 @@
       </test-case>  
       <test-case name="namespace-errors-q3" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="#id-insert"/>
+        <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="id-insert"/>
         <state time="0">
           <query name="namespace-errors-q3" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -4817,7 +4817,7 @@
       </test-case>  
       <test-case name="namespace-errors-q4" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="#id-rename"/>
+        <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="id-rename"/>
         <state time="0">
           <query name="namespace-errors-q4" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -4826,7 +4826,7 @@
       </test-case>  
       <test-case name="namespace-errors-q5" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="#id-rename"/>
+        <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="id-rename"/>
         <state time="0">
           <query name="namespace-errors-q5" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -4835,7 +4835,7 @@
       </test-case>  
       <test-case name="namespace-errors-q6" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="#id-rename"/>
+        <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="id-rename"/>
         <state time="0">
           <query name="namespace-errors-q6" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -4844,7 +4844,7 @@
       </test-case>  
       <test-case name="namespace-errors-q7" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="2.3.3" section-title="Replace" section-pointer="#id-replace"/>
+        <spec-citation spec="XQUPDATE" section-number="2.3.3" section-title="Replace" section-pointer="id-replace"/>
         <state time="0">
           <query name="namespace-errors-q7" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -4853,7 +4853,7 @@
       </test-case>  
       <test-case name="namespace-errors-q8" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="2.3.3" section-title="Replace" section-pointer="#id-replace"/>
+        <spec-citation spec="XQUPDATE" section-number="2.3.3" section-title="Replace" section-pointer="id-replace"/>
         <state time="0">
           <query name="namespace-errors-q8" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -4862,7 +4862,7 @@
       </test-case>  
       <test-case name="namespace-errors-q9" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="#id-upd-insert-attributes"/>
+        <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
         <state time="0">
           <query name="namespace-errors-q9" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -4871,8 +4871,8 @@
       </test-case>  
       <test-case name="namespace-errors-q10" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="#id-upd-insert-attributes"/>
-        <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="#id-upd-replacenode"/>
+        <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
+        <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
         <state time="0">
           <query name="namespace-errors-q10" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -4881,7 +4881,7 @@
       </test-case>  
       <test-case name="namespace-errors-q11" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="#id-upd-replacenode"/>
+        <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
         <state time="0">
           <query name="namespace-errors-q11" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -4890,8 +4890,8 @@
       </test-case>  
       <test-case name="namespace-errors-q12" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="#id-upd-replacenode"/>
-        <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="#id-upd-rename"/>
+        <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
+        <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
         <state time="0">
           <query name="namespace-errors-q12" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -4900,7 +4900,7 @@
       </test-case>  
       <test-case name="namespace-errors-q13" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="#id-upd-rename"/>
+        <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
         <state time="0">
           <query name="namespace-errors-q13" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -4909,8 +4909,8 @@
       </test-case>  
       <test-case name="namespace-errors-q14" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="#id-upd-insert-attributes"/>
-        <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="#id-upd-rename"/>
+        <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
+        <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
         <state time="0">
           <query name="namespace-errors-q14" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -4919,8 +4919,8 @@
       </test-case>  
       <test-case name="namespace-errors-q15" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
         <description></description>
-        <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="#id-upd-insert-attributes"/>
-        <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="#id-upd-rename"/>
+        <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
+        <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
         <state time="0">
           <query name="namespace-errors-q15" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -5597,7 +5597,7 @@
       </GroupInfo>
           <test-case  name="statictyp-xqupd-01" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with delete expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.2" section-title="Delete" section-pointer="#id-update-typing-delete"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.2" section-title="Delete" section-pointer="id-update-typing-delete"/>
               <state time="0">
                  <query name="statictyp-xqupd-01" date="2008-03-22"/>
                  <expected-error>XUTY0007</expected-error>
@@ -5605,7 +5605,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-02" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with delete expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.2" section-title="Delete" section-pointer="#id-update-typing-delete"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.2" section-title="Delete" section-pointer="id-update-typing-delete"/>
               <state time="0">
                  <query name="statictyp-xqupd-02" date="2008-03-22"/>
                  <expected-error>XUTY0007</expected-error>
@@ -5613,7 +5613,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-03" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert into expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-03" date="2008-03-22"/>
                  <expected-error>XUTY0005</expected-error>
@@ -5621,7 +5621,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-04" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert into expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-04" date="2008-03-22"/>
                  <expected-error>XUTY0005</expected-error>
@@ -5629,7 +5629,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-05" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert into expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-05" date="2008-03-22"/>
                  <expected-error>XUTY0005</expected-error>
@@ -5637,7 +5637,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-06" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert into expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-06" date="2008-03-22"/>
                  <expected-error>XUTY0005</expected-error>
@@ -5645,7 +5645,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-07" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert into expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-07" date="2008-03-22"/>
                  <expected-error>XUTY0005</expected-error>
@@ -5653,7 +5653,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-08" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert into expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-08" date="2008-03-22"/>
                  <expected-error>XUTY0005</expected-error>
@@ -5661,7 +5661,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-09" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert into expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-09" date="2008-03-22"/>
                  <expected-error>XUTY0022</expected-error>
@@ -5669,7 +5669,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-10" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert before expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-10" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5677,7 +5677,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-11" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert before expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-11" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5685,7 +5685,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-12" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert before expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-12" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5693,7 +5693,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-13" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert before expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-13" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5701,7 +5701,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-14" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert before expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-14" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5709,7 +5709,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-15" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert before expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-15" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5717,7 +5717,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-16" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert before expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-16" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5725,7 +5725,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-17" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with delete expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-17" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5733,7 +5733,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-18" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert after expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-18" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5741,7 +5741,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-19" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert after expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-19" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5749,7 +5749,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-20" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert after expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-20" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5757,7 +5757,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-21" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert after expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-21" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5765,7 +5765,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-22" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert after expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-22" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5773,7 +5773,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-23" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert after expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-23" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5781,7 +5781,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-24" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert after expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-24" date="2008-03-22"/>
                  <expected-error>XUTY0006</expected-error>
@@ -5789,7 +5789,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-25" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with insert into expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="#id-update-typing-insert"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
               <state time="0">
                  <query name="statictyp-xqupd-25" date="2008-03-22"/>
                  <expected-error>XUTY0022</expected-error>
@@ -5797,7 +5797,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-26" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Delete" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Delete" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-26" date="2008-03-22"/>
                  <expected-error>XUTY0008</expected-error>
@@ -5805,7 +5805,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-27" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-27" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5813,7 +5813,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-28" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-28" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5821,7 +5821,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-29" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-29" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5829,7 +5829,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-30" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-30" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5837,7 +5837,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-31" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-31" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5845,7 +5845,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-32" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-32" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5853,7 +5853,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-33" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-33" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5861,7 +5861,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-34" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-34" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5869,7 +5869,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-35" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-35" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5877,7 +5877,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-36" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-36" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5885,7 +5885,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-37" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-37" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5893,7 +5893,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-38" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-38" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5901,7 +5901,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-39" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-39" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5909,7 +5909,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-40" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-40" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5917,7 +5917,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-41" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-41" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5925,7 +5925,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-42" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-42" date="2008-03-22"/>
                  <expected-error>XUTY0010</expected-error>
@@ -5933,7 +5933,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-43" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-43" date="2008-03-22"/>
                  <expected-error>XUTY0011</expected-error>
@@ -5941,7 +5941,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-44" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-44" date="2008-03-22"/>
                  <expected-error>XUTY0011</expected-error>
@@ -5949,7 +5949,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-45" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-45" date="2008-03-22"/>
                  <expected-error>XUTY0011</expected-error>
@@ -5957,7 +5957,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-46" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-46" date="2008-03-22"/>
                  <expected-error>XUTY0011</expected-error>
@@ -5965,7 +5965,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-47" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-47" date="2008-03-22"/>
                  <expected-error>XUTY0008</expected-error>
@@ -5973,7 +5973,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-48" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-48" date="2008-03-22"/>
                  <expected-error>XUTY0008</expected-error>
@@ -5981,7 +5981,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-49" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-49" date="2008-03-22"/>
                  <expected-error>XUTY0008</expected-error>
@@ -5989,7 +5989,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-50" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with replace expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="#id-update-typing-replace"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
               <state time="0">
                  <query name="statictyp-xqupd-50" date="2008-03-22"/>
                  <expected-error>XUTY0008</expected-error>
@@ -5997,7 +5997,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-51" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with rename expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
               <state time="0">
                  <query name="statictyp-xqupd-51" date="2008-03-22"/>
                  <expected-error>XUTY0012</expected-error>
@@ -6005,7 +6005,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-52" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with rename expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
               <state time="0">
                  <query name="statictyp-xqupd-52" date="2008-03-22"/>
                  <expected-error>XUTY0012</expected-error>
@@ -6013,7 +6013,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-53" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with rename expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
               <state time="0">
                  <query name="statictyp-xqupd-53" date="2008-03-22"/>
                  <expected-error>XUTY0012</expected-error>
@@ -6021,7 +6021,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-54" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with rename expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
               <state time="0">
                  <query name="statictyp-xqupd-54" date="2008-03-22"/>
                  <expected-error>XUTY0012</expected-error>
@@ -6029,7 +6029,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-55" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with rename expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
               <state time="0">
                  <query name="statictyp-xqupd-55" date="2008-03-22"/>
                  <expected-error>XUTY0012</expected-error>
@@ -6037,7 +6037,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-56" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with transform expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.5" section-title="Transform" section-pointer="#id-update-typing-transform"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.5" section-title="Transform" section-pointer="id-update-typing-transform"/>
               <state time="0">
                  <query name="statictyp-xqupd-56" date="2008-03-22"/>
                  <expected-error>XUTY0013</expected-error>
@@ -6045,7 +6045,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-57" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with transform expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.5" section-title="Transform" section-pointer="#id-update-typing-transform"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.5" section-title="Transform" section-pointer="id-update-typing-transform"/>
               <state time="0">
                  <query name="statictyp-xqupd-57" date="2008-03-22"/>
                  <expected-error>XUTY0013</expected-error>
@@ -6053,7 +6053,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-58" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with rename expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
               <state time="0">
                  <query name="statictyp-xqupd-58" date="2008-03-22"/>
                  <expected-error>XQDY0074</expected-error>
@@ -6061,7 +6061,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-59" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with rename expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
               <state time="0">
                  <query name="statictyp-xqupd-59" date="2008-03-22"/>
                  <expected-error>XQDY0074</expected-error>
@@ -6069,7 +6069,7 @@
             </test-case>
             <test-case  name="statictyp-xqupd-60" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
               <description>Evaluation of static typing feature with rename expression.</description>
-              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="#id-update-typing-rename"/>
+              <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
               <state time="0">
                  <query name="statictyp-xqupd-60" date="2008-03-22"/>
                  <expected-error>XQDY0074</expected-error>
