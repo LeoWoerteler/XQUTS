@@ -7,7 +7,7 @@ declare variable $input-context external;
 
 
 declare function 
-   local:renameFunction($e as xs:anyAtomicType, $b as xs:integer) as element()*
+   local:renameFunction($e as xs:anyAtomicType, $b as xs:integer) as item()*
    {
    let $e1 := $e
    return

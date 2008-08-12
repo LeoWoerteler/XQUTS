@@ -6056,7 +6056,7 @@
               <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
               <state time="0">
                  <query name="statictyp-xqupd-58" date="2008-03-22"/>
-                 <expected-error>XQDY0074</expected-error>
+                 <expected-error>XPTY0004</expected-error>
               </state>
             </test-case>
             <test-case  name="statictyp-xqupd-59" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
@@ -6064,7 +6064,7 @@
               <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
               <state time="0">
                  <query name="statictyp-xqupd-59" date="2008-03-22"/>
-                 <expected-error>XQDY0074</expected-error>
+                 <expected-error>XPTY0004</expected-error>
               </state>
             </test-case>
             <test-case  name="statictyp-xqupd-60" FilePath="Static-typing-xqupd/" scenario="runtime-error" Creator="Zhen Hua Liu">
@@ -6072,7 +6072,7 @@
               <spec-citation spec="XQUPDATE" section-number="4.4.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
               <state time="0">
                  <query name="statictyp-xqupd-60" date="2008-03-22"/>
-                 <expected-error>XQDY0074</expected-error>
+                 <expected-error>XPTY0004</expected-error>
               </state>
             </test-case>
     </test-group>
