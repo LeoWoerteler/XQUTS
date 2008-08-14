@@ -1237,8 +1237,8 @@
           <state time="0">
             <query name="complex-deletes-q14" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <expected-error>XUDY0020</expected-error>
             <output-file role="principal" compare="Fragment">complex-deletes-q14.xml</output-file>
+            <expected-error>XUDY0020</expected-error>
           </state>
           <state time="1">
             <query name="complex-deletes-q14-test" date="2007-10-23"/>
@@ -4760,8 +4760,8 @@
         <state time="0">
           <query name="attribute-errors-q14" date="2007-08-30"/>
           <input-file role="principal-data" variable="input-context">works-mod</input-file>
-          <expected-error>XUDY0021</expected-error>
           <output-file role="principal" compare="Fragment">attribute-errors-q14.xml</output-file>
+          <expected-error>XUDY0021</expected-error>
         </state>
       </test-case>  
       <test-case name="attribute-errors-q15" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
