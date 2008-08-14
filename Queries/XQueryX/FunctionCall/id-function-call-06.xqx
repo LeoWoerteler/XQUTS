@@ -29,7 +29,7 @@
           </xqx:param>
         </xqx:paramList>
         <xqx:typeDeclaration>
-          <xqx:elementTest/>
+          <xqx:anyItemType/>
           <xqx:occurrenceIndicator>*</xqx:occurrenceIndicator>
         </xqx:typeDeclaration>
         <xqx:functionBody>
