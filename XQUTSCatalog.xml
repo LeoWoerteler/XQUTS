@@ -1438,8 +1438,86 @@
                <output-file role="principal" compare="Text">id-delete-expr-012-1.txt</output-file>
             </state>
          </test-case>
+         <test-case name="id-delete-expr-013" FilePath="DeleteExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Delete an element node and its parent.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+            <state time="0">
+               <query name="id-delete-expr-013" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            </state>
+            <state time="1">
+               <query name="id-delete-expr-013-test" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">id-delete-expr-013.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="id-delete-expr-014" FilePath="DeleteExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Delete an element node parent and then the element node.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+            <state time="0">
+               <query name="id-delete-expr-014" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            </state>
+            <state time="1">
+               <query name="id-delete-expr-014-test" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">id-delete-expr-014.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="id-delete-expr-015" FilePath="DeleteExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Delete an element node multiple times.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+            <state time="0">
+               <query name="id-delete-expr-015" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            </state>
+            <state time="1">
+               <query name="id-delete-expr-015-test" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">id-delete-expr-015.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="id-delete-expr-016" FilePath="DeleteExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Delete an element node multiple times.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+            <state time="0">
+               <query name="id-delete-expr-016" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            </state>
+            <state time="1">
+               <query name="id-delete-expr-015-test" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">id-delete-expr-016.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="id-delete-expr-017" FilePath="DeleteExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Delete an element node, making sure that it is remains visible in this snapshot.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+            <state time="0">
+               <query name="id-delete-expr-017" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            </state>
+            <state time="1">
+               <query name="id-delete-expr-017-test" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">id-delete-expr-017.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="id-delete-expr-018" FilePath="DeleteExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Delete an element node, making sure that it is remains visible in this snapshot.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+            <state time="0">
+               <query name="id-delete-expr-018" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            </state>
+            <state time="1">
+               <query name="id-delete-expr-018-test" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">id-delete-expr-018.xml</output-file>
+            </state>
+         </test-case>
          <test-case name="complex-deletes-q1" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-            <description></description>
+            <description>Delete leading comments of document element.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
             <state time="0">
                <query name="complex-deletes-q1" date="2007-10-23"/>
@@ -1457,7 +1535,7 @@
             </state>
          </test-case>
          <test-case name="complex-deletes-q2" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-            <description></description>
+            <description>Delete trailing comments of document element.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
             <state time="0">
                <query name="complex-deletes-q2" date="2007-10-23"/>
@@ -1475,7 +1553,7 @@
             </state>
          </test-case>
          <test-case name="complex-deletes-q3" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-            <description></description>
+            <description>Delete all PIs with target "a-pi".</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
             <state time="0">
                <query name="complex-deletes-q3" date="2007-10-23"/>
@@ -1493,7 +1571,7 @@
             </state>
          </test-case>
          <test-case name="complex-deletes-q4" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-            <description></description>
+            <description>Delete last text node child of document element.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
             <state time="0">
                <query name="complex-deletes-q4" date="2007-10-23"/>
@@ -1511,7 +1589,7 @@
             </state>
          </test-case>
          <test-case name="complex-deletes-q5" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-            <description></description>
+            <description>Delete all text node children of element "south".</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
             <state time="0">
                <query name="complex-deletes-q5" date="2007-10-23"/>
@@ -1529,7 +1607,7 @@
             </state>
          </test-case>
          <test-case name="complex-deletes-q6" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-            <description></description>
+            <description>Delete the text node child of element "east".</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
             <state time="0">
                <query name="complex-deletes-q6" date="2007-10-23"/>
@@ -1547,7 +1625,7 @@
             </state>
          </test-case>
          <test-case name="complex-deletes-q7" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-            <description></description>
+            <description>Delete all text nodes that come directly after a comment or PI.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
             <state time="0">
                <query name="complex-deletes-q7" date="2007-10-23"/>
@@ -1565,7 +1643,7 @@
             </state>
          </test-case>
          <test-case name="complex-deletes-q8" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-            <description></description>
+            <description>Delete all elements called "south-east".</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
             <state time="0">
                <query name="complex-deletes-q8" date="2007-10-23"/>
@@ -1583,7 +1661,7 @@
             </state>
          </test-case>
          <test-case name="complex-deletes-q9" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-            <description></description>
+            <description>Delete the element called "center".</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
             <state time="0">
                <query name="complex-deletes-q9" date="2007-10-23"/>
@@ -1601,7 +1679,7 @@
             </state>
          </test-case>
          <test-case name="complex-deletes-q10" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-            <description></description>
+            <description>Delete the element called "far-east".</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
             <state time="0">
                <query name="complex-deletes-q10" date="2007-10-23"/>
@@ -1619,7 +1697,7 @@
             </state>
          </test-case>
          <test-case name="complex-deletes-q11" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-            <description></description>
+            <description>Delete all attributes called "mark".</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
             <state time="0">
                <query name="complex-deletes-q11" date="2007-10-23"/>
@@ -1637,7 +1715,7 @@
             </state>
          </test-case>
          <test-case name="complex-deletes-q12" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-            <description></description>
+            <description>Delete all attributes on the "west" element.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
             <state time="0">
                <query name="complex-deletes-q12" date="2007-10-23"/>
@@ -1655,7 +1733,7 @@
             </state>
          </test-case>
          <test-case name="complex-deletes-q13" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-            <description></description>
+            <description>Delete the attributes names "west-attr-2", "center-attr-2", and "south-attr-2".</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
             <state time="0">
                <query name="complex-deletes-q13" date="2007-10-23"/>
@@ -1673,7 +1751,7 @@
             </state>
          </test-case>
          <test-case name="complex-deletes-q14" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-            <description></description>
+            <description>Delete the document node.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
             <state time="0">
                <query name="complex-deletes-q14" date="2007-10-23"/>
