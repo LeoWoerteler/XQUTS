@@ -11,9 +11,9 @@
    XQueryXQueryOffsetPath="Queries/XQueryX/"
    XQueryFileExtension=".xq"
    XQueryXFileExtension=".xqx"
-
+   
    xsi:schemaLocation="http://www.w3.org/2005/02/query-test-update XQUTSCatalog.xsd">
-
+   
    <test-suite-info>
       <title>XQuery Update Test Suite 0.1.0</title>
       <description>
@@ -21,7 +21,7 @@
          See http://www.w3.org/XML/Query/test-suite/update.
       </description>
    </test-suite-info>
-
+   
    <citations>
       <citation-spec name="XQUPDATE">
          <description last-mod="2006-04-12">XQuery Update Facility</description>
@@ -1771,587 +1771,783 @@
             <title>Replace Expressions</title>
             <description/>
          </GroupInfo>
-         <test-case  name="id-replace-expr-01" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, which replaces an element node.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
-            <state time="0">
-               <query name="id-replace-expr-01" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-            </state>
-            <state time="1">
-               <query name="id-replace-expr-01-test" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <output-file role="principal" compare="Fragment">id-replace-expr-01.xml</output-file>
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-02" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, which replaces an attribute node.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
-            <state time="0">
-               <query name="id-replace-expr-02" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-            </state>
-            <state time="1">
-               <query name="id-replace-expr-02-test" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <output-file role="principal" compare="Fragment">id-replace-expr-02.xml</output-file>
-            </state>             	
-         </test-case>
-         <test-case  name="id-replace-expr-03" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression that replaces a comment node.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
-            <state time="0">
-               <query name="id-replace-expr-03" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-            </state>
-            <state time="1">
-               <query name="id-replace-expr-03-test" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <output-file role="principal" compare="Fragment">id-replace-expr-03.xml</output-file>
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-04" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression that replaces Processing Instruction node.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
-            <state time="0">
-               <query name="id-replace-expr-04" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-            </state>
-            <state time="1">
-               <query name="id-replace-expr-04-test" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <output-file role="principal" compare="Fragment">id-replace-expr-04.xml</output-file>
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-05" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, which replaces an element node and usage of "value of" keyword.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+         <test-group name="ReplaceNode">
+            <GroupInfo>
+               <title>Replacing a Node</title>
+               <description/>
+            </GroupInfo>
+            <test-case  name="id-replace-expr-01" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, which replaces an element node.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-01" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-01-test" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Fragment">id-replace-expr-01.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-02" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, which replaces an attribute node.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-02" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-02-test" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Fragment">id-replace-expr-02.xml</output-file>
+               </state>             	
+            </test-case>
+            <test-case  name="id-replace-expr-03" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression that replaces a comment node.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-03" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-03-test" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Fragment">id-replace-expr-03.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-04" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression that replaces Processing Instruction node.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-04" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-04-test" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Fragment">id-replace-expr-04.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-010" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, which replaces an element node with a sequence of zero nodes.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-010" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-010-test" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+                  <output-file role="principal" compare="Fragment">id-replace-expr-010.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-011" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, where expression following the "with" clause is an updating expression.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-011" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+                  <expected-error>XUST0001</expected-error>             	
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-012" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, where the target expression is an updating expression.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-012" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+                  <expected-error>XUST0001</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-013" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, where the target expression results in more than one node.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-013" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+                  <expected-error>XUTY0008</expected-error>             	
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-014" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, where the target expression results in a single node with no parent property.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-014" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+                  <expected-error>XUDY0009</expected-error>             	
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-015" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, where the target is a document node.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-015" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+                  <expected-error>XUTY0008</expected-error>             	
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-016" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, where an attempt is made to replace an attribute node with an element node.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-016" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+                  <expected-error>XUTY0011</expected-error>             	
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-022" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+               <description>Evaluation of a replace expression where an Element node value is replaced with an attribute node.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-022" date="2007-08-01"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUTY0010</expected-error>               	  	
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-023" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+               <description> Evaluation of a replace expression, where the target node is an attribute and the replacement list is not exclusively attribute nodes.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-023" date="2007-08-01"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+                  <expected-error>XUTY0011</expected-error>               	
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-028" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
+               <description>Evaluation of a replace expression where an empty traget is replaced with an attribute node.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-028" date="2008-10-20"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0027</expected-error>               	  	
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-029" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Replace the values of text nodes.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-029" date="2008-10-20"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-029-test" date="2008-10-20"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">id-replace-expr-029.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-030" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Replace the values of text nodes.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-030" date="2008-10-20"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-030-test" date="2008-10-20"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">id-replace-expr-030.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-031" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Replace the value of a element node with a sequence.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-031" date="2008-10-20"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-031-test" date="2008-10-20"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">id-replace-expr-031.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-032" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Replace the value of a element node with a sequence.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-032" date="2008-10-20"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-032-test" date="2008-10-20"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">id-replace-expr-032.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-033" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Replace the value of a element node with a document.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-033" date="2008-10-20"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-033-test" date="2008-10-20"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">id-replace-expr-033.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-034" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Replace an attribute node with a sequence of attribute nodes.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+               <state time="0">
+                  <query name="id-replace-expr-034" date="2008-10-20"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-034-test" date="2008-10-20"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">id-replace-expr-034.xml</output-file>
+               </state>
+            </test-case>
+         </test-group>
+         <test-group name="ReplaceValue">
+            <GroupInfo>
+               <title>Replacing the Value of a Node</title>
+               <description/>
+            </GroupInfo>
+            <test-case  name="id-replace-expr-05" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, which replaces an element node and usage of "value of" keyword.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <state time="0">
+                  <query name="id-replace-expr-05" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-05-test" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Fragment">id-replace-expr-05.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-06" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, which replaces an attribute node and usage of "value of" keyword.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <state time="0">
+                  <query name="id-replace-expr-06" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-06-test" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Fragment">id-replace-expr-06.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-07" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, which replaces a comment node and usage of "value of" keyword.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <state time="0">
+                  <query name="id-replace-expr-07" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-07-test" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Fragment">id-replace-expr-07.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-08" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, which replaces a Processing Instruction node and usage of "value of" keyword.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <state time="0">
+                  <query name="id-replace-expr-08" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-08-test" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Fragment">id-replace-expr-08.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-09" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, which replaces an element node and usage of "value of" keyword.  It uses an arithmetic expression.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <state time="0">
+                  <query name="id-replace-expr-09" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-09-test" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Fragment">id-replace-expr-09.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-017" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, where expression following the "with" clause is an updating expression and usage of "value of" keyword.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <state time="0">
+                  <query name="id-replace-expr-017" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+                  <expected-error>XUST0001</expected-error>             	
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-018" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, where the target expression is an updating expression and usage of the "value of" keyword.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <state time="0">
+                  <query name="id-replace-expr-018" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+                  <expected-error>XUST0001</expected-error>             	
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-019" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, where the target expression results into more than one node and usage of the "value of" keyword.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <state time="0">
+                  <query name="id-replace-expr-019" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+                  <expected-error>XUTY0008</expected-error>             	
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-020" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, where the target is a document node and usage of the "value of" keyword.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <state time="0">
+                  <query name="id-replace-expr-020" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+                  <expected-error>XUTY0008</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-021" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression, used to replace an attribute node's value with an element node and usage of the "value of" clause.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <state time="0">
+                  <query name="id-replace-expr-021" date="2007-06-04"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>             	
+               </state>
+               <state time="1">
+                  <query name="id-replace-expr-021-test" date="2007-10-05"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+                  <output-file role="principal" compare="Fragment">id-replace-expr-021.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-024" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression with value of clause, where the target is a comment node and replacement string contains two adjacents hypens.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <state time="0">
+                  <query name="id-replace-expr-024" date="2007-08-02"/>
+                  <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+                  <expected-error>XQDY0072</expected-error>             	
+               </state>
+            </test-case>
+            <test-case  name="id-replace-expr-025" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+               <description>Evaluates a replace expression with value of clause, where the target is a PI node and replacement string contains "?>".</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
             <state time="0">
-               <query name="id-replace-expr-05" date="2007-06-04"/>
+               <query name="id-replace-expr-025" date="2007-08-02"/>
+               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+               <expected-error>XQDY0026</expected-error>             	
+            </state>
+         </test-case>
+         <test-case  name="id-replace-expr-026" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+            <description>Evaluates a replace expression with value of clause, where the target expression results in and empty sequence.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <state time="0">
+               <query name="id-replace-expr-026" date="2007-08-02"/>
+               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+               <expected-error>XUDY0027</expected-error>              	
+            </state>
+         </test-case>
+         <test-case  name="id-replace-expr-027" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
+            <description>Evaluates a replace expression with value of clause, where the target expression is set to "()"</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <state time="0">
+               <query name="id-replace-expr-027" date="2007-08-02"/>
+               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+               <expected-error>XUDY0027</expected-error>              	
+            </state>
+         </test-case>
+         <test-case  name="id-replace-expr-035" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Replace value of element with empty sequence.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <state time="0">
+               <query name="id-replace-expr-035" date="2008-10-20"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
             </state>
             <state time="1">
-               <query name="id-replace-expr-05-test" date="2007-06-04"/>
+               <query name="id-replace-expr-035-test" date="2008-10-20"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <output-file role="principal" compare="Fragment">id-replace-expr-05.xml</output-file>
+               <output-file role="principal" compare="XML">id-replace-expr-035.xml</output-file>
             </state>
          </test-case>
-         <test-case  name="id-replace-expr-06" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, which replaces an attribute node and usage of "value of" keyword.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+         <test-case  name="id-replace-expr-036" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Replace value of element with a sequence.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
             <state time="0">
-               <query name="id-replace-expr-06" date="2007-06-04"/>
+               <query name="id-replace-expr-036" date="2008-10-20"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
             </state>
             <state time="1">
-               <query name="id-replace-expr-06-test" date="2007-06-04"/>
+               <query name="id-replace-expr-036-test" date="2008-10-20"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <output-file role="principal" compare="Fragment">id-replace-expr-06.xml</output-file>
+               <output-file role="principal" compare="XML">id-replace-expr-036.xml</output-file>
             </state>
          </test-case>
-         <test-case  name="id-replace-expr-07" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, which replaces a comment node and usage of "value of" keyword.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+         <test-case  name="id-replace-expr-037" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Replace value of an attribute with empty sequence.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
             <state time="0">
-               <query name="id-replace-expr-07" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-            </state>
-            <state time="1">
-               <query name="id-replace-expr-07-test" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <output-file role="principal" compare="Fragment">id-replace-expr-07.xml</output-file>
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-08" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, which replaces a Processing Instruction node and usage of "value of" keyword.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
-            <state time="0">
-               <query name="id-replace-expr-08" date="2007-06-04"/>
+               <query name="id-replace-expr-037" date="2008-10-20"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
             </state>
             <state time="1">
-               <query name="id-replace-expr-08-test" date="2007-06-04"/>
+               <query name="id-replace-expr-037-test" date="2008-10-20"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <output-file role="principal" compare="Fragment">id-replace-expr-08.xml</output-file>
+               <output-file role="principal" compare="XML">id-replace-expr-037.xml</output-file>
             </state>
          </test-case>
-         <test-case  name="id-replace-expr-09" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, which replaces an element node and usage of "value of" keyword.  It uses an arithmetic expression.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+         <test-case  name="id-replace-expr-038" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Replace value of a comment with empty sequence.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
             <state time="0">
-               <query name="id-replace-expr-09" date="2007-06-04"/>
+               <query name="id-replace-expr-038" date="2008-10-20"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
             </state>
             <state time="1">
-               <query name="id-replace-expr-09-test" date="2007-06-04"/>
+               <query name="id-replace-expr-038-test" date="2008-10-20"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <output-file role="principal" compare="Fragment">id-replace-expr-09.xml</output-file>
+               <output-file role="principal" compare="XML">id-replace-expr-038.xml</output-file>
             </state>
          </test-case>
-         <test-case  name="id-replace-expr-010" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, which replaces an element node with a sequence of zero nodes.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+         <test-case  name="id-replace-expr-039" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Replace value of a PI with empty sequence.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
             <state time="0">
-               <query name="id-replace-expr-010" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
+               <query name="id-replace-expr-039" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
             </state>
             <state time="1">
-               <query name="id-replace-expr-010-test" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-               <output-file role="principal" compare="Fragment">id-replace-expr-010.xml</output-file>
+               <query name="id-replace-expr-039-test" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">id-replace-expr-039.xml</output-file>
             </state>
          </test-case>
-         <test-case  name="id-replace-expr-011" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, where expression following the "with" clause is an updating expression.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
-            <state time="0">
-               <query name="id-replace-expr-011" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-               <expected-error>XUST0001</expected-error>             	
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-012" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, where the target expression is an updating expression.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
-            <state time="0">
-               <query name="id-replace-expr-012" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-               <expected-error>XUST0001</expected-error>
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-013" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, where the target expression results in more than one node.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
-            <state time="0">
-               <query name="id-replace-expr-013" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-               <expected-error>XUTY0008</expected-error>             	
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-014" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, where the target expression results in a single node with no parent property.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
-            <state time="0">
-               <query name="id-replace-expr-014" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-               <expected-error>XUDY0009</expected-error>             	
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-015" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, where the target is a document node.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
-            <state time="0">
-               <query name="id-replace-expr-015" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-               <expected-error>XUTY0008</expected-error>             	
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-016" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, where an attempt is made to replace an attribute node with an element node.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
-            <state time="0">
-               <query name="id-replace-expr-016" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-               <expected-error>XUTY0011</expected-error>             	
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-017" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, where expression following the "with" clause is an updating expression and usage of "value of" keyword.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+         <test-case  name="id-replace-expr-040" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Replace value of a text node with empty sequence.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
             <state time="0">
-               <query name="id-replace-expr-017" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-               <expected-error>XUST0001</expected-error>             	
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-018" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, where the target expression is an updating expression and usage of the "value of" keyword.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-            <state time="0">
-               <query name="id-replace-expr-018" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-               <expected-error>XUST0001</expected-error>             	
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-019" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, where the target expression results into more than one node and usage of the "value of" keyword.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-            <state time="0">
-               <query name="id-replace-expr-019" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-               <expected-error>XUTY0008</expected-error>             	
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-020" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, where the target is a document node and usage of the "value of" keyword.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-            <state time="0">
-               <query name="id-replace-expr-020" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-               <expected-error>XUTY0008</expected-error>
-               <expected-error>XUDY0009</expected-error>
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-021" FilePath="ReplaceExpressions/" scenario="standard" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression, used to replace an attribute node's value with an element node and usage of the "value of" clause.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-            <state time="0">
-               <query name="id-replace-expr-021" date="2007-06-04"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>             	
+               <query name="id-replace-expr-040" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
             </state>
             <state time="1">
-               <query name="id-replace-expr-021-test" date="2007-10-05"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-               <output-file role="principal" compare="Fragment">id-replace-expr-021.xml</output-file>
-            </state>
-         </test-case>
-         <test-case  name="id-replace-expr-022" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-            <description>Evaluation of a replace expression where an Element node value is replaced with an attribute node.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-            <state time="0">
-               <query name="id-replace-expr-022" date="2007-08-01"/>
+               <query name="id-replace-expr-040-test" date="2008-10-20"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XUTY0010</expected-error>               	  	
+               <output-file role="principal" compare="XML">id-replace-expr-040.xml</output-file>
             </state>
          </test-case>
-         <test-case  name="id-replace-expr-023" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-            <description> Evaluation of a replace expression, where the target node is an attribute and the replacement list is not exclusively attribute nodes.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+         <test-case  name="id-replace-expr-041" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Replace value of an attribute with a sequence.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
             <state time="0">
-               <query name="id-replace-expr-023" date="2007-08-01"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-               <expected-error>XUTY0011</expected-error>               	
+               <query name="id-replace-expr-041" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            </state>
+            <state time="1">
+               <query name="id-replace-expr-041-test" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">id-replace-expr-041.xml</output-file>
             </state>
          </test-case>
-         <test-case  name="id-replace-expr-024" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression with value of clause, where the target is a comment node and replacement string contains two adjacents hypens.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+         <test-case  name="id-replace-expr-042" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Replace value of a comment with a sequence.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
             <state time="0">
-               <query name="id-replace-expr-024" date="2007-08-02"/>
-               <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-               <expected-error>XQDY0072</expected-error>             	
+               <query name="id-replace-expr-042" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            </state>
+            <state time="1">
+               <query name="id-replace-expr-042-test" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">id-replace-expr-042.xml</output-file>
             </state>
          </test-case>
-         <test-case  name="id-replace-expr-025" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-            <description>Evaluates a replace expression with value of clause, where the target is a PI node and replacement string contains "?>".</description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="id-replace-expr-025" date="2007-08-02"/>
-            <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-            <expected-error>XQDY0026</expected-error>             	
-         </state>
-      </test-case>
-      <test-case  name="id-replace-expr-026" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-         <description>Evaluates a replace expression with value of clause, where the target expression results in and empty sequence.</description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="id-replace-expr-026" date="2007-08-02"/>
-            <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-            <expected-error>XUDY0027</expected-error>              	
-         </state>
-      </test-case>
-      <test-case  name="id-replace-expr-027" FilePath="ReplaceExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
-         <description>Evaluates a replace expression with value of clause, where the target expression is set to "()"</description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="id-replace-expr-027" date="2007-08-02"/>
-            <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
-            <expected-error>XUDY0027</expected-error>              	
-         </state>
-      </test-case>
-      <test-case name="complex-replacevalues-q1" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="complex-replacevalues-q1" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-         </state>
-         <state time="1">
-            <query name="complex-replacevalues-q1-test" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q1.xml</output-file>
-         </state>
-         <state time="2">
-            <query name="complex-replacevalues-q1-test2" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q1-2.xml</output-file>
-         </state>
-      </test-case>
-      <test-case name="complex-replacevalues-q2" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="complex-replacevalues-q2" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-         </state>
-         <state time="1">
-            <query name="complex-replacevalues-q2-test" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q2.xml</output-file>
-         </state>
-         <state time="2">
-            <query name="complex-replacevalues-q2-test2" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q2-2.xml</output-file>
-         </state>
-      </test-case>
-      <test-case name="complex-replacevalues-q3" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="complex-replacevalues-q3" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-         </state>
-         <state time="1">
-            <query name="complex-replacevalues-q3-test" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q3.xml</output-file>
-         </state>
-         <state time="2">
-            <query name="complex-replacevalues-q3-test2" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q3-2.xml</output-file>
-         </state>
-      </test-case>
-      <test-case name="complex-replacevalues-q4" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="complex-replacevalues-q4" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-         </state>
-         <state time="1">
-            <query name="complex-replacevalues-q4-test" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q4.xml</output-file>
-         </state>
-         <state time="2">
-            <query name="complex-replacevalues-q4-test2" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q4-2.xml</output-file>
-         </state>
-      </test-case>
-      <test-case name="complex-replacevalues-q5" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="complex-replacevalues-q5" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-         </state>
-         <state time="1">
-            <query name="complex-replacevalues-q5-test" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q5.xml</output-file>
-         </state>
-         <state time="2">
-            <query name="complex-replacevalues-q5-test2" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q5-2.xml</output-file>
-         </state>
-      </test-case>
-      <test-case name="complex-replacevalues-q6" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="complex-replacevalues-q6" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-         </state>
-         <state time="1">
-            <query name="complex-replacevalues-q6-test" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q6.xml</output-file>
-         </state>
-         <state time="2">
-            <query name="complex-replacevalues-q6-test2" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q6-2.xml</output-file>
-         </state>
-      </test-case>
-      <test-case name="complex-replacevalues-q7" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="complex-replacevalues-q7" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-         </state>
-         <state time="1">
-            <query name="complex-replacevalues-q7-test" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q7.xml</output-file>
-         </state>
-         <state time="2">
-            <query name="complex-replacevalues-q7-test2" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q7-2.xml</output-file>
-         </state>
-      </test-case>
-      <test-case name="complex-replacevalues-q8" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="complex-replacevalues-q8" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-         </state>
-         <state time="1">
-            <query name="complex-replacevalues-q8-test" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q8.xml</output-file>
-         </state>
-         <state time="2">
-            <query name="complex-replacevalues-q8-test2" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q8-2.xml</output-file>
-         </state>
-      </test-case>
-      <test-case name="complex-replacevalues-q9" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="complex-replacevalues-q9" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-         </state>
-         <state time="1">
-            <query name="complex-replacevalues-q9-test" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q9.xml</output-file>
-         </state>
-         <state time="2">
-            <query name="complex-replacevalues-q9-test2" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q9-2.xml</output-file>
-         </state>
-      </test-case>
-      <test-case name="complex-replacevalues-q10" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="complex-replacevalues-q10" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-         </state>
-         <state time="1">
-            <query name="complex-replacevalues-q10-test" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q10.xml</output-file>
-         </state>
-         <state time="2">
-            <query name="complex-replacevalues-q10-test2" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q10-2.xml</output-file>
-         </state>
-      </test-case>
-      <test-case name="complex-replacevalues-q11" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="complex-replacevalues-q11" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-         </state>
-         <state time="1">
-            <query name="complex-replacevalues-q11-test" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q11.xml</output-file>
-         </state>
-         <state time="2">
-            <query name="complex-replacevalues-q11-test2" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q11-2.xml</output-file>
-         </state>
-      </test-case>
-      <test-case name="complex-replacevalues-q12" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="complex-replacevalues-q12" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-         </state>
-         <state time="1">
-            <query name="complex-replacevalues-q12-test" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q12.xml</output-file>
-         </state>
-         <state time="2">
-            <query name="complex-replacevalues-q12-test2" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q12-2.xml</output-file>
-         </state>
-      </test-case>
-      <test-case name="complex-replacevalues-q13" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="complex-replacevalues-q13" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-         </state>
-         <state time="1">
-            <query name="complex-replacevalues-q13-test" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q13.xml</output-file>
-         </state>
-         <state time="2">
-            <query name="complex-replacevalues-q13-test2" date="2007-10-23"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q13-2.xml</output-file>
-         </state>
-      </test-case>
-      <test-case name="complex-replacevalues-q14" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
-         <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-         <state time="0">
-            <query name="complex-replacevalues-q14" date="2008-01-03"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-         </state>
-         <state time="1">
-            <query name="complex-replacevalues-q14-test" date="2008-01-03"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q14.xml</output-file>
-         </state>
-         <state time="2">
-            <query name="complex-replacevalues-q14-test2" date="2008-01-03"/>
-            <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            <output-file role="principal" compare="Fragment">complex-replacevalues-q14-2.xml</output-file>
-         </state>
-      </test-case>
+         <test-case  name="id-replace-expr-043" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Replace value of a PI with a sequence.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <state time="0">
+               <query name="id-replace-expr-043" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            </state>
+            <state time="1">
+               <query name="id-replace-expr-043-test" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">id-replace-expr-043.xml</output-file>
+            </state>
+         </test-case>
+         <test-case  name="id-replace-expr-044" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Replace value of a text node with a sequence.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <state time="0">
+               <query name="id-replace-expr-044" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            </state>
+            <state time="1">
+               <query name="id-replace-expr-044-test" date="2008-10-20"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">id-replace-expr-044.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-replacevalues-q1" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Replace the value of the leading comments of document element.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
+            <state time="0">
+               <query name="complex-replacevalues-q1" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-replacevalues-q1-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q1.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-replacevalues-q1-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q1-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-replacevalues-q2" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Replace values of trailing comments of document element.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
+            <state time="0">
+               <query name="complex-replacevalues-q2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-replacevalues-q2-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q2.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-replacevalues-q2-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q2-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-replacevalues-q3" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Replace value of all PIs with target "a-pi".</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
+            <state time="0">
+               <query name="complex-replacevalues-q3" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-replacevalues-q3-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q3.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-replacevalues-q3-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q3-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-replacevalues-q4" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Replace value of last text node child of document element.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <state time="0">
+               <query name="complex-replacevalues-q4" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-replacevalues-q4-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q4.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-replacevalues-q4-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q4-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-replacevalues-q5" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Replace value of all text node children of element "south".</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
+            <state time="0">
+               <query name="complex-replacevalues-q5" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-replacevalues-q5-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q5.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-replacevalues-q5-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q5-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-replacevalues-q6" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Replace value of the text node child of element "east".</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <state time="0">
+               <query name="complex-replacevalues-q6" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-replacevalues-q6-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q6.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-replacevalues-q6-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q6-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-replacevalues-q7" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Replace the value of all text nodes that come directly after a comment or PI.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
+            <state time="0">
+               <query name="complex-replacevalues-q7" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-replacevalues-q7-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q7.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-replacevalues-q7-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q7-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-replacevalues-q8" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Replace value of all elements called "south-east".</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
+            <state time="0">
+               <query name="complex-replacevalues-q8" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-replacevalues-q8-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q8.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-replacevalues-q8-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q8-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-replacevalues-q9" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Replace value of the element called "center".</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <state time="0">
+               <query name="complex-replacevalues-q9" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-replacevalues-q9-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q9.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-replacevalues-q9-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q9-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-replacevalues-q10" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Replace value of the element called "south".</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <state time="0">
+               <query name="complex-replacevalues-q10" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-replacevalues-q10-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q10.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-replacevalues-q10-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q10-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-replacevalues-q11" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Replace value of all attributes called "mark".</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
+            <state time="0">
+               <query name="complex-replacevalues-q11" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-replacevalues-q11-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q11.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-replacevalues-q11-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q11-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-replacevalues-q12" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Replace value of all attributes on the "west" element.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
+            <state time="0">
+               <query name="complex-replacevalues-q12" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-replacevalues-q12-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q12.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-replacevalues-q12-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q12-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-replacevalues-q13" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Replace the value of the attributes named "west-attr-2", "center-attr-2", and "south-attr-2".</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
+            <state time="0">
+               <query name="complex-replacevalues-q13" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-replacevalues-q13-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q13.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-replacevalues-q13-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q13-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-replacevalues-q14" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Replace the value of the "far-west" element with a string containing markup.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+            <state time="0">
+               <query name="complex-replacevalues-q14" date="2008-01-03"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-replacevalues-q14-test" date="2008-01-03"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q14.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-replacevalues-q14-test2" date="2008-01-03"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-replacevalues-q14-2.xml</output-file>
+            </state>
+         </test-case>
+      </test-group>
    </test-group>
    <test-group name="RenameExpressions">
       <GroupInfo>
