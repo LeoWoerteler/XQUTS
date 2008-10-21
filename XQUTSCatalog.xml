@@ -2775,9 +2775,134 @@
             <expected-error>XQDY0074</expected-error>              	
          </state>
       </test-case>
-      <test-case name="complex-renames-q1" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
+      <test-case  name="id-rename-expr-021" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <description>Rename a document node.</description>
          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <state time="0">
+            <query name="id-rename-expr-021" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0012</expected-error>              	
+         </state>
+      </test-case>
+      <test-case  name="id-rename-expr-022" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <description>Rename a text node.</description>
+         <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <state time="0">
+            <query name="id-rename-expr-022" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0012</expected-error>              	
+         </state>
+      </test-case>
+      <test-case  name="id-rename-expr-023" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <description>Rename an element using a sequence.</description>
+         <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <state time="0">
+            <query name="id-rename-expr-023" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XQTY0004</expected-error>              	
+         </state>
+      </test-case>
+      <test-case  name="id-rename-expr-024" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <description>Rename an element using a sequence.</description>
+         <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <state time="0">
+            <query name="id-rename-expr-024" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XQTY0004</expected-error>              	
+         </state>
+      </test-case>
+      <test-case  name="id-rename-expr-025" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <description>Rename an attribute using a number.</description>
+         <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <state time="0">
+            <query name="id-rename-expr-025" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XQDY0074</expected-error>              	
+         </state>
+      </test-case>
+      <test-case  name="id-rename-expr-026" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <description>Rename an attribute using an invalid NCName.</description>
+         <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <state time="0">
+            <query name="id-rename-expr-026" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XQDY0074</expected-error>              	
+         </state>
+      </test-case>
+      <test-case  name="id-rename-expr-027" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <description>Rename an element using an invalid QName.</description>
+         <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <state time="0">
+            <query name="id-rename-expr-027" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XQDY0074</expected-error>              	
+         </state>
+      </test-case>
+      <test-case  name="id-rename-expr-028" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <description>Rename an attribute using an invalid QName.</description>
+         <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <state time="0">
+            <query name="id-rename-expr-028" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XQDY0074</expected-error>              	
+         </state>
+      </test-case>
+      <test-case  name="id-rename-expr-029" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <description>Rename an element using a QName.</description>
+         <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <state time="0">
+            <query name="id-rename-expr-029" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+         </state>
+         <state time="1">
+            <query name="id-rename-expr-029-test" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <output-file role="principal" compare="Fragment">id-rename-expr-029.xml</output-file>
+         </state>
+      </test-case>
+      <test-case  name="id-rename-expr-030" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <description>Rename an attribute using a QName.</description>
+         <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <state time="0">
+            <query name="id-rename-expr-030" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+         </state>
+         <state time="1">
+            <query name="id-rename-expr-030-test" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <output-file role="principal" compare="Fragment">id-rename-expr-030.xml</output-file>
+         </state>
+      </test-case>
+      <test-case  name="id-rename-expr-031" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <description>Rename an element using a QName.</description>
+         <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <state time="0">
+            <query name="id-rename-expr-031" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+         </state>
+         <state time="1">
+            <query name="id-rename-expr-031-test" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <output-file role="principal" compare="Fragment">id-rename-expr-031.xml</output-file>
+         </state>
+      </test-case>
+      <test-case  name="id-rename-expr-032" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <description>Rename an attribute using a QName.</description>
+         <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <state time="0">
+            <query name="id-rename-expr-032" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+         </state>
+         <state time="1">
+            <query name="id-rename-expr-032-test" date="2008-10-21"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <output-file role="principal" compare="Fragment">id-rename-expr-032.xml</output-file>
+         </state>
+      </test-case>
+      <test-case name="complex-renames-q1" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
+         <description>Rename all PIs with target "a-pi".</description>
+         <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
          <state time="0">
             <query name="complex-renames-q1" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -2794,8 +2919,9 @@
          </state>
       </test-case>
       <test-case name="complex-renames-q2" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
+         <description>Rename all elements called "south-east".</description>
          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
          <state time="0">
             <query name="complex-renames-q2" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -2812,7 +2938,7 @@
          </state>
       </test-case>
       <test-case name="complex-renames-q3" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
+         <description>Rename the element called "center".</description>
          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
          <state time="0">
             <query name="complex-renames-q3" date="2007-10-23"/>
@@ -2830,7 +2956,7 @@
          </state>
       </test-case>
       <test-case name="complex-renames-q4" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
+         <description>Rename one of the elements called "south-east".</description>
          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
          <state time="0">
             <query name="complex-renames-q4" date="2007-10-23"/>
@@ -2848,7 +2974,7 @@
          </state>
       </test-case>
       <test-case name="complex-renames-q5" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
+         <description>Rename the element called "far-east".</description>
          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
          <state time="0">
             <query name="complex-renames-q5" date="2007-10-23"/>
@@ -2866,8 +2992,9 @@
          </state>
       </test-case>
       <test-case name="complex-renames-q6" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
+         <description>Rename all attributes called "mark".</description>
          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
          <state time="0">
             <query name="complex-renames-q6" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -2884,8 +3011,9 @@
          </state>
       </test-case>
       <test-case name="complex-renames-q7" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
+         <description>Rename all attributes on the "west" element.</description>
          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
          <state time="0">
             <query name="complex-renames-q7" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>
@@ -2902,8 +3030,9 @@
          </state>
       </test-case>
       <test-case name="complex-renames-q8" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
-         <description></description>
+         <description>Rename the attributes names "west-attr-2", "center-attr-2", and "south-attr-2".</description>
          <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+         <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
          <state time="0">
             <query name="complex-renames-q8" date="2007-10-23"/>
             <input-file role="principal-data" variable="input-context">TopMany</input-file>

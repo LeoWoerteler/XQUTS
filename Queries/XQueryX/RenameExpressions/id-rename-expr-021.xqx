@@ -8,77 +8,24 @@
                                 http://www.w3.org/2007/xquery-update-10/xquery-update-10-xqueryx.xsd">
   <xqx:mainModule>
     <xqx:prolog>
-      <xqx:namespaceDecl>
-        <xqx:prefix>foo</xqx:prefix>
-        <xqx:uri>http://example.org</xqx:uri>
-      </xqx:namespaceDecl>
       <xqx:varDecl>
         <xqx:varName>input-context</xqx:varName>
         <xqx:external/>
       </xqx:varDecl>
     </xqx:prolog>
     <xqx:queryBody>
-      <xqx:flworExpr>
-        <xqx:letClause>
-          <xqx:letClauseItem>
-            <xqx:typedVariableBinding>
-              <xqx:varName>var1</xqx:varName>
-            </xqx:typedVariableBinding>
-            <xqx:letExpr>
-              <xqx:elementConstructor>
-                <xqx:tagName xqx:prefix="foo">someName</xqx:tagName>
-                <xqx:elementContent>
-                  <xqx:stringConstantExpr>
-                    <xqx:value>some Data</xqx:value>
-                  </xqx:stringConstantExpr>
-                </xqx:elementContent>
-              </xqx:elementConstructor>
-            </xqx:letExpr>
-          </xqx:letClauseItem>
-        </xqx:letClause>
-        <xqx:letClause>
-          <xqx:letClauseItem>
-            <xqx:typedVariableBinding>
-              <xqx:varName>var2</xqx:varName>
-            </xqx:typedVariableBinding>
-            <xqx:letExpr>
-              <xqx:elementConstructor>
-                <xqx:tagName xqx:prefix="foo">anotherName</xqx:tagName>
-                <xqx:attributeList>
-                  <xqx:namespaceDeclaration>
-                    <xqx:prefix>foo</xqx:prefix>
-                    <xqx:uri>http://example1.org</xqx:uri>
-                  </xqx:namespaceDeclaration>
-                </xqx:attributeList>
-                <xqx:elementContent>
-                  <xqx:stringConstantExpr>
-                    <xqx:value>Another Data</xqx:value>
-                  </xqx:stringConstantExpr>
-                </xqx:elementContent>
-              </xqx:elementConstructor>
-            </xqx:letExpr>
-          </xqx:letClauseItem>
-        </xqx:letClause>
-        <xqx:returnClause>
-          <xqxuf:renameExpr>
-            <xqxuf:targetExpr>
-              <xqx:varRef>
-                <xqx:name>var1</xqx:name>
-              </xqx:varRef>
-            </xqxuf:targetExpr>
-            <xqxuf:newNameExpr>
-              <xqx:functionCallExpr>
-                <xqx:functionName xqx:prefix="fn">qname</xqx:functionName>
-                <xqx:arguments>
-                  <xqx:varRef>
-                    <xqx:name>var2</xqx:name>
-                  </xqx:varRef>
-                </xqx:arguments>
-              </xqx:functionCallExpr>
-            </xqxuf:newNameExpr>
-          </xqxuf:renameExpr>
-        </xqx:returnClause>
-      </xqx:flworExpr>
+      <xqxuf:renameExpr>
+        <xqxuf:targetExpr>
+          <xqx:varRef>
+            <xqx:name>input-context</xqx:name>
+          </xqx:varRef>
+        </xqxuf:targetExpr>
+        <xqxuf:newNameExpr>
+          <xqx:stringConstantExpr>
+            <xqx:value>document</xqx:value>
+          </xqx:stringConstantExpr>
+        </xqxuf:newNameExpr>
+      </xqxuf:renameExpr>
     </xqx:queryBody>
   </xqx:mainModule>
 </xqx:module>
