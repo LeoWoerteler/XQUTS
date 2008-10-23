@@ -3691,6 +3691,58 @@
                <expected-error>XUTY0017</expected-error>
             </state>
          </test-case>
+         <test-case  name="compatibility-027" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>Replace and replace value of operate on the same element.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-027" date="2008-10-23"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            </state>
+            <state time="1">
+               <query name="compatibility-027-test" date="2008-10-23"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">compatibility-027.xml</output-file>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-028" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>Replace and replace value of operate on the same element.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-028" date="2008-10-23"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            </state>
+            <state time="1">
+               <query name="compatibility-028-test" date="2008-10-23"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">compatibility-028.xml</output-file>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-029" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>Replace value of and insert operate on the same element.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-029" date="2008-10-23"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            </state>
+            <state time="1">
+               <query name="compatibility-029-test" date="2008-10-23"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">compatibility-029.xml</output-file>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-030" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>Replace value of and insert operate on the same element.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-030" date="2008-10-23"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            </state>
+            <state time="1">
+               <query name="compatibility-030-test" date="2008-10-23"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">compatibility-030.xml</output-file>
+            </state>
+         </test-case>
       </test-group>
    </test-group>
    <test-group name = "ExtensionExistingFunctions">
