@@ -3225,6 +3225,7 @@
          <test-case  name="id-transform-expr-019" FilePath="TransformExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
             <description>Evaluates a transform expression, where an element node is affected by more than one rename expression.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
             <state time="0">
                <query name="id-transform-expr-019" date="2007-07-31"/>
                <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
@@ -3234,6 +3235,7 @@
          <test-case  name="id-transform-expr-020" FilePath="TransformExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
             <description>Evaluates a transform expression, where an element node is affected by more than one replace expression (no "value of" being specified.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
             <state time="0">
                <query name="id-transform-expr-020" date="2007-07-31"/>
                <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
@@ -3243,6 +3245,7 @@
          <test-case  name="id-transform-expr-021" FilePath="TransformExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
             <description>Evaluates a transform expression, where an attribute node is affected by more than one rename expression.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
             <state time="0">
                <query name="id-transform-expr-021" date="2007-08-01"/>
                <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
@@ -3252,6 +3255,7 @@
          <test-case  name="id-transform-expr-022" FilePath="TransformExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
             <description>Evaluates a transform expression, where an attribute node is affected by more than one replace expression (no "value of" being specified.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
             <state time="0">
                <query name="id-transform-expr-022" date="2007-08-01"/>
                <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
@@ -3261,6 +3265,7 @@
          <test-case  name="id-transform-expr-023" FilePath="TransformExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
             <description>Evaluates a transform expression, where an attribute node is affected by more than one replace value expression.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
             <state time="0">
                <query name="id-transform-expr-023" date="2007-08-01"/>
                <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
@@ -3270,6 +3275,7 @@
          <test-case  name="id-transform-expr-024" FilePath="TransformExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
             <description>Evaluates a transform expression, where an element node is affected by more than one replace value expression.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
             <state time="0">
                <query name="id-transform-expr-024" date="2007-08-01"/>
                <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
@@ -3443,6 +3449,246 @@
                <query name="id-transform-expr-041" date="2008-10-21"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
                <output-file role="principal" compare="XML">id-transform-expr-041.xml</output-file>
+            </state>
+         </test-case>
+      </test-group>
+      <test-group name="Compatibility">
+         <GroupInfo>
+            <title>Compatibility of Updating Expressions</title>
+            <description/>
+         </GroupInfo>
+         <test-case  name="compatibility-001" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>An element node is renamed more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-001" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0015</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-002" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>An element node is renamed more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-002" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0015</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-003" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>An attribute node is renamed more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-003" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0015</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-004" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>An attribute node is renamed more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-004" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0015</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-005" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>A PI node is renamed more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-005" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0015</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-006" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>A PI node is renamed more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-006" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0015</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-007" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>An element node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-007" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0016</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-008" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>An element node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-008" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0016</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-009" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>An attribute node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-009" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0016</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-010" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>An attribute node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-010" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0016</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-011" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>An text node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-011" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0016</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-012" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>An text node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-012" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0016</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-013" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>An PI node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-013" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0016</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-014" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>An PI node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-014" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0016</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-015" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>A comment node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-015" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0016</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-016" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>A comment node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-016" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0016</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-017" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>The value of an element node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-017" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0017</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-018" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>The value of an element node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-018" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0017</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-019" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>The value of an attribute node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-019" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0017</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-020" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>The value of an attribute node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-020" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0017</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-021" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>The value of a text node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-021" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0017</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-022" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>The value of a text node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-022" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0017</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-023" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>The value of a PI node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-023" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0017</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-024" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>The value of a PI node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-024" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0017</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-025" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>The value of a comment node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-025" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0017</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="compatibility-026" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>The value of a comment node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="compatibility-026" date="2008-10-22"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUTY0017</expected-error>
             </state>
          </test-case>
       </test-group>
