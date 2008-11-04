@@ -5955,380 +5955,627 @@
          </test-case>
       </test-group>
    </test-group>
-   <test-group name="UpdatePrimitives">
+   <test-group name="UpdateOperations">
       <GroupInfo>
-         <title>XML Query Update Primitives</title>
+         <title>XML Query Update Operations</title>
          <description/>
       </GroupInfo>
-      <test-group name = "updinsertBefore">
+      <test-group name="UpdatePrimitives">
          <GroupInfo>
-            <title>upd:insertBefore Primitive</title>
+            <title>XML Query Update Primitives</title>
             <description/>
          </GroupInfo>
+         <test-group name = "updinsertBefore">
+            <GroupInfo>
+               <title>upd:insertBefore Primitive</title>
+               <description/>
+            </GroupInfo>
+         </test-group>
+         <test-group name = "updinsertAfter">
+            <GroupInfo>
+               <title>upd:insertAfter Primitive</title>
+               <description/>
+            </GroupInfo>
+         </test-group>
+         <test-group name = "updinsertInto">
+            <GroupInfo>
+               <title>upd:insertInto Primitive</title>
+               <description/>
+            </GroupInfo>
+         </test-group>
+         <test-group name = "updinsertIntoAsFirst">
+            <GroupInfo>
+               <title>upd:insertIntoAsFirst Primitive</title>
+               <description/>
+            </GroupInfo>
+         </test-group>
+         <test-group name = "updinsertIntoAsLast">
+            <GroupInfo>
+               <title>upd:insertIntoAsLast Primitive</title>
+               <description/>
+            </GroupInfo>
+         </test-group>
+         <test-group name = "updinsertAttributes">
+            <GroupInfo>
+               <title>upd:insertAttributes Primitive</title>
+               <description/>
+            </GroupInfo>
+         </test-group>
+         <test-group name = "updDelete">
+            <GroupInfo>
+               <title>upd:delete Primitive</title>
+               <description/>
+            </GroupInfo>
+         </test-group>
+         <test-group name = "updReplaceNode">
+            <GroupInfo>
+               <title>upd:replaceNode Primitive</title>
+               <description/>
+            </GroupInfo>
+         </test-group>
+         <test-group name = "updReplaceValue">
+            <GroupInfo>
+               <title>upd:replaceValue Primitive</title>
+               <description/>
+            </GroupInfo>
+         </test-group>
+         <test-group name = "updReplaceElementContent">
+            <GroupInfo>
+               <title>upd:replaceElementContent Primitive</title>
+               <description/>
+            </GroupInfo>
+         </test-group>
+         <test-group name = "updRename">
+            <GroupInfo>
+               <title>upd:rename Primitive</title>
+               <description/>
+            </GroupInfo>
+         </test-group>
+         <test-group name="AttrDataModelErrs">
+            <GroupInfo>
+               <title>Data model errors on changing attributes</title>
+               <description/>
+            </GroupInfo>
+            <test-case name="attribute-errors-q1" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q1" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q2" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q2" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q3" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q3" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q4" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q4" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q5" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q5" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q6" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q6" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q7" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q7" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q8" FilePath="UpdatePrimitives/AttributeErrors/" scenario="standard" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q8" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="attribute-errors-q8-test" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Fragment">attribute-errors-q8.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q9" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q9" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q10" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q10" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q11" FilePath="UpdatePrimitives/AttributeErrors/" scenario="standard" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q11" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="attribute-errors-q11-test" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Fragment">attribute-errors-q11.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q12" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q12" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q13" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q13" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q14" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q14" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Fragment">attribute-errors-q14.xml</output-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q15" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q15" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
+            <test-case name="attribute-errors-q16" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q16" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
+         </test-group>
+         <test-group name="NSBindingConflictErrs">
+            <GroupInfo>
+               <title>Namespace binding conflicts on attribute updates</title>
+               <description/>
+            </GroupInfo>
+            <test-case name="namespace-errors-q1" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="namespace-errors-q1" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0023</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q2" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="namespace-errors-q2" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0023</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q3" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="namespace-errors-q3" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0023</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q4" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="id-rename"/>
+               <state time="0">
+                  <query name="namespace-errors-q4" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0023</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q5" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="id-rename"/>
+               <state time="0">
+                  <query name="namespace-errors-q5" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0023</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q6" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="id-rename"/>
+               <state time="0">
+                  <query name="namespace-errors-q6" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0023</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q7" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="2.3.3" section-title="Replace" section-pointer="id-replace"/>
+               <state time="0">
+                  <query name="namespace-errors-q7" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0023</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q8" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="2.3.3" section-title="Replace" section-pointer="id-replace"/>
+               <state time="0">
+                  <query name="namespace-errors-q8" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0023</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q9" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
+               <state time="0">
+                  <query name="namespace-errors-q9" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0024</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q10" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
+               <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
+               <state time="0">
+                  <query name="namespace-errors-q10" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0024</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q11" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
+               <state time="0">
+                  <query name="namespace-errors-q11" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0024</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q12" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
+               <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
+               <state time="0">
+                  <query name="namespace-errors-q12" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0024</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q13" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
+               <state time="0">
+                  <query name="namespace-errors-q13" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0024</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q14" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
+               <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
+               <state time="0">
+                  <query name="namespace-errors-q14" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0024</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q15" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
+               <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
+               <state time="0">
+                  <query name="namespace-errors-q15" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0024</expected-error>
+               </state>
+            </test-case>
+         </test-group>
       </test-group>
-      <test-group name = "updinsertAfter">
+      <test-group name="UpdateRoutines">
          <GroupInfo>
-            <title>upd:insertAfter Primitive</title>
-            <description/>
+            <title>XQuery Update Routines</title>
+            <description></description>
          </GroupInfo>
-      </test-group>
-      <test-group name = "updinsertInto">
-         <GroupInfo>
-            <title>upd:insertInto Primitive</title>
-            <description/>
-         </GroupInfo>
-      </test-group>
-      <test-group name = "updinsertIntoAsFirst">
-         <GroupInfo>
-            <title>upd:insertIntoAsFirst Primitive</title>
-            <description/>
-         </GroupInfo>
-      </test-group>
-      <test-group name = "updinsertIntoAsLast">
-         <GroupInfo>
-            <title>upd:insertIntoAsLast Primitive</title>
-            <description/>
-         </GroupInfo>
-      </test-group>
-      <test-group name = "updinsertAttributes">
-         <GroupInfo>
-            <title>upd:insertAttributes Primitive</title>
-            <description/>
-         </GroupInfo>
-      </test-group>
-      <test-group name = "updDelete">
-         <GroupInfo>
-            <title>upd:delete Primitive</title>
-            <description/>
-         </GroupInfo>
-      </test-group>
-      <test-group name = "updReplaceNode">
-         <GroupInfo>
-            <title>upd:replaceNode Primitive</title>
-            <description/>
-         </GroupInfo>
-      </test-group>
-      <test-group name = "updReplaceValue">
-         <GroupInfo>
-            <title>upd:replaceValue Primitive</title>
-            <description/>
-         </GroupInfo>
-      </test-group>
-      <test-group name = "updReplaceElementContent">
-         <GroupInfo>
-            <title>upd:replaceElementContent Primitive</title>
-            <description/>
-         </GroupInfo>
-      </test-group>
-      <test-group name = "updRename">
-         <GroupInfo>
-            <title>upd:rename Primitive</title>
-            <description/>
-         </GroupInfo>
-      </test-group>
-      <test-group name="AttrDataModelErrs">
-         <GroupInfo>
-            <title>Data model errors on changing attributes</title>
-            <description/>
-         </GroupInfo>
-         <test-case name="attribute-errors-q1" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q1" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XUDY0021</expected-error>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q2" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q2" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XUDY0021</expected-error>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q3" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q3" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XUDY0021</expected-error>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q4" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q4" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XUDY0021</expected-error>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q5" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q5" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XUDY0021</expected-error>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q6" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q6" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XUDY0021</expected-error>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q7" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q7" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XUDY0021</expected-error>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q8" FilePath="UpdatePrimitives/AttributeErrors/" scenario="standard" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q8" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-            </state>
-            <state time="1">
-               <query name="attribute-errors-q8-test" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <output-file role="principal" compare="Fragment">attribute-errors-q8.xml</output-file>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q9" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q9" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XUDY0021</expected-error>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q10" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q10" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XUDY0021</expected-error>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q11" FilePath="UpdatePrimitives/AttributeErrors/" scenario="standard" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q11" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-            </state>
-            <state time="1">
-               <query name="attribute-errors-q11-test" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <output-file role="principal" compare="Fragment">attribute-errors-q11.xml</output-file>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q12" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q12" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XUDY0021</expected-error>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q13" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q13" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XUDY0021</expected-error>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q14" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q14" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <output-file role="principal" compare="Fragment">attribute-errors-q14.xml</output-file>
-               <expected-error>XUDY0021</expected-error>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q15" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q15" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XUDY0021</expected-error>
-            </state>
-         </test-case>
-         <test-case name="attribute-errors-q16" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
-            <state time="0">
-               <query name="attribute-errors-q16" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XUDY0021</expected-error>
-            </state>
-         </test-case>
-      </test-group>
-      <test-group name="NSBindingConflictErrs">
-         <GroupInfo>
-            <title>Namespace binding conflicts on attribute updates</title>
-            <description/>
-         </GroupInfo>
-         <test-case name="namespace-errors-q1" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="id-insert"/>
-            <state time="0">
-               <query name="namespace-errors-q1" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0023</expected-error>
-            </state>
-         </test-case>
-         <test-case name="namespace-errors-q2" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="id-insert"/>
-            <state time="0">
-               <query name="namespace-errors-q2" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0023</expected-error>
-            </state>
-         </test-case>
-         <test-case name="namespace-errors-q3" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="id-insert"/>
-            <state time="0">
-               <query name="namespace-errors-q3" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0023</expected-error>
-            </state>
-         </test-case>
-         <test-case name="namespace-errors-q4" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="id-rename"/>
-            <state time="0">
-               <query name="namespace-errors-q4" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0023</expected-error>
-            </state>
-         </test-case>
-         <test-case name="namespace-errors-q5" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="id-rename"/>
-            <state time="0">
-               <query name="namespace-errors-q5" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0023</expected-error>
-            </state>
-         </test-case>
-         <test-case name="namespace-errors-q6" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="id-rename"/>
-            <state time="0">
-               <query name="namespace-errors-q6" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0023</expected-error>
-            </state>
-         </test-case>
-         <test-case name="namespace-errors-q7" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="2.3.3" section-title="Replace" section-pointer="id-replace"/>
-            <state time="0">
-               <query name="namespace-errors-q7" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0023</expected-error>
-            </state>
-         </test-case>
-         <test-case name="namespace-errors-q8" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="2.3.3" section-title="Replace" section-pointer="id-replace"/>
-            <state time="0">
-               <query name="namespace-errors-q8" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0023</expected-error>
-            </state>
-         </test-case>
-         <test-case name="namespace-errors-q9" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
-            <state time="0">
-               <query name="namespace-errors-q9" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0024</expected-error>
-            </state>
-         </test-case>
-         <test-case name="namespace-errors-q10" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
-            <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
-            <state time="0">
-               <query name="namespace-errors-q10" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0024</expected-error>
-            </state>
-         </test-case>
-         <test-case name="namespace-errors-q11" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
-            <state time="0">
-               <query name="namespace-errors-q11" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0024</expected-error>
-            </state>
-         </test-case>
-         <test-case name="namespace-errors-q12" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
-            <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
-            <state time="0">
-               <query name="namespace-errors-q12" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0024</expected-error>
-            </state>
-         </test-case>
-         <test-case name="namespace-errors-q13" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
-            <state time="0">
-               <query name="namespace-errors-q13" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0024</expected-error>
-            </state>
-         </test-case>
-         <test-case name="namespace-errors-q14" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
-            <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
-            <state time="0">
-               <query name="namespace-errors-q14" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0024</expected-error>
-            </state>
-         </test-case>
-         <test-case name="namespace-errors-q15" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-            <description></description>
-            <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
-            <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
-            <state time="0">
-               <query name="namespace-errors-q15" date="2007-08-30"/>
-               <input-file role="principal-data" variable="input-context">grant</input-file>
-               <expected-error>XUDY0024</expected-error>
-            </state>
-         </test-case>
+         <test-group name="mergeUpdates">
+            <GroupInfo>
+               <title>upd:mergeUpdates</title>
+               <description></description>
+            </GroupInfo>
+         </test-group>
+         <test-group name="applyUpdates">
+            <GroupInfo>
+               <title>upd:applyUpdates</title>
+               <description></description>
+            </GroupInfo>
+            <test-case  name="applyUpdates-001" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Apply insertInto then delete.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-001" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-001-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">applyUpdates-001.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-002" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Apply insertInto then delete.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-002" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-002-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">applyUpdates-002.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-003" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Apply insertBefore then replaceNode.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-003" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-003-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">applyUpdates-003.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-004" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Apply insertBefore then replaceNode.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-004" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-004-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">applyUpdates-004.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-005" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Apply insertAsFirst then replaceElementContent.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-005" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-005-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">applyUpdates-005.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-006" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Apply insertAsFirst then replaceElementContent.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-006" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-006-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">applyUpdates-006.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-007" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Apply replaceNode then delete.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-007" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-007-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">applyUpdates-007.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-008" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Apply replaceNode then delete.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-008" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-008-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">applyUpdates-008.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-009" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Apply multiple operations to the same node.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-009" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-009-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">applyUpdates-009.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-010" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Apply multiple operations to the same node.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-010" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-010-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">applyUpdates-010.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-011" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Delete elements and merge text nodes.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-011" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-011-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Text">applyUpdates-011.txt</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-012" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Delete the content of a text node.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-012" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-012-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Text">applyUpdates-012.txt</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-013" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Insert and delete attributes with the same name.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-013" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-013-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Text">applyUpdates-013.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-014" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Insert and delete attributes with the same name.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-014" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-014-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Text">applyUpdates-014.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-015" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Change attribute name to an illegal value.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-015" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>              	
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-016" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check atomicity with a good operation and a bad operation.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-016" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>              	
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-016-test" date="2008-11-04"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Text">applyUpdates-016.xml</output-file>
+               </state>
+            </test-case>
+         </test-group>
+         <test-group name="revalidate">
+            <GroupInfo>
+               <title>upd:revalidate</title>
+               <description></description>
+            </GroupInfo>
+         </test-group>
+         <test-group name="removeType">
+            <GroupInfo>
+               <title>upd:removeType</title>
+               <description></description>
+            </GroupInfo>
+         </test-group>
+         <test-group name="setToUntyped">
+            <GroupInfo>
+               <title>upd:setToUntyped</title>
+               <description></description>
+            </GroupInfo>
+         </test-group>
       </test-group>
    </test-group>
    <test-group name="Validation">
