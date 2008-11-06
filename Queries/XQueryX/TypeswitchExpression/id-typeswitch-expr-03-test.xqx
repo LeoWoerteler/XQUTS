@@ -40,6 +40,10 @@
             </xqx:integerConstantExpr>
           </xqx:predicates>
         </xqx:stepExpr>
+        <xqx:stepExpr>
+          <xqx:xpathAxis>child</xqx:xpathAxis>
+          <xqx:nameTest>hours</xqx:nameTest>
+        </xqx:stepExpr>
       </xqx:pathExpr>
     </xqx:queryBody>
   </xqx:mainModule>

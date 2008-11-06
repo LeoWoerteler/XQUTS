@@ -6387,7 +6387,7 @@
                <description/>
             </GroupInfo>
             <test-case name="namespace-errors-q1" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Insert after of attribute with implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="id-insert"/>
                <state time="0">
                   <query name="namespace-errors-q1" date="2007-08-30"/>
@@ -6396,7 +6396,7 @@
                </state>
             </test-case>
             <test-case name="namespace-errors-q2" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Insert of attribute with implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="id-insert"/>
                <state time="0">
                   <query name="namespace-errors-q2" date="2007-08-30"/>
@@ -6405,7 +6405,7 @@
                </state>
             </test-case>
             <test-case name="namespace-errors-q3" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Insert as first of attribute with implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="2.3.1" section-title="Insert" section-pointer="id-insert"/>
                <state time="0">
                   <query name="namespace-errors-q3" date="2007-08-30"/>
@@ -6414,7 +6414,7 @@
                </state>
             </test-case>
             <test-case name="namespace-errors-q4" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Rename of no namespace element with implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="id-rename"/>
                <state time="0">
                   <query name="namespace-errors-q4" date="2007-08-30"/>
@@ -6423,7 +6423,7 @@
                </state>
             </test-case>
             <test-case name="namespace-errors-q5" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Rename of namespaced element with implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="id-rename"/>
                <state time="0">
                   <query name="namespace-errors-q5" date="2007-08-30"/>
@@ -6432,7 +6432,7 @@
                </state>
             </test-case>
             <test-case name="namespace-errors-q6" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Rename of attribute with implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="2.3.4" section-title="Rename" section-pointer="id-rename"/>
                <state time="0">
                   <query name="namespace-errors-q6" date="2007-08-30"/>
@@ -6441,7 +6441,7 @@
                </state>
             </test-case>
             <test-case name="namespace-errors-q7" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Replace of attribute with implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="2.3.3" section-title="Replace" section-pointer="id-replace"/>
                <state time="0">
                   <query name="namespace-errors-q7" date="2007-08-30"/>
@@ -6450,7 +6450,7 @@
                </state>
             </test-case>
             <test-case name="namespace-errors-q8" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Replace of attribute with muliple attributes, one of which has an implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="2.3.3" section-title="Replace" section-pointer="id-replace"/>
                <state time="0">
                   <query name="namespace-errors-q8" date="2007-08-30"/>
@@ -6459,8 +6459,9 @@
                </state>
             </test-case>
             <test-case name="namespace-errors-q9" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Multiple inserts of attribute with implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
                <state time="0">
                   <query name="namespace-errors-q9" date="2007-08-30"/>
                   <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -6468,7 +6469,7 @@
                </state>
             </test-case>
             <test-case name="namespace-errors-q10" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Insert and replace of attributes with implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
                <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
                <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
@@ -6479,7 +6480,7 @@
                </state>
             </test-case>
             <test-case name="namespace-errors-q11" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Multiple replaces of attributes with implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
                <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
                <state time="0">
@@ -6489,7 +6490,7 @@
                </state>
             </test-case>
             <test-case name="namespace-errors-q12" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Replace and rename of attributes with implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
                <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
                <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
@@ -6500,7 +6501,7 @@
                </state>
             </test-case>
             <test-case name="namespace-errors-q13" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Two renames of attributes with implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
                <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
                <state time="0">
@@ -6510,7 +6511,7 @@
                </state>
             </test-case>
             <test-case name="namespace-errors-q14" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Rename and insert of attributes with implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
                <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
                <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
@@ -6521,12 +6522,48 @@
                </state>
             </test-case>
             <test-case name="namespace-errors-q15" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
-               <description></description>
+               <description>Rename of element and insert of attribute with implicit namespace binding that clashes.</description>
                <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
                <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
                <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
                <state time="0">
                   <query name="namespace-errors-q15" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0024</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q16" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="Andrew Eisenberg">
+               <description>Rename of element with non-prefixed implicit namespace binding that clashes.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
+               <state time="0">
+                  <query name="namespace-errors-q16" date="2008-11-05"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0023</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q17" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="Andrew Eisenberg">
+               <description>Insert new attributes with implicit namespace bindings that clash.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="namespace-errors-q17" date="2008-11-06"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0024</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q18" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="Andrew Eisenberg">
+               <description>Insert new attributes with implicit namespace bindings that clash.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="namespace-errors-q18" date="2008-11-06"/>
+                  <input-file role="principal-data" variable="input-context">grant</input-file>
+                  <expected-error>XUDY0024</expected-error>
+               </state>
+            </test-case>
+            <test-case name="namespace-errors-q19" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="Andrew Eisenberg">
+               <description>Replace introduces new attributes with implicit namespace bindings that clash.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
+               <state time="0">
+                  <query name="namespace-errors-q19" date="2008-11-06"/>
                   <input-file role="principal-data" variable="input-context">grant</input-file>
                   <expected-error>XUDY0024</expected-error>
                </state>
