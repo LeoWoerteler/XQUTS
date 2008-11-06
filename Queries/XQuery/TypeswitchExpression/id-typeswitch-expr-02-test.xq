@@ -5,4 +5,4 @@
 declare variable $input-context external;
 (: insert-end :)
 
-$input-context/works[1]/employee[1]
+$input-context/works[1]/employee[1]/hours

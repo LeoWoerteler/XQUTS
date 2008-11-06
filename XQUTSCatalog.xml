@@ -4225,6 +4225,7 @@
                <query name="id-typeswitch-expr-02-test" date="2007-06-04"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
                <output-file role="principal" compare="Fragment">id-typeswitch-expr-02.xml</output-file>
+               <output-file role="principal" compare="Fragment">id-typeswitch-expr-02a.xml</output-file>
             </state>
          </test-case>
          <test-case  name="id-typeswitch-expr-03" FilePath="TypeswitchExpression/" scenario="standard" Creator="Carmelo Montanez">
@@ -4239,6 +4240,7 @@
                <query name="id-typeswitch-expr-03-test" date="2007-06-04"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
                <output-file role="principal" compare="Fragment">id-typeswitch-expr-03.xml</output-file>
+               <output-file role="principal" compare="Fragment">id-typeswitch-expr-03a.xml</output-file>
             </state>
          </test-case>
          <test-case  name="id-typeswitch-expr-04" FilePath="TypeswitchExpression/" scenario="standard" Creator="Carmelo Montanez">
