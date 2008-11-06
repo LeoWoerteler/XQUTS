@@ -450,7 +450,7 @@
                               </A>     
                            </td>
                         </tr>
-                        <xsl:if test = "test:input-file">
+                        <xsl:if test = "test:input-file | test:input-URI">
                            <xsl:call-template name = "getInputs"/>
                         </xsl:if>
                         <xsl:if test = "test:output-file | test:expected-error">
@@ -500,7 +500,7 @@
                </tr>
             </xsl:for-each>
          </xsl:if>
-         <xsl:if test = "test:input-file">
+         <xsl:if test = "test:input-file | test:input-URI">
             <xsl:call-template name = "getInputs"/>      
          </xsl:if>
          <xsl:if test = "test:output-file | test:expected-error">
@@ -627,6 +627,31 @@
             </td>
          </tr>
       </xsl:for-each>   
+      <xsl:for-each select="test:input-URI">
+         <tr>
+            <td>
+               Name:
+               <xsl:value-of select="@variable"/>
+            </td>
+            <td>
+               Role:
+               <A>
+                  <xsl:attribute name="href">#<xsl:value-of select="@role"/></xsl:attribute>
+                  <xsl:value-of select="@role"/>
+               </A>
+            </td>
+            <td>
+               Source ID:
+               <A>
+                  <xsl:attribute name="href">#<xsl:value-of select="."/></xsl:attribute>
+                  <xsl:value-of select="."/>
+               </A>
+            </td>
+            <td>
+               <xsl:text>(as input URI)</xsl:text>
+            </td>
+         </tr>
+      </xsl:for-each>
    </xsl:template>
    
    

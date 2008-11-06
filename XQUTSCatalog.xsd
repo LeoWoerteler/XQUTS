@@ -717,6 +717,31 @@
             </xs:complexType>
          </xs:element>
          
+         <!-- Zero or more input URIs that will be used by this query -->
+         
+         <xs:element name="input-URI" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+               <xs:documentation>
+                  One or more input URIs that will be used by this query.
+               </xs:documentation>
+            </xs:annotation>
+            <xs:complexType>
+               <xs:simpleContent>
+                  <xs:extension base="xs:IDREF">
+                     <!-- this attribute contains only principal-data -->
+                     <xs:attribute name="role" type="test:role-enum" use="required" >
+                        <xs:annotation>
+                           <xs:documentation>
+                              this attribute contains only principal-data
+                           </xs:documentation>
+                        </xs:annotation>
+                     </xs:attribute>
+                     <xs:attribute name="variable" type="xs:string" use="required" />
+                  </xs:extension>
+               </xs:simpleContent>
+            </xs:complexType>
+         </xs:element>
+         
          <!-- Zero or more input queries that will be used to bind values to -->
          <!-- external variables                                             -->
          

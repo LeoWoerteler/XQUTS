@@ -192,6 +192,14 @@
          <description last-mod="2003-03-25">Like TreeCompass, but with comments and PIs off the root. PI targets vary.</description>
          <note>All text nodes must have non-whitespace characters.</note>
       </source>
+      <source ID="putOutput" FileName="TestSources/putoutput.xml" Creator="Andrew Eisenberg">
+         <description last-mod="2008-11-05">Expected location of the result of fn:put operatons.</description>
+         <note>This file does not exist by design.</note>
+      </source>
+      <source ID="putOutput2" FileName="TestSources/putoutput2.xml" Creator="Andrew Eisenberg">
+         <description last-mod="2008-11-05">Expected location of the result of fn:put operatons.</description>
+         <note>This file does not exist by design.</note>
+      </source>
       <schema ID="books-schema" uri="http://ns.example.com/books" FileName="TestSources/books.xsd">
          <description last-mod="2008-01-03">Schema for books.xml</description>
       </schema>
@@ -200,15 +208,28 @@
       </schema>          	
    </sources>
    <implementation-defined-items>
-      <implementation-defined-item spec = "XQUPDATE" name = "Space Holder for now">
-         <description last-mod="2005-04-04">The statically-known collations.</description>
+      <implementation-defined-item spec="XQUPDATE" name="supportedRevalidationModes">
+         <description last-mod="2008-11-05">The revalidation modes that are supported by this implementation.</description>
+      </implementation-defined-item>
+      <implementation-defined-item spec="XQUPDATE" name="defaultRevalidationMode">
+         <description last-mod="2008-11-05">The default revalidation mode for this implementation.</description>
+      </implementation-defined-item>
+      <implementation-defined-item spec="XQUPDATE" name="errorParentlessDelete">
+         <description last-mod="2008-11-05">Whether the implementation raises dynamic error [err:XUDY0020] if a node is deleted that had no parent before execution of the query began.</description>
+      </implementation-defined-item>
+      <implementation-defined-item spec="XQUPDATE" name="externalFunctionXDMPUL">
+         <description last-mod="2008-11-05">The mechanism (if any) by which an external function can return an XDM instance and/or a pending update list to the invoking query.</description>
+      </implementation-defined-item>
+      <implementation-defined-item spec="XQUPDATE" name="fnPutSemantics">
+         <description last-mod="2008-11-05">The semantics of fn:put(), including the kinds of nodes accepted as operands by this function.</description>
       </implementation-defined-item>
    </implementation-defined-items>
    <features>
       <feature name="Minimal Conformance"/>
+      <feature name="Update Facility Static Typing Feature"/>
    </features>
    <context-properties>
-      <context-property context-type = "static" name = "SpaceHolderfornow"/>
+      <context-property context-type = "static" name = "Revalidation mode"/>
    </context-properties>
    <test-group name="Minimal Conformance">
       <GroupInfo>
@@ -5944,13 +5965,181 @@
                <output-file role="principal" compare="Fragment">id-other-expr-031.xml</output-file>              	
             </state>
          </test-case>
-         <test-case  name="id-other-expr-032" FilePath="OtherExpressions/" scenario="runtime-error" Creator="armelo Montanez">
+         <test-case  name="id-other-expr-032" FilePath="OtherExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
             <description>Evaluates usage of an updating expression (delete) as part of a range expression.</description>
             <spec-citation spec="XQUPDATE" section-number="2.5.8" section-title="Other Expressions" section-pointer="id-other-expr"/>
             <state time="0">
                <query name="id-other-expr-032" date="2007-08-09"/>
                <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
                <expected-error>XUST0001</expected-error>              	
+            </state>
+         </test-case>
+      </test-group>
+   </test-group>
+   <test-group name="ExtensionFunctions">
+      <GroupInfo>
+         <title>Extensions to Built-in Function Library</title>
+         <description/>
+      </GroupInfo>
+      <test-group name="fnput">
+         <GroupInfo>
+            <title>fn:put</title>
+            <description/>
+         </GroupInfo>
+         <test-case  name="fn-put-001" FilePath="Put/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Store a document.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="fn-put-001" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+            </state>
+            <state time="1">
+               <query name="fn-put-001-test" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <output-file role="principal" compare="XML">fn-put-001.xml</output-file>
+            </state>
+         </test-case>
+         <test-case  name="fn-put-002" FilePath="Put/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Store an element.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="fn-put-002" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+            </state>
+            <state time="1">
+               <query name="fn-put-002-test" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <output-file role="principal" compare="XML">fn-put-002.xml</output-file>
+            </state>
+         </test-case>
+         <test-case  name="fn-put-003" FilePath="Put/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Store a comment.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="fn-put-003" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <expected-error>FOUP0001</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="fn-put-004" FilePath="Put/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Store a PI.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="fn-put-004" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <expected-error>FOUP0001</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="fn-put-005" FilePath="Put/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Store an attribute.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="fn-put-005" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <expected-error>FOUP0001</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="fn-put-006" FilePath="Put/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Store a text node.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="fn-put-006" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <expected-error>FOUP0001</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="fn-put-007" FilePath="Put/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>Bad URI as argument to fn:put.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="fn-put-007" date="2008-11-05"/>
+               <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+               <expected-error>FOUP0002</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="fn-put-008" FilePath="Put/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>Check that fn:put is an updating function.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="fn-put-008" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <expected-error>XUST0001</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="fn-put-009" FilePath="Put/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Check that fn:put is an updating function.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="fn-put-009" date="2008-11-05"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+            </state>
+            <state time="1">
+               <query name="fn-put-009a-test" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <output-file role="principal" compare="XML">fn-put-009a.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="fn-put-009b-test" date="2008-11-05"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">fn-put-009b.xml</output-file>
+            </state>
+         </test-case>
+         <test-case  name="fn-put-010" FilePath="Put/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Check that fn:put is an updating function.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="fn-put-010" date="2008-11-05"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+            </state>
+            <state time="1">
+               <query name="fn-put-010a-test" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <output-file role="principal" compare="XML">fn-put-010a.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="fn-put-010b-test" date="2008-11-05"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <output-file role="principal" compare="XML">fn-put-010b.xml</output-file>
+            </state>
+         </test-case>
+         <test-case  name="fn-put-011" FilePath="Put/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>Check that fn:put does not become effective until after completion of the snapshot.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="fn-put-011" date="2008-11-05"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <expected-error>FODC0005</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="fn-put-012" FilePath="Put/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>Multiple invocations of fn:put on the same URI.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="fn-put-012" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <expected-error>XUDY0031</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="fn-put-013" FilePath="Put/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Multiple invocations of fn:put on different URIs.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="fn-put-013" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <input-URI role="principal-data" variable="input-URI-2">putOutput2</input-URI>
+            </state>
+            <state time="1">
+               <query name="fn-put-013a-test" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <output-file role="principal" compare="XML">fn-put-013a.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="fn-put-013b-test" date="2008-11-05"/>
+               <input-URI role="principal-data" variable="input-URI-2">putOutput2</input-URI>
+               <output-file role="principal" compare="XML">fn-put-013b.xml</output-file>
             </state>
          </test-case>
       </test-group>
