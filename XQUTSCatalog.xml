@@ -6471,6 +6471,7 @@
                <description></description>
                <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
                <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
                <state time="0">
                   <query name="namespace-errors-q10" date="2007-08-30"/>
                   <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -6480,6 +6481,7 @@
             <test-case name="namespace-errors-q11" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
                <description></description>
                <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
                <state time="0">
                   <query name="namespace-errors-q11" date="2007-08-30"/>
                   <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -6490,6 +6492,7 @@
                <description></description>
                <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
                <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
                <state time="0">
                   <query name="namespace-errors-q12" date="2007-08-30"/>
                   <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -6499,6 +6502,7 @@
             <test-case name="namespace-errors-q13" FilePath="UpdatePrimitives/NamespaceErrors/" scenario="runtime-error" Creator="John Snelson">
                <description></description>
                <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
                <state time="0">
                   <query name="namespace-errors-q13" date="2007-08-30"/>
                   <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -6509,6 +6513,7 @@
                <description></description>
                <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
                <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
                <state time="0">
                   <query name="namespace-errors-q14" date="2007-08-30"/>
                   <input-file role="principal-data" variable="input-context">grant</input-file>
@@ -6519,6 +6524,7 @@
                <description></description>
                <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
                <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename" section-pointer="id-upd-rename"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
                <state time="0">
                   <query name="namespace-errors-q15" date="2007-08-30"/>
                   <input-file role="principal-data" variable="input-context">grant</input-file>
