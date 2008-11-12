@@ -6660,6 +6660,28 @@
                <title>upd:mergeUpdates</title>
                <description></description>
             </GroupInfo>
+            <test-case  name="mergeUpdates-001" FilePath="UpdateRoutines/mergeUpdates/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Multiple operations that add non-conflicting namespace bindings to a node.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
+               <state time="0">
+                  <query name="mergeUpdates-001" date="2008-11-12"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="mergeUpdates-001-test" date="2008-11-12"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">mergeUpdates-001.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="mergeUpdates-002" FilePath="UpdateRoutines/mergeUpdates/" scenario="runtime-error" Creator="Andrew Eisenberg">
+               <description>Multiple operations that add conflicting namespace bindings to a node.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.1" section-title="upd:mergeUpdates" section-pointer="id-upd-merge-updates"/>
+               <state time="0">
+                  <query name="mergeUpdates-002" date="2008-11-12"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0024</expected-error>
+               </state>
+            </test-case>
          </test-group>
          <test-group name="applyUpdates">
             <GroupInfo>
