@@ -5992,6 +5992,17 @@
             <title>fn:put</title>
             <description/>
          </GroupInfo>
+         <test-case  name="put-001" FilePath="Put/" scenario="standard" Creator="Saxonica">
+            <description>simple test of fn:put function</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="put-001" date="2008-04-06"/>
+            </state>
+            <state time="1">
+               <query name="put-001-test" date="2008-04-06"/>
+               <output-file role="principal" compare="Fragment">put-001.xml</output-file>
+            </state>
+         </test-case>
          <test-case  name="fn-put-001" FilePath="Put/" scenario="standard" Creator="Andrew Eisenberg">
             <description>Store a document.</description>
             <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
@@ -7461,24 +7472,6 @@
             </state>
          </test-case>
       </test-group>
-   </test-group>
-   <test-group name="PutFunction">
-      <GroupInfo>
-         <title>XQuery Update Tests for the fn:put() function</title>
-         <description>Note that the semantics of fn:put() are implementation-defined so
-            it's not really possible to fail these tests.</description>
-      </GroupInfo>
-      <test-case  name="put-001" FilePath="Put/" scenario="standard" Creator="Saxonica">
-         <description>inserting a disallowed element causes validation failure</description>
-         <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
-         <state time="0">
-            <query name="put-001" date="2008-04-06"/>
-         </state>
-         <state time="1">
-            <query name="put-001-test" date="2008-04-06"/>
-            <output-file role="principal" compare="Fragment">put-001.xml</output-file>
-         </state>
-      </test-case>
    </test-group>
    <test-group name="AdditionalTyping" featureOwner="Jonathan Robie">
       <GroupInfo>
