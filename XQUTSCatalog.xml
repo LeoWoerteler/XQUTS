@@ -1705,6 +1705,62 @@
                   <output-file role="principal" compare="XML">id-delete-expr-018.xml</output-file>
                </state>
             </test-case>
+            <test-case name="id-delete-expr-019" FilePath="DeleteExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Delete an attribute node multiple times.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+               <spec-citation spec="XQUPDATE" section-number="3.1.7" section-title="upd:delete" section-pointer="id-upd-delete"/>
+               <state time="0">
+                  <query name="id-delete-expr-019" date="2008-11-12"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-delete-expr-019-test" date="2008-11-12"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">id-delete-expr-019.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="id-delete-expr-020" FilePath="DeleteExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Delete a text node multiple times.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+               <spec-citation spec="XQUPDATE" section-number="3.1.7" section-title="upd:delete" section-pointer="id-upd-delete"/>
+               <state time="0">
+                  <query name="id-delete-expr-020" date="2008-11-12"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-delete-expr-020-test" date="2008-11-12"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">id-delete-expr-020.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="id-delete-expr-021" FilePath="DeleteExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Delete a comment node multiple times.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+               <spec-citation spec="XQUPDATE" section-number="3.1.7" section-title="upd:delete" section-pointer="id-upd-delete"/>
+               <state time="0">
+                  <query name="id-delete-expr-021" date="2008-11-12"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-delete-expr-021-test" date="2008-11-12"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">id-delete-expr-021.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="id-delete-expr-022" FilePath="DeleteExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Delete a PI node multiple times.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+               <spec-citation spec="XQUPDATE" section-number="3.1.7" section-title="upd:delete" section-pointer="id-upd-delete"/>
+               <state time="0">
+                  <query name="id-delete-expr-022" date="2008-11-12"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-delete-expr-022-test" date="2008-11-12"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">id-delete-expr-022.xml</output-file>
+               </state>
+            </test-case>
             <test-case name="complex-deletes-q1" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
                <description>Delete leading comments of document element.</description>
                <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
