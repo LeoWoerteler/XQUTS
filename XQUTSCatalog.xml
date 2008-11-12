@@ -6148,6 +6148,15 @@
                <output-file role="principal" compare="XML">fn-put-013b.xml</output-file>
             </state>
          </test-case>
+         <test-case  name="fn-put-014" FilePath="Put/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>Multiple invocations of fn:put on the same URI.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
+            <state time="0">
+               <query name="fn-put-014" date="2008-11-12"/>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <expected-error>XUDY0031</expected-error>
+            </state>
+         </test-case>
       </test-group>
    </test-group>
    <test-group name="UpdateOperations">
