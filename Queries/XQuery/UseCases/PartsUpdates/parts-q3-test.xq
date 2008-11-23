@@ -1,5 +1,5 @@
-(: start-indent :)
+(: insert-start :)
 declare variable $part-list external;
-(: end-indent :)
+(: insert-end :)
 
 $part-list//part

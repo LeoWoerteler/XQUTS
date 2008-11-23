@@ -1,12 +1,12 @@
 (: Test - address-book-q1 :)
 (: Description - Update Use Case Address book   :)
 
-(: start-indent :)
+(: insert-start :)
 declare variable $archive external;
 declare variable $copy1 external;
 declare variable $copy2 external;
 declare variable $log external;
-(: end-indent :)
+(: insert-end :)
 
 (:state-1-start :)
 

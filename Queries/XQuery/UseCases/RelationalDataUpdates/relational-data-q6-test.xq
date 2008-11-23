@@ -1,11 +1,11 @@
 (: Test - relational-data-q6 :)
 (: Description - Update Use Case #6  :)
 
-(: start-indent :)
+(: insert-start :)
 declare variable $users external;
 declare variable $items external;
 declare variable $bids external;
-(: end-indent :)
+(: insert-end :)
 
 let $user := $users/users/user_tuple[name="Dee Linquent"]
 let $items := $items/items/item_tuple[offered_by="U03"]

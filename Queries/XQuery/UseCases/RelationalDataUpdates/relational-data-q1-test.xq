@@ -1,8 +1,8 @@
 (: Test - relational-data-q1 :)
 (: Description - Verify Update Use Case #1  :)
 
-(: start-indent :)
+(: insert-start :)
 declare variable $users external;
-(: end-indent :)
+(: insert-end :)
 
 $users/users/user_tuple[name="Annabel Lee"]

@@ -1,10 +1,10 @@
 (: Test - relational-data-q2 :)
 (: Description - Update Use Case #2  :)
 
-(: start-indent :)
+(: insert-start :)
 declare variable $users external;
 declare variable $bids external;
-(: end-indent :)
+(: insert-end :)
 
 (:state-1-start :)
 

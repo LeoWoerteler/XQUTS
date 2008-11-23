@@ -1,5 +1,5 @@
-(: start-indent :)
+(: insert-start :)
 declare variable $grant external;
-(: end-indent :)
+(: insert-end :)
 
 $grant//*

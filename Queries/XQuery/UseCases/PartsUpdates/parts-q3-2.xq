@@ -1,10 +1,10 @@
 (: Test - parts-q3-2 :)
 (: Description - Update Use Case Parts Q3 - Alternate Solution:)
 
-(: start-indent :)
+(: insert-start :)
 declare variable $part-tree external;
 declare variable $part-list external;
-(: end-indent :)
+(: insert-end :)
 
 (:state-1-start :)
 

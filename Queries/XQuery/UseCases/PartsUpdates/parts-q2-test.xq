@@ -1,5 +1,5 @@
-(: start-indent :)
+(: insert-start :)
 declare variable $part-tree external;
-(: end-indent :)
+(: insert-end :)
 
 $part-tree//part[@name="car"]/part

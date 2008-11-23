@@ -3,9 +3,9 @@
 
 declare namespace nara = "http://www.anr.fr/nara";
 
-(: start-indent :)
+(: insert-start :)
 declare variable $grant external;
-(: end-indent :)
+(: insert-end :)
 
 (:state-1-start :)
 

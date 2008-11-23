@@ -10,10 +10,10 @@ declare namespace
 declare namespace 
   p="http://travelcompany.example.org/reservation/travel";
   
-(: start-indent :)
+(: insert-start :)
 declare variable $airportsDoc external;
 declare variable $msg external;
-(: end-indent :)
+(: insert-end :)
 
 declare variable $airports := $airportsDoc/AIRPORTS/AIRPORT;
 

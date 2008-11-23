@@ -1,10 +1,10 @@
 (: Test - relational-data-2 :)
 (: Description - Update Use Case #2  :)
 
-(: start-indent :)
+(: insert-start :)
 declare variable $users external;
 declare variable $bids external;
-(: end-indent :)
+(: insert-end :)
 
 let $uid := 
 $users/users/user_tuple[name="Annabel Lee"]/userid

@@ -1,9 +1,9 @@
 (: Test - nil-q1 :)
 (: Description - Update Use Case nill Q1:)
 
-(: start-indent :)
+(: insert-start :)
 declare variable $employees external;
-(: end-indent :)
+(: insert-end :)
 
 (:state-1-start :)
 

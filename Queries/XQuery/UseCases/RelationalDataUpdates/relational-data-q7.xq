@@ -1,9 +1,9 @@
 (: Test - relational-data-q7 :)
 (: Description - Update Use Case #7   :)
 
-(: start-indent :)
+(: insert-start :)
 declare variable $items external;
-(: end-indent :)
+(: insert-end :)
 
 (:state-1-start :)
  insert nodes
