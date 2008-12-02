@@ -1761,42 +1761,6 @@
                   <output-file role="principal" compare="XML">id-delete-expr-022.xml</output-file>
                </state>
             </test-case>
-            <test-case name="complex-deletes-q1" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-               <description>Delete leading comments of document element.</description>
-               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
-               <state time="0">
-                  <query name="complex-deletes-q1" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               </state>
-               <state time="1">
-                  <query name="complex-deletes-q1-test" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="XML">complex-deletes-q1.xml</output-file>
-               </state>
-               <state time="2">
-                  <query name="complex-deletes-q1-test2" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-deletes-q1-2.xml</output-file>
-               </state>
-            </test-case>
-            <test-case name="complex-deletes-q2" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-               <description>Delete trailing comments of document element.</description>
-               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
-               <state time="0">
-                  <query name="complex-deletes-q2" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               </state>
-               <state time="1">
-                  <query name="complex-deletes-q2-test" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="XML">complex-deletes-q2.xml</output-file>
-               </state>
-               <state time="2">
-                  <query name="complex-deletes-q2-test2" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-deletes-q2-2.xml</output-file>
-               </state>
-            </test-case>
             <test-case name="complex-deletes-q3" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
                <description>Delete all PIs with target "a-pi".</description>
                <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
@@ -1849,78 +1813,6 @@
                   <query name="complex-deletes-q5-test2" date="2007-10-23"/>
                   <input-file role="principal-data" variable="input-context">TopMany</input-file>
                   <output-file role="principal" compare="Fragment">complex-deletes-q5-2.xml</output-file>
-               </state>
-            </test-case>
-            <test-case name="complex-deletes-q6" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-               <description>Delete the text node child of element "east".</description>
-               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
-               <state time="0">
-                  <query name="complex-deletes-q6" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               </state>
-               <state time="1">
-                  <query name="complex-deletes-q6-test" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-deletes-q6.xml</output-file>
-               </state>
-               <state time="2">
-                  <query name="complex-deletes-q6-test2" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-deletes-q6-2.xml</output-file>
-               </state>
-            </test-case>
-            <test-case name="complex-deletes-q7" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-               <description>Delete all text nodes that come directly after a comment or PI.</description>
-               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
-               <state time="0">
-                  <query name="complex-deletes-q7" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               </state>
-               <state time="1">
-                  <query name="complex-deletes-q7-test" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-deletes-q7.xml</output-file>
-               </state>
-               <state time="2">
-                  <query name="complex-deletes-q7-test2" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-deletes-q7-2.xml</output-file>
-               </state>
-            </test-case>
-            <test-case name="complex-deletes-q8" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-               <description>Delete all elements called "south-east".</description>
-               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
-               <state time="0">
-                  <query name="complex-deletes-q8" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               </state>
-               <state time="1">
-                  <query name="complex-deletes-q8-test" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-deletes-q8.xml</output-file>
-               </state>
-               <state time="2">
-                  <query name="complex-deletes-q8-test2" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-deletes-q8-2.xml</output-file>
-               </state>
-            </test-case>
-            <test-case name="complex-deletes-q9" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
-               <description>Delete the element called "center".</description>
-               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
-               <state time="0">
-                  <query name="complex-deletes-q9" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               </state>
-               <state time="1">
-                  <query name="complex-deletes-q9-test" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-deletes-q9.xml</output-file>
-               </state>
-               <state time="2">
-                  <query name="complex-deletes-q9-test2" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-deletes-q9-2.xml</output-file>
                </state>
             </test-case>
             <test-case name="complex-deletes-q10" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
@@ -2533,44 +2425,6 @@
                   <output-file role="principal" compare="XML">id-replace-expr-044.xml</output-file>
                </state>
             </test-case>
-            <test-case name="complex-replacevalues-q1" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-               <description>Replace the value of the leading comments of document element.</description>
-               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-               <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
-               <state time="0">
-                  <query name="complex-replacevalues-q1" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               </state>
-               <state time="1">
-                  <query name="complex-replacevalues-q1-test" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-replacevalues-q1.xml</output-file>
-               </state>
-               <state time="2">
-                  <query name="complex-replacevalues-q1-test2" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-replacevalues-q1-2.xml</output-file>
-               </state>
-            </test-case>
-            <test-case name="complex-replacevalues-q2" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-               <description>Replace values of trailing comments of document element.</description>
-               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-               <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
-               <state time="0">
-                  <query name="complex-replacevalues-q2" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               </state>
-               <state time="1">
-                  <query name="complex-replacevalues-q2-test" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-replacevalues-q2.xml</output-file>
-               </state>
-               <state time="2">
-                  <query name="complex-replacevalues-q2-test2" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-replacevalues-q2-2.xml</output-file>
-               </state>
-            </test-case>
             <test-case name="complex-replacevalues-q3" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
                <description>Replace value of all PIs with target "a-pi".</description>
                <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
@@ -2625,62 +2479,6 @@
                   <query name="complex-replacevalues-q5-test2" date="2007-10-23"/>
                   <input-file role="principal-data" variable="input-context">TopMany</input-file>
                   <output-file role="principal" compare="Fragment">complex-replacevalues-q5-2.xml</output-file>
-               </state>
-            </test-case>
-            <test-case name="complex-replacevalues-q6" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-               <description>Replace value of the text node child of element "east".</description>
-               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-               <state time="0">
-                  <query name="complex-replacevalues-q6" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               </state>
-               <state time="1">
-                  <query name="complex-replacevalues-q6-test" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-replacevalues-q6.xml</output-file>
-               </state>
-               <state time="2">
-                  <query name="complex-replacevalues-q6-test2" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-replacevalues-q6-2.xml</output-file>
-               </state>
-            </test-case>
-            <test-case name="complex-replacevalues-q7" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-               <description>Replace the value of all text nodes that come directly after a comment or PI.</description>
-               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-               <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
-               <state time="0">
-                  <query name="complex-replacevalues-q7" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               </state>
-               <state time="1">
-                  <query name="complex-replacevalues-q7-test" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-replacevalues-q7.xml</output-file>
-               </state>
-               <state time="2">
-                  <query name="complex-replacevalues-q7-test2" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-replacevalues-q7-2.xml</output-file>
-               </state>
-            </test-case>
-            <test-case name="complex-replacevalues-q8" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
-               <description>Replace value of all elements called "south-east".</description>
-               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
-               <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
-               <state time="0">
-                  <query name="complex-replacevalues-q8" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               </state>
-               <state time="1">
-                  <query name="complex-replacevalues-q8-test" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-replacevalues-q8.xml</output-file>
-               </state>
-               <state time="2">
-                  <query name="complex-replacevalues-q8-test2" date="2007-10-23"/>
-                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
-                  <output-file role="principal" compare="Fragment">complex-replacevalues-q8-2.xml</output-file>
                </state>
             </test-case>
             <test-case name="complex-replacevalues-q9" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
@@ -3163,61 +2961,6 @@
                <query name="complex-renames-q1-test2" date="2007-10-23"/>
                <input-file role="principal-data" variable="input-context">TopMany</input-file>
                <output-file role="principal" compare="Fragment">complex-renames-q1-2.xml</output-file>
-            </state>
-         </test-case>
-         <test-case name="complex-renames-q2" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
-            <description>Rename all elements called "south-east".</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
-            <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
-            <state time="0">
-               <query name="complex-renames-q2" date="2007-10-23"/>
-               <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            </state>
-            <state time="1">
-               <query name="complex-renames-q2-test" date="2007-10-23"/>
-               <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               <output-file role="principal" compare="Fragment">complex-renames-q2.xml</output-file>
-            </state>
-            <state time="2">
-               <query name="complex-renames-q2-test2" date="2007-10-23"/>
-               <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               <output-file role="principal" compare="Fragment">complex-renames-q2-2.xml</output-file>
-            </state>
-         </test-case>
-         <test-case name="complex-renames-q3" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
-            <description>Rename the element called "center".</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
-            <state time="0">
-               <query name="complex-renames-q3" date="2007-10-23"/>
-               <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            </state>
-            <state time="1">
-               <query name="complex-renames-q3-test" date="2007-10-23"/>
-               <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               <output-file role="principal" compare="Fragment">complex-renames-q3.xml</output-file>
-            </state>
-            <state time="2">
-               <query name="complex-renames-q3-test2" date="2007-10-23"/>
-               <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               <output-file role="principal" compare="Fragment">complex-renames-q3-2.xml</output-file>
-            </state>
-         </test-case>
-         <test-case name="complex-renames-q4" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
-            <description>Rename one of the elements called "south-east".</description>
-            <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
-            <state time="0">
-               <query name="complex-renames-q4" date="2007-10-23"/>
-               <input-file role="principal-data" variable="input-context">TopMany</input-file>
-            </state>
-            <state time="1">
-               <query name="complex-renames-q4-test" date="2007-10-23"/>
-               <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               <output-file role="principal" compare="Fragment">complex-renames-q4.xml</output-file>
-            </state>
-            <state time="2">
-               <query name="complex-renames-q4-test2" date="2007-10-23"/>
-               <input-file role="principal-data" variable="input-context">TopMany</input-file>
-               <output-file role="principal" compare="Fragment">complex-renames-q4-2.xml</output-file>
             </state>
          </test-case>
          <test-case name="complex-renames-q5" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
@@ -8054,6 +7797,270 @@
          <title>Update Facility Static Typing Feature</title>
          <description/>
       </GroupInfo>
+   </test-group>
+   <test-group name="FullAxis" featureOwner="John Snelson">
+      <GroupInfo>
+         <title>Tests that need the Full Axis Feature</title>
+         <description/>
+      </GroupInfo>
+            <test-case name="complex-deletes-q1" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
+               <description>Delete leading comments of document element.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+               <state time="0">
+                  <query name="complex-deletes-q1" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               </state>
+               <state time="1">
+                  <query name="complex-deletes-q1-test" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="XML">complex-deletes-q1.xml</output-file>
+               </state>
+               <state time="2">
+                  <query name="complex-deletes-q1-test2" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-deletes-q1-2.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="complex-deletes-q2" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
+               <description>Delete trailing comments of document element.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+               <state time="0">
+                  <query name="complex-deletes-q2" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               </state>
+               <state time="1">
+                  <query name="complex-deletes-q2-test" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="XML">complex-deletes-q2.xml</output-file>
+               </state>
+               <state time="2">
+                  <query name="complex-deletes-q2-test2" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-deletes-q2-2.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="complex-deletes-q6" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
+               <description>Delete the text node child of element "east".</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+               <state time="0">
+                  <query name="complex-deletes-q6" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               </state>
+               <state time="1">
+                  <query name="complex-deletes-q6-test" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-deletes-q6.xml</output-file>
+               </state>
+               <state time="2">
+                  <query name="complex-deletes-q6-test2" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-deletes-q6-2.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="complex-deletes-q7" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
+               <description>Delete all text nodes that come directly after a comment or PI.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+               <state time="0">
+                  <query name="complex-deletes-q7" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               </state>
+               <state time="1">
+                  <query name="complex-deletes-q7-test" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-deletes-q7.xml</output-file>
+               </state>
+               <state time="2">
+                  <query name="complex-deletes-q7-test2" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-deletes-q7-2.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="complex-deletes-q8" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
+               <description>Delete all elements called "south-east".</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+               <state time="0">
+                  <query name="complex-deletes-q8" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               </state>
+               <state time="1">
+                  <query name="complex-deletes-q8-test" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-deletes-q8.xml</output-file>
+               </state>
+               <state time="2">
+                  <query name="complex-deletes-q8-test2" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-deletes-q8-2.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="complex-deletes-q9" FilePath="DeleteExpressions/" scenario="standard" Creator="John Snelson">
+               <description>Delete the element called "center".</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.2" section-title="Delete" section-pointer="id-delete"/>
+               <state time="0">
+                  <query name="complex-deletes-q9" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               </state>
+               <state time="1">
+                  <query name="complex-deletes-q9-test" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-deletes-q9.xml</output-file>
+               </state>
+               <state time="2">
+                  <query name="complex-deletes-q9-test2" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-deletes-q9-2.xml</output-file>
+               </state>
+            </test-case>
+
+            <test-case name="complex-replacevalues-q1" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+               <description>Replace the value of the leading comments of document element.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
+               <state time="0">
+                  <query name="complex-replacevalues-q1" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               </state>
+               <state time="1">
+                  <query name="complex-replacevalues-q1-test" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-replacevalues-q1.xml</output-file>
+               </state>
+               <state time="2">
+                  <query name="complex-replacevalues-q1-test2" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-replacevalues-q1-2.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="complex-replacevalues-q2" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+               <description>Replace values of trailing comments of document element.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
+               <state time="0">
+                  <query name="complex-replacevalues-q2" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               </state>
+               <state time="1">
+                  <query name="complex-replacevalues-q2-test" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-replacevalues-q2.xml</output-file>
+               </state>
+               <state time="2">
+                  <query name="complex-replacevalues-q2-test2" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-replacevalues-q2-2.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="complex-replacevalues-q6" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+               <description>Replace value of the text node child of element "east".</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <state time="0">
+                  <query name="complex-replacevalues-q6" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               </state>
+               <state time="1">
+                  <query name="complex-replacevalues-q6-test" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-replacevalues-q6.xml</output-file>
+               </state>
+               <state time="2">
+                  <query name="complex-replacevalues-q6-test2" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-replacevalues-q6-2.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="complex-replacevalues-q7" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+               <description>Replace the value of all text nodes that come directly after a comment or PI.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
+               <state time="0">
+                  <query name="complex-replacevalues-q7" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               </state>
+               <state time="1">
+                  <query name="complex-replacevalues-q7-test" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-replacevalues-q7.xml</output-file>
+               </state>
+               <state time="2">
+                  <query name="complex-replacevalues-q7-test2" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-replacevalues-q7-2.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="complex-replacevalues-q8" FilePath="ReplaceExpressions/" scenario="standard" Creator="John Snelson">
+               <description>Replace value of all elements called "south-east".</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.3.2" section-title="Replacing the Value of a Node" section-pointer="id-replacing-node-value"/>
+               <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
+               <state time="0">
+                  <query name="complex-replacevalues-q8" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               </state>
+               <state time="1">
+                  <query name="complex-replacevalues-q8-test" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-replacevalues-q8.xml</output-file>
+               </state>
+               <state time="2">
+                  <query name="complex-replacevalues-q8-test2" date="2007-10-23"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <output-file role="principal" compare="Fragment">complex-replacevalues-q8-2.xml</output-file>
+               </state>
+            </test-case>
+         <test-case name="complex-renames-q2" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Rename all elements called "south-east".</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+            <spec-citation spec="XQUPDATE" section-number="2.5.1" section-title="FLWOR Expression" section-pointer="id-flwor-expr"/>
+            <state time="0">
+               <query name="complex-renames-q2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-renames-q2-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-renames-q2.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-renames-q2-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-renames-q2-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-renames-q3" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Rename the element called "center".</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+            <state time="0">
+               <query name="complex-renames-q3" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-renames-q3-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-renames-q3.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-renames-q3-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-renames-q3-2.xml</output-file>
+            </state>
+         </test-case>
+         <test-case name="complex-renames-q4" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
+            <description>Rename one of the elements called "south-east".</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+            <state time="0">
+               <query name="complex-renames-q4" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+            </state>
+            <state time="1">
+               <query name="complex-renames-q4-test" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-renames-q4.xml</output-file>
+            </state>
+            <state time="2">
+               <query name="complex-renames-q4-test2" date="2007-10-23"/>
+               <input-file role="principal-data" variable="input-context">TopMany</input-file>
+               <output-file role="principal" compare="Fragment">complex-renames-q4-2.xml</output-file>
+            </state>
+         </test-case>
    </test-group>
 </test-group>
 <test-group name="UseCases">
