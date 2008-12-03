@@ -3523,6 +3523,82 @@
                <output-file role="principal" compare="Text">id-transform-expr-050.txt</output-file>
             </state>
          </test-case>
+         <test-case name="id-transform-expr-051" FilePath="TransformExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>The copy clause sometimes changes the in-scope-namespaces.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
+            <state time="0">
+               <query name="id-transform-expr-051" date="2008-12-03"/>
+               <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+               <output-file role="principal" compare="Text">id-transform-expr-051.txt</output-file>
+            </state>
+         </test-case>
+         <test-case name="id-transform-expr-052" FilePath="TransformExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>The copy clause sometimes changes the in-scope-namespaces.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
+            <state time="0">
+               <query name="id-transform-expr-052" date="2008-12-03"/>
+               <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+               <output-file role="principal" compare="Text">id-transform-expr-052.txt</output-file>
+            </state>
+         </test-case>
+         <test-case name="id-transform-expr-053" FilePath="TransformExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>The copy clause sometimes changes the in-scope-namespaces.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
+            <state time="0">
+               <query name="id-transform-expr-053" date="2008-12-03"/>
+               <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+               <output-file role="principal" compare="Text">id-transform-expr-053.txt</output-file>
+            </state>
+         </test-case>
+         <test-case name="id-transform-expr-054" FilePath="TransformExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>The copy clause sometimes changes the in-scope-namespaces.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
+            <state time="0">
+               <query name="id-transform-expr-054" date="2008-12-03"/>
+               <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+               <output-file role="principal" compare="Text">id-transform-expr-054.txt</output-file>
+            </state>
+         </test-case>
+         <test-case  name="id-transform-expr-055" FilePath="TransformExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>Within a transform, an element node is renamed more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="id-transform-expr-055" date="2008-12-03"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUDY0015</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="id-transform-expr-056" FilePath="TransformExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>Within a transform, an attribute node is renamed more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="id-transform-expr-056" date="2008-12-03"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUDY0015</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="id-transform-expr-057" FilePath="TransformExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>Within a transform, an element node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="id-transform-expr-057" date="2008-12-03"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUDY0016</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="id-transform-expr-058" FilePath="TransformExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
+            <description>Within a transform, the value of an element node is replaced more than once.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
+            <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
+            <state time="0">
+               <query name="id-transform-expr-058" date="2008-12-03"/>
+               <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               <expected-error>XUDY0017</expected-error>
+            </state>
+         </test-case>
       </test-group>
       <test-group name="Compatibility">
          <GroupInfo>
@@ -3763,7 +3839,7 @@
                <expected-error>XUDY0017</expected-error>
             </state>
          </test-case>
-         <test-case  name="compatibility-027" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+         <test-case  name="compatibility-027" FilePath="Compatibility/" scenario="standard" Creator="Andrew Eisenberg">
             <description>Replace and replace value of operate on the same element.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
             <state time="0">
@@ -3776,7 +3852,7 @@
                <output-file role="principal" compare="XML">compatibility-027.xml</output-file>
             </state>
          </test-case>
-         <test-case  name="compatibility-028" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+         <test-case  name="compatibility-028" FilePath="Compatibility/" scenario="standard" Creator="Andrew Eisenberg">
             <description>Replace and replace value of operate on the same element.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
             <state time="0">
@@ -3789,7 +3865,7 @@
                <output-file role="principal" compare="XML">compatibility-028.xml</output-file>
             </state>
          </test-case>
-         <test-case  name="compatibility-029" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+         <test-case  name="compatibility-029" FilePath="Compatibility/" scenario="standard" Creator="Andrew Eisenberg">
             <description>Replace value of and insert operate on the same element.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
             <state time="0">
@@ -3802,7 +3878,7 @@
                <output-file role="principal" compare="XML">compatibility-029.xml</output-file>
             </state>
          </test-case>
-         <test-case  name="compatibility-030" FilePath="Compatibility/" scenario="runtime-error" Creator="Andrew Eisenberg">
+         <test-case  name="compatibility-030" FilePath="Compatibility/" scenario="standard" Creator="Andrew Eisenberg">
             <description>Replace value of and insert operate on the same element.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.6" section-title="Compatibility of Updating Expressions" section-pointer="id-compatibility"/>
             <state time="0">
