@@ -3470,7 +3470,7 @@
             </state>
          </test-case>
          <test-case name="id-transform-expr-045" FilePath="TransformExpressions/" scenario="standard" Creator="Andrew Eisenberg">
-            <description>Copy clause changes the idref property of the new element node.</description>
+            <description>Copy clause changes the is-idref property of the new element node.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
             <state time="0">
                <query name="id-transform-expr-045" date="2008-12-02"/>
@@ -3479,7 +3479,7 @@
             </state>
          </test-case>
          <test-case name="id-transform-expr-046" FilePath="TransformExpressions/" scenario="standard" Creator="Andrew Eisenberg">
-            <description>Copy clause changes the id property of the new element node.</description>
+            <description>Copy clause changes the is-id property of the new element node.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.5" section-title="Transform" section-pointer="id-transform"/>
             <state time="0">
                <query name="id-transform-expr-046" date="2008-12-02"/>
@@ -6817,6 +6817,78 @@
                <title>upd:setToUntyped</title>
                <description></description>
             </GroupInfo>
+            <test-case name="setToUntyped-001" FilePath="UpdateRoutines/setToUntyped/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check that all properties are set correctly by upd:setToUntyped.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.5" section-title="upd:setToUntyped" section-pointer="id-upd-set-to-untyped"/>
+               <state time="0">
+                  <query name="setToUntyped-001" date="2008-12-03"/>
+                  <input-file role="principal-data" variable="input-context">books2</input-file>
+                  <output-file role="principal" compare="Text">setToUntyped-001.txt</output-file>
+               </state>
+            </test-case>
+            <test-case name="setToUntyped-002" FilePath="UpdateRoutines/setToUntyped/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check that all properties are set correctly by upd:setToUntyped.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.5" section-title="upd:setToUntyped" section-pointer="id-upd-set-to-untyped"/>
+               <state time="0">
+                  <query name="setToUntyped-002" date="2008-12-03"/>
+                  <input-file role="principal-data" variable="input-context">books2</input-file>
+                  <output-file role="principal" compare="Text">setToUntyped-002.txt</output-file>
+               </state>
+            </test-case>
+            <test-case name="setToUntyped-003" FilePath="UpdateRoutines/setToUntyped/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check that all properties are set correctly by upd:setToUntyped.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.5" section-title="upd:setToUntyped" section-pointer="id-upd-set-to-untyped"/>
+               <state time="0">
+                  <query name="setToUntyped-003" date="2008-12-03"/>
+                  <input-file role="principal-data" variable="input-context">books2</input-file>
+                  <output-file role="principal" compare="Text">setToUntyped-003.txt</output-file>
+               </state>
+            </test-case>
+            <test-case name="setToUntyped-004" FilePath="UpdateRoutines/setToUntyped/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check that all properties are set correctly by upd:setToUntyped.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.5" section-title="upd:setToUntyped" section-pointer="id-upd-set-to-untyped"/>
+               <state time="0">
+                  <query name="setToUntyped-004" date="2008-12-03"/>
+                  <input-file role="principal-data" variable="input-context">books2</input-file>
+                  <output-file role="principal" compare="Text">setToUntyped-004.txt</output-file>
+               </state>
+            </test-case>
+            <test-case name="setToUntyped-005" FilePath="UpdateRoutines/setToUntyped/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check that all properties are set correctly by upd:setToUntyped.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.5" section-title="upd:setToUntyped" section-pointer="id-upd-set-to-untyped"/>
+               <state time="0">
+                  <query name="setToUntyped-005" date="2008-12-03"/>
+                  <input-file role="principal-data" variable="input-context">books2</input-file>
+                  <output-file role="principal" compare="Text">setToUntyped-005.txt</output-file>
+               </state>
+            </test-case>
+            <test-case name="setToUntyped-006" FilePath="UpdateRoutines/setToUntyped/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check that all properties are set correctly by upd:setToUntyped.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.5" section-title="upd:setToUntyped" section-pointer="id-upd-set-to-untyped"/>
+               <state time="0">
+                  <query name="setToUntyped-006" date="2008-12-03"/>
+                  <input-file role="principal-data" variable="input-context">books2</input-file>
+                  <output-file role="principal" compare="Text">setToUntyped-006.txt</output-file>
+               </state>
+            </test-case>
+            <test-case name="setToUntyped-007" FilePath="UpdateRoutines/setToUntyped/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check that all properties are set correctly by upd:setToUntyped.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.5" section-title="upd:setToUntyped" section-pointer="id-upd-set-to-untyped"/>
+               <state time="0">
+                  <query name="setToUntyped-007" date="2008-12-03"/>
+                  <input-file role="principal-data" variable="input-context">books</input-file>
+                  <output-file role="principal" compare="Text">setToUntyped-007.txt</output-file>
+               </state>
+            </test-case>
+            <test-case name="setToUntyped-008" FilePath="UpdateRoutines/setToUntyped/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check that all properties are set correctly by upd:setToUntyped.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.5" section-title="upd:setToUntyped" section-pointer="id-upd-set-to-untyped"/>
+               <state time="0">
+                  <query name="setToUntyped-008" date="2008-12-03"/>
+                  <input-file role="principal-data" variable="input-context">books</input-file>
+                  <output-file role="principal" compare="Text">setToUntyped-008.txt</output-file>
+               </state>
+            </test-case>
          </test-group>
       </test-group>
    </test-group>
