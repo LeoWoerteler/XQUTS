@@ -8032,6 +8032,249 @@
          <title>Update Facility Static Typing Feature</title>
          <description/>
       </GroupInfo>
+      <test-case name="stf-insert-01" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>insert: ST of SourceExpr is too vague.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
+         <state time="0">
+            <query name="stf-insert-01" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0004</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-insert-02" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>insert: ST of SourceExpr has non-attribute before attribute.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
+         <state time="0">
+            <query name="stf-insert-02" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0004</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-insert-into-01" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>insert-into: ST of TargetExpr has cardinality greater than one.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
+         <state time="0">
+            <query name="stf-insert-into-01" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0005</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-insert-into-02" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>insert-into: ST of TargetExpr is too vague.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
+         <state time="0">
+            <query name="stf-insert-into-02" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0005</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-insert-into-03" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>insert-into: ST of TargetExpr is attribute().</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
+         <state time="0">
+            <query name="stf-insert-into-03" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0005</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-insert-into-04" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>insert-into: ST of TargetExpr is document() but ST of SourceExpr involves attribute().</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
+         <state time="0">
+            <query name="stf-insert-into-04" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0022</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-insert-after-01" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>insert-after: ST of TargetExpr has cardinality greater than one.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
+         <state time="0">
+            <query name="stf-insert-after-01" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0006</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-insert-after-02" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>insert-after: ST of TargetExpr is too vague.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
+         <state time="0">
+            <query name="stf-insert-after-02" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0006</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-insert-after-03" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>insert-after: ST of TargetExpr is attribute().</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.1" section-title="Insert" section-pointer="id-update-typing-insert"/>
+         <state time="0">
+            <query name="stf-insert-after-03" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0006</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-delete-01" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>delete: ST of TargetExpr is too vague.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.2" section-title="Delete" section-pointer="id-update-typing-delete"/>
+         <state time="0">
+            <query name="stf-delete-01" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0007</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-delete-02" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>delete: ST of TargetExpr is atomic type.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.2" section-title="Delete" section-pointer="id-update-typing-delete"/>
+         <state time="0">
+            <query name="stf-delete-02" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0007</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-replace-node-01" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>replace-node: ST of TargetExpr has cardinality greater than one.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
+         <state time="0">
+            <query name="stf-replace-node-01" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0008</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-replace-node-02" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>replace-node: ST of TargetExpr is too vague.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
+         <state time="0">
+            <query name="stf-replace-node-02" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0008</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-replace-node-03" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>replace-node: ST of TargetExpr is atomic type.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
+         <state time="0">
+            <query name="stf-replace-node-03" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0008</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-replace-node-04" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>replace-node: ST of TargetExpr is element()?, but ST of replacement expr is too vague.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
+         <state time="0">
+            <query name="stf-replace-node-04" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0010</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-replace-node-05" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>replace-node: ST of TargetExpr is element(), but ST of replacement expr is attribute()</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
+         <state time="0">
+            <query name="stf-replace-node-05" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0010</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-replace-node-06" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>replace-node: ST of TargetExpr is attribute()?, but ST of replacement expr is too vague.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
+         <state time="0">
+            <query name="stf-replace-node-06" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0011</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-replace-node-07" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>replace-node: ST of TargetExpr is attribute(), but ST of replacement expr is element()</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
+         <state time="0">
+            <query name="stf-replace-node-07" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0011</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-replace-value-of-node-01" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>replace-value-of-node: ST of TargetExpr has cardinality greater than one.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
+         <state time="0">
+            <query name="stf-replace-value-of-node-01" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0008</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-replace-value-of-node-02" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>replace-value-of-node: ST of TargetExpr is too vague.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.3" section-title="Replace" section-pointer="id-update-typing-replace"/>
+         <state time="0">
+            <query name="stf-replace-value-of-node-02" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0008</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-rename-01" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>rename: ST of TargetExpr has cardinality greater than one.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
+         <state time="0">
+            <query name="stf-rename-01" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0012</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-rename-02" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>rename: ST of TargetExpr is too vague.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
+         <state time="0">
+            <query name="stf-rename-02" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0012</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-rename-03" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>rename: ST of TargetExpr is comment.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
+         <state time="0">
+            <query name="stf-rename-03" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0012</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-rename-04" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>rename: ST of NewNameExpr is duration.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.4" section-title="Rename" section-pointer="id-update-typing-rename"/>
+         <state time="0">
+            <query name="stf-rename-04" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XPTY0004</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-transform-01" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>transform: ST of source expression has cardinality greater than one.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.5" section-title="Transform" section-pointer="id-update-typing-transform"/>
+         <state time="0">
+            <query name="stf-transform-01" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0013</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-transform-02" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>transform: ST of source expression is too vague.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.5" section-title="Transform" section-pointer="id-update-typing-transform"/>
+         <state time="0">
+            <query name="stf-transform-02" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0013</expected-error>
+         </state>
+      </test-case>
+      <test-case name="stf-transform-03" FilePath="StaticTypingFeature/" scenario="runtime-error" Creator="Michael Dyck">
+         <description>transform: ST of source expression is an atomic type.</description>
+         <spec-citation spec="XQUPDATE" section-number="4.5.5" section-title="Transform" section-pointer="id-update-typing-transform"/>
+         <state time="0">
+            <query name="stf-transform-03" date="2008-12-05"/>
+            <input-file role="principal-data" variable="input-context">works-mod</input-file>
+            <expected-error>XUTY0013</expected-error>
+         </state>
+      </test-case>
    </test-group>
    <test-group name="FullAxis" featureOwner="John Snelson">
       <GroupInfo>
