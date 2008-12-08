@@ -19,6 +19,8 @@ declare updating function
       )
   };
 
-local:delete-subtree($part-list//part[@name="car"])
+for $p in doc("part-list.xml")//part[@name="car"]
+return 
+  local:delete-subtree($p)
   
 (:state-1-end :)  
