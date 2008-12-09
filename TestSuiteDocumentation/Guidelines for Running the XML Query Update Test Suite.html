@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <title>Guidelines for Running the XML Query Update Test Suite</title>
-  <meta name="generator" content="amaya 8.7, see http://www.w3.org/Amaya/" />
+  <meta name="generator" content="amaya 9.51, see http://www.w3.org/Amaya/" />
   <link
   href="http://www.w3.org/XML/Group/xquery-test/TestSuiteStagingArea/XQUTSCatalog.xml"
   rel="stylesheet" type="text/css" />
@@ -13,20 +14,20 @@
 <body xml:lang="en" lang="en">
 <p><img alt="W3C" src="http://www.w3.org/Icons/WWW/w3c_home.gif" /></p>
 
-<h1 style="text-align: center;">Guidelines for Running the XML Query Update Test
-Suite</h1>
+<h1 style="text-align: center;">Guidelines for Running the XML Query Update
+Test Suite</h1>
 
 <p style="text-align: center;"></p>
 
 <h1>Overview</h1>
 
 <p>This document provides information to implementers who wish to run the
-XQuery Update Test Suite on their implementation. It includes guidelines how test
-cases can be customized in order to run on an implementation, and describes
-the process of evaluating the results. The documentation of the XML Query
-Test Suite, which defines the structure of the test cases and the catalog,
-can be found in [1]. Guidelines for submitting results to the XML Query
-Working Group can be found in [3].</p>
+XQuery Update Test Suite (XQUTS) on their implementation. It includes
+guidelines how test cases can be customized in order to run on an
+implementation, and describes the process of evaluating the results. The
+documentation of the XML Query Update Test Suite, which defines the structure
+of the test cases and the catalog, can be found in [1]. Guidelines for
+submitting results to the XML Query Working Group can be found in [3].</p>
 
 <h1>Obtaining a Test Harness</h1>
 
@@ -37,7 +38,7 @@ the following tasks:</p>
     (see below)</li>
   <li>Execute tests, using source files specified in the catalog</li>
   <li>Use appropriate comparator to match result</li>
-  <li>Produce categorization of test result (pass, fail etc., see below)</li>
+  <li>Produce categorization of test result (pass, fail, etc., see below)</li>
 </ul>
 
 <p>Ideally, the test harness produces an XML file containing all test results
@@ -54,13 +55,13 @@ listed below must be highlighted.</p>
 <h2>Accessing Source Documents</h2>
 
 <p>XQuery supports a number of different ways to refer to source data as
-query context. Among these are the context item, external variables, the fn:doc()
-function, the fn:collection() function, implementation-defined functions, or
-parameter passing through host-language binding. Test cases that do not refer
-to any input document (i.e., the catalog does not contain any
-&#x201c;input-file&#x201d; for the &#x201c;test-case&#x201d;) do not need to
-be customized in this way.  Sometimes the filename "emptydoc" is used to indicate this 
-situation.</p>
+query context. Among these are the context item, external variables, the
+fn:doc() function, the fn:collection() function, implementation-defined
+functions, or parameter passing through host-language binding. Test cases
+that do not refer to any input document (i.e., the catalog does not contain
+any &ldquo;input-file&rdquo; for the &ldquo;test-case&rdquo;) do not need to
+be customized in this way. Sometimes the filename "emptydoc" is used to
+indicate this situation.</p>
 
 <p>The following example is a customizable test case:</p>
 
@@ -81,18 +82,17 @@ return
 <p>and the corresponding catalog entry:</p>
 
 <blockquote>
-  <pre><code>
-&lt;test-case name="id-insert-expr-06" FilePath= ... &gt;
-  &lt;description>Evaluates a simple insert expression with "after" clause only. ... &lt;/description&gt;
+  <pre><code>&lt;test-case name="id-insert-expr-06" FilePath= ... &gt;
+  &lt;description&gt;Evaluates a simple insert expression with "after" clause only. ... &lt;/description&gt;
   &lt;spec-citation spec="XQUPDATE" section-number="2.4.1" ...  section-pointer="#id-insert"/&gt;
   &lt;state time="0"&gt;
     &lt;query name="id-insert-expr-06" date="2007-06-04"/&gt;
-    &lt;input-file role="principal-data" variable="input-context">works-mod&lt;/input-file&gt;
+    &lt;input-file role="principal-data" variable="input-context"&gt;works-mod&lt;/input-file&gt;
   &lt;/state&gt;
   &lt;state time="1"&gt;    
     &lt;query name="id-insert-expr-06-test" date="2007-06-04"/&gt;
-    &lt;input-file role="principal-data" variable="input-context">works-mod&lt;/input-file&gt;                        
-    &lt;output-file role="principal" compare="Fragment">id-insert-expr-06.xml&lt;/output-file&gt;
+    &lt;input-file role="principal-data" variable="input-context"&gt;works-mod&lt;/input-file&gt;                        
+    &lt;output-file role="principal" compare="Fragment"&gt;id-insert-expr-06.xml&lt;/output-file&gt;
   &lt;/state&gt;
  &lt;/test-case&gt;</code></pre>
 </blockquote>
@@ -135,9 +135,9 @@ return
   <li>Implicit context: Remove variable declarations between insert-start and
     insert-end comments, and replace the variable references with the context
     item (.).
+
     <blockquote>
-      <pre><code>
-(: Name: id-insert-expr-06 :)
+      <pre><code>(: Name: id-insert-expr-06 :)
 (: Description: Evaluation of simple insert expression that uses "after" clause only for an attribute. :)
 
 let $var := ./works[1]/employee[3]
@@ -149,19 +149,20 @@ return
     insert-end comments, and replace variable references with the
     fn:doc(someURI), where someURI is a URI that the test harness has
     associated with the input file.
+
     <blockquote>
-      <pre><code>
-(: Name: id-insert-expr-06 :)
+      <pre><code>(: Name: id-insert-expr-06 :)
 (: Description: Evaluation of simple insert expression that uses "after" clause only for an attribute. :)
 
 let $var := fn:doc("works-mod.xml")/works[1]/employee[3]
 return 
-  do insert attribute type {"Part Time"} after $var></code></pre>
+  do insert attribute type {"Part Time"} after $var&gt;</code></pre>
     </blockquote>
   </li>
- <li>Default collection function: Remove variable declarations between
+  <li>Default collection function: Remove variable declarations between
     insert-start and insert-end comments, and replace variable references
     with fn:collection().
+
     <blockquote>
       <pre><code>    
 (: Name: id-insert-expr-06 :)
@@ -178,8 +179,7 @@ return
     associated with the collection identified by the input file.
 
     <blockquote>
-      <pre><code>
-(: Name: id-insert-expr-06 :)
+      <pre><code>(: Name: id-insert-expr-06 :)
 (: Description: Evaluation of simple insert expression that uses "after" clause only for an attribute. :)
 
 let $var := fn:collection("file:collection1")/works[1]/employee[3]
@@ -205,25 +205,27 @@ return
 
 <h1>Query States</h1>
 
-<p>A test case may define one or more states for a &lt;test-case&gt;.  A &lt;state&gt element is
-used for this purpose. A &lt;state&gt element may define:
-<ul>
- <li>One or more &lt;query&gt; elements that defines a query (s)
-(via the &quot;name&quot attribute).  Each query defined via the &lt;state&gt element must be run 
-in the exact order they are defined as each state is aware of any changes performed by the previous state(s) 
-and depend on those states to execute correctly. Therefore all queries defined on a previous state must 
-execute correctly before the next one can execute.</li>
- <li>Zero or more &lt;input-file&gt; elements, which defines any input data sources required for
-this state. </li>
- <li>Zero or more &lt;output-file&gt; elements, which will contain the expected results for this state.</li>
- <li>Zero or more &lt;expected-error&gt; elements, which define the expected errors (if any) for this state.
+<p>A test case may define one or more states for a &lt;test-case&gt;. A
+&lt;state&gt; element is used for this purpose. A &lt;state&gt; element may
+define: <ul>
+  <li>One or more &lt;query&gt; elements that defines a query (s) (via the
+    "name" attribute). Each query defined via the &lt;state&gt; element must
+    be run in the exact order they are defined as each state is aware of any
+    changes performed by the previous state(s) and depend on those states to
+    execute correctly. Therefore all queries defined on a previous state must
+    execute correctly before the next one can execute.</li>
+  <li>Zero or more &lt;input-file&gt; elements, which defines any input data
+    sources required for this state.</li>
+  <li>Zero or more &lt;output-file&gt; elements, which will contain the
+    expected results for this state.</li>
+  <li>Zero or more &lt;expected-error&gt; elements, which define the expected
+    errors (if any) for this state.</li>
 </ul>
-
-A query may define both an &lt;output-file&gt; and an &lt;expected-error&gt; element.  If the same data source is
-used for multiple states, then that data source should not be set to its original state until the last state is
-executed.
-
-The queries defined within a &lt;state&gt element can be customized using any of the approaches defined in the previous section.</p>
+A query may define both an &lt;output-file&gt; and an &lt;expected-error&gt;
+element. If the same data source is used for multiple states, then that data
+source should not be set to its original state until the last state is
+executed. The queries defined within a &lt;state&gt; element can be
+customized using any of the approaches defined in the previous section.</p>
 
 <h1>Host Language Binding</h1>
 
@@ -237,7 +239,7 @@ return do insert attribute type {"Part Time"} after $var'
                 passing xmlcol as "input-context")
 from works-mod</code></pre>
 </blockquote>
-
+<!--
 <h1>External Variables</h1>
 
 <p>External variable tests (with our without types) are designed to use the
@@ -273,6 +275,8 @@ parameters described above:</p>
    &lt;/state&gt;
 &lt;/test-case&gt;</code></pre>
 </blockquote>
+-->
+
 <h1>Boundary-space Customization</h1>
 
 <p>The test cases and their associated results have been written with an
@@ -304,16 +308,16 @@ as follows:</p>
 
 <h1>Comparing Results</h1>
 
-<p>In order to check correctness of running a test case, the result of the
-implementation must be compared to the result provided in the test suite. The
-implementations result of the test case must be serialized and compared to
-the expected file(s) provided in the test suite. Serialization should be
-performed as described in XSLT 2.0 and XQuery 1.0 Serialization [4] with
-method="xml". The catalog defines for each test case, which of the following
-five comparators has to be applied:</p>
+<p>In order to check correctness of running a test case state, the result of
+the implementation must be compared to the result provided in the test suite.
+The implementation's result of the test case state must be serialized and
+compared to the expected file(s) provided in the test suite. Serialization
+should be performed as described in XSLT 2.0 and XQuery 1.0 Serialization [4]
+with method="xml". The catalog defines for each test case, which of the
+following five comparators has to be applied:</p>
 <ul>
   <li>XML: The test harness must canonicalize both, the actual result and the
-    expected result according to the &#x201c;Canonical XML&#x201d;
+    expected result according to the &ldquo;Canonical XML&rdquo;
     recommendation [2], which refers to a number of open-source
     implementations. Byte-comparison can then be applied to the resulting XML
     documents. If the test harness does this process in a different manner,
@@ -326,15 +330,15 @@ five comparators has to be applied:</p>
     the implementation successfully executes the test case.</li>
   <li>Inspect: A human is required to make the call about correctness of the
     result according to the description in the test case.</li>
-  <li>Error: The expected result of the test case is an error, identified as
-    an eight-character error code (e.g., XPST0003). The result of a test is
-    true, if the implementation raises an error. However, raising an error
-    because an implementation does not support the feature is not considered
-    a correct result.</li>
+  <li>Error: The expected result of the test case state is an error,
+    identified as an eight-character error code (e.g., XPST0003). The result
+    of a test is true, if the implementation raises an error. However,
+    raising an error because an implementation does not support the feature
+    is not considered a correct result.</li>
 </ul>
 
-<p>It is possible that a test case provides multiple expected results. In
-this case, successfully comparing the actual result to one of the provided
+<p>It is possible that a test case state provides multiple expected results.
+In this case, successfully comparing the actual result to one of the provided
 expected results is a "pass".</p>
 
 <p>Many tests involve operations on floats/doubles and converting those
@@ -342,6 +346,9 @@ results to strings. Even as one explicit value is given, the task force
 realizes that other values may also be acceptable. In such cases submitters
 are encouraged to submit values that may differ. The task force will
 eventually determine if such values are within the acceptable range.</p>
+
+<p>If all states of a test case "pass", then the result for the test case is
+a "pass". Otherwise, the result for the test case is a "fail".</p>
 
 <p>The expected files provided in the test suite are serialized forms as
 specified by XML Query Serialization, with the following parameter values:</p>
@@ -427,7 +434,7 @@ byte-comparison with the provided expected results.</p>
   <tbody>
     <tr>
       <td valign="top">[1]</td>
-      <td><a href="../UpdateCatalog.xml">XQuery Test Suite
+      <td><a href="../XQUTSCatalog.xml">XQuery Test Suite
       Documentation</a></td>
     </tr>
     <tr>
@@ -452,7 +459,7 @@ byte-comparison with the provided expected results.</p>
 <hr />
 <address>
   <a href="http://www.w3.org/Help/Webmaster">Webmaster</a> · Last modified:
-  $Date: 2007/10/04 15:56:22 $ by $Author: aeisenbe2 $
+  $Date: 2008/12/09 16:41:18 $ by $Author: aeisenbe2 $
 </address>
 
 <p><a rel="Copyright"
