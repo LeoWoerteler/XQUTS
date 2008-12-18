@@ -1474,6 +1474,66 @@
                   <output-file role="principal" compare="XML">id-insert-expr-080.xml</output-file>
                </state>
             </test-case>
+            <test-case  name="id-insert-expr-081" FilePath="InsertExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check namepsace propogation when inserting an element.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-081" date="2008-12-18"/>
+                  <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-081a.txt</output-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-081b.txt</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-082" FilePath="InsertExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check namepsace propogation when inserting an element.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-082" date="2008-12-18"/>
+                  <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-082a.txt</output-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-082b.txt</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-083" FilePath="InsertExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check namepsace propogation when inserting an element.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-083" date="2008-12-18"/>
+                  <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-083a.txt</output-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-083b.txt</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-084" FilePath="InsertExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check namepsace propogation when inserting an element.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-084" date="2008-12-18"/>
+                  <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-084a.txt</output-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-084b.txt</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-085" FilePath="InsertExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check namepsace propogation when inserting an element.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-085" date="2008-12-18"/>
+                  <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-085a.txt</output-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-085b.txt</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-086" FilePath="InsertExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check namepsace propogation when inserting an attribute.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-086" date="2008-12-18"/>
+                  <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-086a.txt</output-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-086b.txt</output-file>
+               </state>
+            </test-case>
          </test-group>
          <test-group name="DeleteExpressions">
             <GroupInfo>
@@ -2143,6 +2203,16 @@
                      <query name="id-replace-expr-034-test" date="2008-10-20"/>
                      <input-file role="principal-data" variable="input-context">works-mod</input-file>
                      <output-file role="principal" compare="XML">id-replace-expr-034.xml</output-file>
+                  </state>
+               </test-case>
+               <test-case  name="id-replace-expr-045" FilePath="ReplaceExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+                  <description>Check namepsace propogation when replacing an attribute.</description>
+                  <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+                  <state time="0">
+                     <query name="id-replace-expr-045" date="2008-12-18"/>
+                     <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                     <output-file role="principal" compare="Text">id-replace-expr-045a.txt</output-file>
+                     <output-file role="principal" compare="Text">id-replace-expr-045b.txt</output-file>
                   </state>
                </test-case>
             </test-group>
@@ -2948,6 +3018,26 @@
                <query name="id-rename-expr-032-test" date="2008-10-21"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
                <output-file role="principal" compare="XML">id-rename-expr-032.xml</output-file>
+            </state>
+         </test-case>
+         <test-case  name="id-rename-expr-033" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Check namepsace propogation when renaming an element.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+            <state time="0">
+               <query name="id-rename-expr-033" date="2008-12-18"/>
+               <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+               <output-file role="principal" compare="Text">id-rename-expr-033a.txt</output-file>
+               <output-file role="principal" compare="Text">id-rename-expr-033b.txt</output-file>
+            </state>
+         </test-case>
+         <test-case  name="id-rename-expr-034" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+            <description>Check namepsace propogation when renaming an attribute.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+            <state time="0">
+               <query name="id-rename-expr-034" date="2008-12-18"/>
+               <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+               <output-file role="principal" compare="Text">id-rename-expr-034a.txt</output-file>
+               <output-file role="principal" compare="Text">id-rename-expr-034b.txt</output-file>
             </state>
          </test-case>
          <test-case name="complex-renames-q1" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
