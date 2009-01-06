@@ -16,7 +16,7 @@ let $myemps :=       <myco:employees>
                      </myco:employees>
 let $newemps :=
    copy $e := $myemps
-   modify insert node attribute hisco:salaried {"true"} into $e/myco:employees[1]
+   modify insert node attribute hisco:salaried {"true"} into $e
    return $e
 return
     namespace-uri-for-prefix("hisco",
