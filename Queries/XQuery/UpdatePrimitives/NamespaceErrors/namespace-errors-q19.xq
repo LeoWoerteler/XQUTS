@@ -10,7 +10,7 @@ declare namespace agro = "http://www.agroplus.com";
 declare variable $input-context external;
 (: insert-end :)
 
-replace node grant/nara:lab/@name with 
+replace node $input-context/grant/nara:lab/@name with 
    (
    attribute { fn:QName("http://www.example.com", "newns:orgname") } { "AgroPlus" },
    attribute { fn:QName("http://www.example.com/oops", "newns:orgsymbol") } { "AgP" }

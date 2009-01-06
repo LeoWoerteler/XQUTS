@@ -127,15 +127,6 @@
                 </xqx:stepExpr>
                 <xqx:stepExpr>
                   <xqx:xpathAxis>child</xqx:xpathAxis>
-                  <xqx:nameTest xqx:prefix="myco">employee</xqx:nameTest>
-                  <xqx:predicates>
-                    <xqx:integerConstantExpr>
-                      <xqx:value>1</xqx:value>
-                    </xqx:integerConstantExpr>
-                  </xqx:predicates>
-                </xqx:stepExpr>
-                <xqx:stepExpr>
-                  <xqx:xpathAxis>child</xqx:xpathAxis>
                   <xqx:nameTest>dependents</xqx:nameTest>
                   <xqx:predicates>
                     <xqx:integerConstantExpr>

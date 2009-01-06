@@ -34,6 +34,13 @@
         <xqxuf:targetExpr>
           <xqx:pathExpr>
             <xqx:stepExpr>
+              <xqx:filterExpr>
+                <xqx:varRef>
+                  <xqx:name>input-context</xqx:name>
+                </xqx:varRef>
+              </xqx:filterExpr>
+            </xqx:stepExpr>
+            <xqx:stepExpr>
               <xqx:xpathAxis>child</xqx:xpathAxis>
               <xqx:nameTest>grant</xqx:nameTest>
             </xqx:stepExpr>

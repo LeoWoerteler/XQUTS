@@ -7,4 +7,4 @@ declare variable $input-context external;
 
 let $var := $input-context/employees[1]/employee[1]
 return 
- rename node (xs:int(salary) + 1) as "salary1"
+ rename node (xs:int($var/salary[1]) + 1) as "salary1"

@@ -19,4 +19,4 @@ let $newemps :=
    return $e
 return
     namespace-uri-for-prefix("myco",
-                             $newemps/myco:employee[1]/dependents[1])
+                             $newemps/dependents[1])

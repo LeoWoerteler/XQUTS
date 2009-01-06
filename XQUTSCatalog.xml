@@ -2914,25 +2914,25 @@
                <expected-error>XUTY0012</expected-error>              	
             </state>
          </test-case>
-         <test-case  name="id-rename-expr-023" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <test-case  name="id-rename-expr-023" FilePath="RenameExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
             <description>Rename an element using a sequence.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
             <state time="0">
                <query name="id-rename-expr-023" date="2008-10-21"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XQTY0004</expected-error>              	
+               <expected-error>XPTY0004</expected-error>              	
             </state>
          </test-case>
-         <test-case  name="id-rename-expr-024" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <test-case  name="id-rename-expr-024" FilePath="RenameExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
             <description>Rename an element using a sequence.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
             <state time="0">
                <query name="id-rename-expr-024" date="2008-10-21"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XQTY0004</expected-error>              	
+               <expected-error>XPTY0004</expected-error>              	
             </state>
          </test-case>
-         <test-case  name="id-rename-expr-025" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <test-case  name="id-rename-expr-025" FilePath="RenameExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
             <description>Rename an attribute using a number.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
             <state time="0">
@@ -2941,7 +2941,7 @@
                <expected-error>XQDY0074</expected-error>              	
             </state>
          </test-case>
-         <test-case  name="id-rename-expr-026" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <test-case  name="id-rename-expr-026" FilePath="RenameExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
             <description>Rename an attribute using an invalid NCName.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
             <state time="0">
@@ -2950,7 +2950,7 @@
                <expected-error>XQDY0074</expected-error>              	
             </state>
          </test-case>
-         <test-case  name="id-rename-expr-027" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <test-case  name="id-rename-expr-027" FilePath="RenameExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
             <description>Rename an element using an invalid QName.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
             <state time="0">
@@ -2959,7 +2959,7 @@
                <expected-error>XQDY0074</expected-error>              	
             </state>
          </test-case>
-         <test-case  name="id-rename-expr-028" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
+         <test-case  name="id-rename-expr-028" FilePath="RenameExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
             <description>Rename an attribute using an invalid QName.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
             <state time="0">
@@ -4482,7 +4482,7 @@
                <output-file role="principal" compare="Fragment">id-typeswitch-expr-018.xml</output-file>
             </state>
          </test-case>
-         <test-case  name="id-typeswitch-expr-019" FilePath="TypeswitchExpression/" scenario="runtime-error" Creator="Carmelo Montanez">
+         <test-case  name="id-typeswitch-expr-019" FilePath="TypeswitchExpression/" scenario="standard" Creator="Carmelo Montanez">
             <description>Evaluates a replace expression used together with a typeswitch expression where a branch (the default) is an updating (replace) expression. Other branches are a call to the fn:error function.</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.3" section-title="Replace" section-pointer="id-replace"/>
             <spec-citation spec="XQUPDATE" section-number="2.5.2" section-title="Typeswitch Expression" section-pointer="id-typeswitch-expr"/>
