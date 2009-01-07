@@ -8,10 +8,10 @@ declare variable $input-context external;
 let $new1 := <employee/>
 let $new2 := <otherEmployee/>
 return
-   copy $var := $input-context/works[1]/employee[1]
+   copy $var := $input-context/works[1]
    modify
       (
-      replace node $var with $new1,
-      replace node $var with $new2
+      replace node $var/employee[1] with $new1,
+      replace node $var/employee[1] with $new2
       )
    return $var

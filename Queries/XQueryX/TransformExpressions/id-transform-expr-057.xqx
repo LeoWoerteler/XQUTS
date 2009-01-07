@@ -64,15 +64,6 @@
                         </xqx:integerConstantExpr>
                       </xqx:predicates>
                     </xqx:stepExpr>
-                    <xqx:stepExpr>
-                      <xqx:xpathAxis>child</xqx:xpathAxis>
-                      <xqx:nameTest>employee</xqx:nameTest>
-                      <xqx:predicates>
-                        <xqx:integerConstantExpr>
-                          <xqx:value>1</xqx:value>
-                        </xqx:integerConstantExpr>
-                      </xqx:predicates>
-                    </xqx:stepExpr>
                   </xqx:pathExpr>
                 </xqxuf:copySource>
               </xqxuf:transformCopy>
@@ -81,9 +72,24 @@
               <xqx:sequenceExpr>
                 <xqxuf:replaceExpr>
                   <xqxuf:targetExpr>
-                    <xqx:varRef>
-                      <xqx:name>var</xqx:name>
-                    </xqx:varRef>
+                    <xqx:pathExpr>
+                      <xqx:stepExpr>
+                        <xqx:filterExpr>
+                          <xqx:varRef>
+                            <xqx:name>var</xqx:name>
+                          </xqx:varRef>
+                        </xqx:filterExpr>
+                      </xqx:stepExpr>
+                      <xqx:stepExpr>
+                        <xqx:xpathAxis>child</xqx:xpathAxis>
+                        <xqx:nameTest>employee</xqx:nameTest>
+                        <xqx:predicates>
+                          <xqx:integerConstantExpr>
+                            <xqx:value>1</xqx:value>
+                          </xqx:integerConstantExpr>
+                        </xqx:predicates>
+                      </xqx:stepExpr>
+                    </xqx:pathExpr>
                   </xqxuf:targetExpr>
                   <xqxuf:replacementExpr>
                     <xqx:varRef>
@@ -93,9 +99,24 @@
                 </xqxuf:replaceExpr>
                 <xqxuf:replaceExpr>
                   <xqxuf:targetExpr>
-                    <xqx:varRef>
-                      <xqx:name>var</xqx:name>
-                    </xqx:varRef>
+                    <xqx:pathExpr>
+                      <xqx:stepExpr>
+                        <xqx:filterExpr>
+                          <xqx:varRef>
+                            <xqx:name>var</xqx:name>
+                          </xqx:varRef>
+                        </xqx:filterExpr>
+                      </xqx:stepExpr>
+                      <xqx:stepExpr>
+                        <xqx:xpathAxis>child</xqx:xpathAxis>
+                        <xqx:nameTest>employee</xqx:nameTest>
+                        <xqx:predicates>
+                          <xqx:integerConstantExpr>
+                            <xqx:value>1</xqx:value>
+                          </xqx:integerConstantExpr>
+                        </xqx:predicates>
+                      </xqx:stepExpr>
+                    </xqx:pathExpr>
                   </xqxuf:targetExpr>
                   <xqxuf:replacementExpr>
                     <xqx:varRef>
