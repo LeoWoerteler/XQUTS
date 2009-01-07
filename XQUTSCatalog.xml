@@ -6180,6 +6180,7 @@
                <query name="fn-put-011" date="2008-11-05"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
                <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
+               <expected-error>FODC0002</expected-error>
                <expected-error>FODC0005</expected-error>
             </state>
          </test-case>
