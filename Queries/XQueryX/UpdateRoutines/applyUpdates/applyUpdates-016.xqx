@@ -70,7 +70,25 @@
                 </xqx:varRef>
               </xqxuf:targetExpr>
             </xqxuf:insertExpr>
-            <xqxuf:renameExpr>
+            <xqxuf:insertExpr>
+              <xqxuf:sourceExpr>
+                <xqx:computedAttributeConstructor>
+                  <xqx:tagName>punctual</xqx:tagName>
+                  <xqx:valueExpr>
+                    <xqx:stringConstantExpr>
+                      <xqx:value>true</xqx:value>
+                    </xqx:stringConstantExpr>
+                  </xqx:valueExpr>
+                </xqx:computedAttributeConstructor>
+              </xqxuf:sourceExpr>
+              <xqxuf:insertInto/>
+              <xqxuf:targetExpr>
+                <xqx:varRef>
+                  <xqx:name>var</xqx:name>
+                </xqx:varRef>
+              </xqxuf:targetExpr>
+            </xqxuf:insertExpr>
+            <xqxuf:replaceExpr>
               <xqxuf:targetExpr>
                 <xqx:pathExpr>
                   <xqx:stepExpr>
@@ -81,17 +99,22 @@
                     </xqx:filterExpr>
                   </xqx:stepExpr>
                   <xqx:stepExpr>
-                    <xqx:xpathAxis>child</xqx:xpathAxis>
-                    <xqx:nameTest>hours</xqx:nameTest>
+                    <xqx:xpathAxis>attribute</xqx:xpathAxis>
+                    <xqx:nameTest>gender</xqx:nameTest>
                   </xqx:stepExpr>
                 </xqx:pathExpr>
               </xqxuf:targetExpr>
-              <xqxuf:newNameExpr>
-                <xqx:stringConstantExpr>
-                  <xqx:value>this is a baaaad name</xqx:value>
-                </xqx:stringConstantExpr>
-              </xqxuf:newNameExpr>
-            </xqxuf:renameExpr>
+              <xqxuf:replacementExpr>
+                <xqx:computedAttributeConstructor>
+                  <xqx:tagName>punctual</xqx:tagName>
+                  <xqx:valueExpr>
+                    <xqx:stringConstantExpr>
+                      <xqx:value>true</xqx:value>
+                    </xqx:stringConstantExpr>
+                  </xqx:valueExpr>
+                </xqx:computedAttributeConstructor>
+              </xqxuf:replacementExpr>
+            </xqxuf:replaceExpr>
           </xqx:sequenceExpr>
         </xqx:returnClause>
       </xqx:flworExpr>

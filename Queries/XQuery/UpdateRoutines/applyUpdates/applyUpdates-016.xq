@@ -9,5 +9,6 @@ let $var := $input-context/works[1]/employee[1]
 return
    (
    insert node comment {"my guy"} into $var,
-   rename node $var/hours as "this is a baaaad name"
+   insert node attribute punctual {"true"} into $var,
+   replace node $var/@gender with attribute punctual {"true"}
    )

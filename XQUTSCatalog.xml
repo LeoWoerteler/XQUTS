@@ -6866,6 +6866,7 @@
                   <output-file role="principal" compare="Text">applyUpdates-014.xml</output-file>
                </state>
             </test-case>
+            <!-- test removed in response to Bugzilla #6369
             <test-case  name="applyUpdates-015" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
                <description>Change attribute name to an illegal value.</description>
                <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
@@ -6875,6 +6876,7 @@
                   <expected-error>XUDY0021</expected-error>              	
                </state>
             </test-case>
+            -->
             <test-case  name="applyUpdates-016" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Andrew Eisenberg">
                <description>Check atomicity with a good operation and a bad operation.</description>
                <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
