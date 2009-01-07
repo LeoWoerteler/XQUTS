@@ -2938,7 +2938,7 @@
             <state time="0">
                <query name="id-rename-expr-025" date="2008-10-21"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               <expected-error>XQDY0074</expected-error>              	
+               <expected-error>XPTY0004</expected-error>              	
             </state>
          </test-case>
          <test-case  name="id-rename-expr-026" FilePath="RenameExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
