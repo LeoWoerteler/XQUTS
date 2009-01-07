@@ -9,4 +9,4 @@ declare variable $input-context external;
 
 copy $var1 := $input-context/BOOKLIST[1]/BOOKS[1]
 modify ()
-return ($var1/DIMENSIONS[1]/@UNIT instance of xs:untypedAtomic)
+return ($var1/ITEM[1]/DIMENSIONS[1]/@UNIT instance of attribute(*, xs:untypedAtomic))
