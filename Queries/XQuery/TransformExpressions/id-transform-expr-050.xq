@@ -7,9 +7,9 @@ declare default element namespace "http://ns.example.com/books";
 declare variable $input-context external;
 (: insert-end :)
 
-copy $var1 := $input-context/BOOKLIST[1]/BOOKS[1]
+copy $var1 := $input-context
 modify ()
 return (
-       $var1/ITEM[last()]/@xml:id instance of xs:untypedAtomic,
-       empty(id("jff01", $var1/ITEM[last()]))
+       $var1/BOOKLIST[1]/BOOKS[1]/ITEM[last()]/@xml:id instance of xs:untypedAtomic,
+       empty(id("jff01", $var1/BOOKLIST[1]/BOOKS[1]/ITEM[last()]))
        )

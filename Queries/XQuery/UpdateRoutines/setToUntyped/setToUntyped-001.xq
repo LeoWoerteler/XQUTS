@@ -10,9 +10,10 @@ declare variable $input-context external;
 copy $var1 := document { <test><content/></test> }
 modify insert node $input-context/BOOKLIST[1] into $var1/test[1] 
 return (
-       $var1/test[1]/BOOKLIST[1] instance of xs:untyped,
+       $var1/test[1]/BOOKLIST[1] instance of element(*, xs:untyped),
        $var1/test[1]/BOOKLIST[1]/BOOKS[1]/ITEM[1]/PUB-DATE[1] eq "2002-12-31",
-       $var1/test[1]/BOOKLIST[1]/BOOKS[1]/ITEM[1]/PUB-DATE[1] instance of element(*, xs:untypedAtomic),
+       $var1/test[1]/BOOKLIST[1]/BOOKS[1]/ITEM[1]/PUB-DATE[1] instance of element(*, xs:untyped),
+       data($var1/test[1]/BOOKLIST[1]/BOOKS[1]/ITEM[1]/PUB-DATE[1]) instance of xs:untypedAtomic,
        $var1/test[1]/BOOKLIST[1]/BOOKS[1]/ITEM[1]/DIMENSIONS[1]/@UNIT eq "in",
        $var1/test[1]/BOOKLIST[1]/BOOKS[1]/ITEM[1]/DIMENSIONS[1]/@UNIT instance of attribute(*, xs:untypedAtomic),
        empty(data($var1/test[1]/BOOKLIST[1]/BOOKS[1]/ITEM[1]/LANGUAGE[1])),

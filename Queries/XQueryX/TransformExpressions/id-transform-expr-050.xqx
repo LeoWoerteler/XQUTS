@@ -25,33 +25,9 @@
               <xqx:name>var1</xqx:name>
             </xqx:varRef>
             <xqxuf:copySource>
-              <xqx:pathExpr>
-                <xqx:stepExpr>
-                  <xqx:filterExpr>
-                    <xqx:varRef>
-                      <xqx:name>input-context</xqx:name>
-                    </xqx:varRef>
-                  </xqx:filterExpr>
-                </xqx:stepExpr>
-                <xqx:stepExpr>
-                  <xqx:xpathAxis>child</xqx:xpathAxis>
-                  <xqx:nameTest>BOOKLIST</xqx:nameTest>
-                  <xqx:predicates>
-                    <xqx:integerConstantExpr>
-                      <xqx:value>1</xqx:value>
-                    </xqx:integerConstantExpr>
-                  </xqx:predicates>
-                </xqx:stepExpr>
-                <xqx:stepExpr>
-                  <xqx:xpathAxis>child</xqx:xpathAxis>
-                  <xqx:nameTest>BOOKS</xqx:nameTest>
-                  <xqx:predicates>
-                    <xqx:integerConstantExpr>
-                      <xqx:value>1</xqx:value>
-                    </xqx:integerConstantExpr>
-                  </xqx:predicates>
-                </xqx:stepExpr>
-              </xqx:pathExpr>
+              <xqx:varRef>
+                <xqx:name>input-context</xqx:name>
+              </xqx:varRef>
             </xqxuf:copySource>
           </xqxuf:transformCopy>
         </xqxuf:transformCopies>
@@ -69,6 +45,24 @@
                         <xqx:name>var1</xqx:name>
                       </xqx:varRef>
                     </xqx:filterExpr>
+                  </xqx:stepExpr>
+                  <xqx:stepExpr>
+                    <xqx:xpathAxis>child</xqx:xpathAxis>
+                    <xqx:nameTest>BOOKLIST</xqx:nameTest>
+                    <xqx:predicates>
+                      <xqx:integerConstantExpr>
+                        <xqx:value>1</xqx:value>
+                      </xqx:integerConstantExpr>
+                    </xqx:predicates>
+                  </xqx:stepExpr>
+                  <xqx:stepExpr>
+                    <xqx:xpathAxis>child</xqx:xpathAxis>
+                    <xqx:nameTest>BOOKS</xqx:nameTest>
+                    <xqx:predicates>
+                      <xqx:integerConstantExpr>
+                        <xqx:value>1</xqx:value>
+                      </xqx:integerConstantExpr>
+                    </xqx:predicates>
                   </xqx:stepExpr>
                   <xqx:stepExpr>
                     <xqx:xpathAxis>child</xqx:xpathAxis>
@@ -107,6 +101,24 @@
                             <xqx:name>var1</xqx:name>
                           </xqx:varRef>
                         </xqx:filterExpr>
+                      </xqx:stepExpr>
+                      <xqx:stepExpr>
+                        <xqx:xpathAxis>child</xqx:xpathAxis>
+                        <xqx:nameTest>BOOKLIST</xqx:nameTest>
+                        <xqx:predicates>
+                          <xqx:integerConstantExpr>
+                            <xqx:value>1</xqx:value>
+                          </xqx:integerConstantExpr>
+                        </xqx:predicates>
+                      </xqx:stepExpr>
+                      <xqx:stepExpr>
+                        <xqx:xpathAxis>child</xqx:xpathAxis>
+                        <xqx:nameTest>BOOKS</xqx:nameTest>
+                        <xqx:predicates>
+                          <xqx:integerConstantExpr>
+                            <xqx:value>1</xqx:value>
+                          </xqx:integerConstantExpr>
+                        </xqx:predicates>
                       </xqx:stepExpr>
                       <xqx:stepExpr>
                         <xqx:xpathAxis>child</xqx:xpathAxis>

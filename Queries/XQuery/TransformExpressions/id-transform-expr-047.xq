@@ -7,6 +7,6 @@ declare default element namespace "http://ns.example.com/books";
 declare variable $input-context external;
 (: insert-end :)
 
-copy $var1 := $input-context/BOOKLIST[1]/CATEGORIES[1]
+copy $var1 := $input-context
 modify ()
-return empty(id("MMP", $var1))
+return empty(id("MMP", $var1/BOOKLIST[1]/CATEGORIES[1]))
