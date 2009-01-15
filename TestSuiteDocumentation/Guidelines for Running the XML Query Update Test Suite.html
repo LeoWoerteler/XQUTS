@@ -34,15 +34,27 @@ submitting results to the XML Query Working Group can be found in [3].</p>
 <p>Implementers are expected to write their own test harness that implements
 the following tasks:</p>
 <ul>
-  <li>Read test cases from the catalog, apply customization if applicable
-    (see below)</li>
-  <li>Execute tests, using source files specified in the catalog</li>
-  <li>Use appropriate comparator to match result</li>
-  <li>Produce categorization of test result (pass, fail, etc., see below)</li>
+  <li>Read test cases from the catalog</li>
+  <li>Execute each test case by:
+    <ul>
+      <li>Applying customization, if applicable (see below)</li>
+      <li>Reading the source files specified in the catalog</li>
+      <li>Executing the queries in each of the query states (in order)</li>
+      <li>Using the appropriate comparators to match the results</li>
+      <li>Categorizing the test result (pass, fail, etc., see below)</li>
+    </ul>
+  </li>
+  <li>Produce a file containing the results of the test run</li>
 </ul>
 
 <p>Ideally, the test harness produces an XML file containing all test results
 in the format shown below, that can be sent to the working group.</p>
+
+<p>The test cases in this test suite are independent of each other, and so
+can be executed in any order. As test case execution may modify source
+documents, it is the responsibility of the test harness to return the source
+documents to their original state before executing any subsequent test
+cases.</p>
 
 <h1>Test Suite Customization</h1>
 
@@ -459,7 +471,7 @@ byte-comparison with the provided expected results.</p>
 <hr />
 <address>
   <a href="http://www.w3.org/Help/Webmaster">Webmaster</a> · Last modified:
-  $Date: 2008/12/09 16:41:18 $ by $Author: aeisenbe2 $
+  $Date: 2009/01/15 16:16:14 $ by $Author: aeisenbe2 $
 </address>
 
 <p><a rel="Copyright"
