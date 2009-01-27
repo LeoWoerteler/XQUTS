@@ -1,4 +1,8 @@
 (: put-001.xq :)
 (: simple test of fn:put function :)
 
-put(<a><b c="{day-from-date(current-date())}"/></a>, "sandpit/put001.xml")
+(: insert-start :)
+declare variable $input-URI external;
+(: insert-end :)
+
+put(<a><b c="{day-from-date(current-date())}"/></a>, $input-URI)

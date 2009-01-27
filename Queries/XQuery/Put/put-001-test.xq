@@ -1,6 +1,10 @@
 (: put-001-test.xq :)
 (: simple test of fn:put function :)
 
+(: insert-start :)
+declare variable $input-URI external;
+(: insert-end :)
+
 <out>{
-  deep-equal(<a><b c="{day-from-date(current-date())}"/></a>, doc("sandpit/put001.xml")/*)
+  day-from-date(current-date()) = doc($input-URI)/a/b/@c
 }</out>
