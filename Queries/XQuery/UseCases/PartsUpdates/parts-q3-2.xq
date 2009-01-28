@@ -19,7 +19,7 @@ declare updating function
       )
   };
 
-for $p in doc("part-list.xml")//part[@name="car"]
+for $p in $part-list//part[@name="car"]
 return 
   local:delete-subtree($p)
   
