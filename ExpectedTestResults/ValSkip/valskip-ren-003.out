@@ -1,19 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <out xmlns="http://ns.example.com/books">
-   <jff>
-      <ITEM xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CAT="P" ex-id="jff001"
-            TAX="V">
-         <TITLE>The Eyre Affair</TITLE>
-         <AUTHOR>Jasper Fforde</AUTHOR>
-         <PUBLISHER>Penguin</PUBLISHER>
-         <PUB-DATE>2003-02-25</PUB-DATE>
-         <LANGUAGE>English</LANGUAGE>
-         <PRICE>16.47</PRICE>
-         <QUANTITY>129</QUANTITY>
-         <ISBN>0142001805</ISBN>
-         <PAGES>384</PAGES>
-         <DIMENSIONS UNIT="in">7.8 5.0 0.9</DIMENSIONS>
-         <WEIGHT UNIT="oz">9.0</WEIGHT>
-      </ITEM>
-   </jff>
+   <jff/>
 </out>
