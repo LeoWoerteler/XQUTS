@@ -6049,11 +6049,11 @@
             <spec-citation spec="XQUPDATE" section-number="2.6.1" section-title="fn:put" section-pointer="id-func-put"/>
             <state time="0">
                <query name="put-001" date="2008-04-06"/>
-               <input-URI role="principal-data" variable="input-URI">sandpit/put001.xml</input-URI>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
             </state>
             <state time="1">
                <query name="put-001-test" date="2008-04-06"/>
-               <input-URI role="principal-data" variable="input-URI">sandpit/put001.xml</input-URI>
+               <input-URI role="principal-data" variable="input-URI">putOutput</input-URI>
                <output-file role="principal" compare="Fragment">put-001.xml</output-file>
             </state>
          </test-case>
