@@ -8078,6 +8078,197 @@
             </state>
          </test-case>
       </test-group>
+      <test-group name="RevalidateLax">
+         <GroupInfo>
+            <title>XQuery Update Lax Revalidation Tests</title>
+            <description>Tests that the results of an update must be valid against the schema.
+               Requires "declare revalidation lax". Most of the tests perform an update in the first stage
+               of the test, and then do a query whose task is to examine the type annotations on the relevant nodes.
+               Either that, or they produce invalid output and fail with an error.
+               Tests are identical to the RevalidateStrict group, replacing Strict by Lax.</description>
+         </GroupInfo>
+         <test-case  name="vallax-del-001" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+            <description>deleting a mandatory element causes validation failure</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-del-001" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <expected-error>XQDY0027</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="vallax-del-002" FilePath="ValLax/" scenario="standard" Creator="Saxonica">
+            <description>deleting an optional element is fine</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-del-002" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+            </state>
+            <state time="1">
+               <query name="vallax-del-002-test" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <output-file role="principal" compare="Fragment">vallax-del-002.out</output-file>
+            </state>
+         </test-case>
+         <test-case  name="vallax-del-003" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+            <description>deleting a mandatory attribute causes validation failure</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-del-003" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <expected-error>XQDY0027</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="vallax-del-004" FilePath="ValLax/" scenario="standard" Creator="Saxonica">
+            <description>deleting an optional attribute is fine</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-del-004" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+            </state>
+            <state time="1">
+               <query name="vallax-del-004-test" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <output-file role="principal" compare="Fragment">vallax-del-004.out</output-file>
+            </state>
+         </test-case>
+         <test-case  name="vallax-ins-001" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+            <description>inserting a disallowed element causes validation failure</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-ins-001" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <expected-error>XQDY0027</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="vallax-ins-002" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+            <description>inserting an element that exceeds maxOccurs causes validation failure</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-ins-002" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <expected-error>XQDY0027</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="vallax-ins-003" FilePath="ValLax/" scenario="standard" Creator="Saxonica">
+            <description>Adding a second author to a book is fine (especially if it's Thursday Next...)</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-ins-003" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+            </state>
+            <state time="1">
+               <query name="vallax-ins-003-test" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <output-file role="principal" compare="Fragment">vallax-ins-003.out</output-file>
+            </state>
+         </test-case>
+         <test-case  name="vallax-ins-004" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+            <description>inserting a disallowed attribute causes validation failure</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-ins-004" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <expected-error>XQDY0027</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="vallax-ins-005" FilePath="ValLax/" scenario="standard" Creator="Saxonica">
+            <description>Adding an xml:id to a book is fine </description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-ins-005" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+            </state>
+            <state time="1">
+               <query name="vallax-ins-005-test" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <output-file role="principal" compare="Fragment">vallax-ins-005.out</output-file>
+            </state>
+         </test-case>
+         <test-case  name="vallax-ins-006" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+            <description>Adding an xml:id to a book is an error if the ID isn't unique</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-ins-006" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <expected-error>XQDY0027</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="vallax-ins-007" FilePath="ValLax/" scenario="standard" Creator="Saxonica">
+            <description>Adding a duplicate xml:id to a book is fine if we change the ID that it conflicts with</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-ins-007" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+            </state>
+            <state time="1">
+               <query name="vallax-ins-007-test" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <output-file role="principal" compare="Fragment">vallax-ins-007.out</output-file>
+            </state>
+         </test-case>
+         <test-case  name="vallax-ren-001" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+            <description>renaming an element is bad news if the new name is not allowed</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-ren-001" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <expected-error>XQDY0027</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="vallax-ren-002" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+            <description>renaming an attribute is bad news if the new name is not allowed</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-ren-002" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <expected-error>XQDY0027</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="vallax-ren-003" FilePath="ValLax/" scenario="standard" Creator="Saxonica">
+            <description>renaming an element is OK if the new name is in the substitution group</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-ren-003" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+            </state>
+            <state time="1">
+               <query name="vallax-ren-003-test" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <output-file role="principal" compare="Fragment">vallax-ren-003.out</output-file>
+            </state>
+         </test-case>
+         <test-case  name="vallax-repnode-001" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+            <description>replace element fails if the new node is invalid</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-repnode-001" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <expected-error>XQDY0027</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="vallax-repnode-002" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+            <description>replace attribute fails if the new node is invalid</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-repnode-002" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <expected-error>XQDY0027</expected-error>
+            </state>
+         </test-case>
+         <test-case  name="vallax-repnode-003" FilePath="ValLax/" scenario="standard" Creator="Saxonica">
+            <description>replacing an element is OK if the new node is valid</description>
+            <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+            <state time="0">
+               <query name="vallax-repnode-003" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+            </state>
+            <state time="1">
+               <query name="vallax-repnode-003-test" date="2009-01-28"/>
+               <input-file role="principal-data" variable="books">books</input-file>
+               <output-file role="principal" compare="Fragment">vallax-repnode-003.out</output-file>
+            </state>
+         </test-case>
+      </test-group>
       <test-group name="RevalidateTransform">
          <GroupInfo>
             <title>XQuery Update Revalidation Tests for copy-modify expressions (also called transform expressions)</title>

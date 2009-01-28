@@ -36,7 +36,7 @@
    <xs:element name="CATEGORY">
       <xs:complexType>
          <xs:sequence>
-            <xs:element name="CAT" type="xs:ID"/>
+            <xs:element name="CODE" type="xs:ID"/>
          </xs:sequence>
          <xs:attribute name="CODE" type="xs:string" use="required"/>
          <xs:attribute name="DESC" type="xs:string" use="required"/>
