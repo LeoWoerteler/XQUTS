@@ -10,6 +10,6 @@ declare variable $input-context external;
 copy $var1 := $input-context
 modify ()
 return (
-       $var1/BOOKLIST[1]/BOOKS[1]/ITEM[last()]/@xml:id instance of xs:untypedAtomic,
+       $var1/BOOKLIST[1]/BOOKS[1]/ITEM[last()]/@xml:id instance of attribute(*, xs:untypedAtomic),
        empty(id("jff01", $var1/BOOKLIST[1]/BOOKS[1]/ITEM[last()]))
        )

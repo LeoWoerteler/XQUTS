@@ -9,4 +9,5 @@ declare variable $input-context external;
 
 copy $var1 := $input-context/BOOKLIST[1]/BOOKS[1]/ITEM[1]
 modify ()
-return ($var1 instance of xs:untyped, $var1/TITLE[1] instance of xs:untyped)
+return ($var1 instance of element(*, xs:untyped),
+        $var1/TITLE[1] instance of element(*, xs:untyped))

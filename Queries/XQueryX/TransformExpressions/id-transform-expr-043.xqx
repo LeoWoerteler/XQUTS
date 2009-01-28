@@ -76,7 +76,12 @@
                 </xqx:varRef>
               </xqx:argExpr>
               <xqx:sequenceType>
-                <xqx:atomicType xqx:prefix="xs">untyped</xqx:atomicType>
+                <xqx:elementTest>
+                  <xqx:elementName>
+                    <xqx:star/>
+                  </xqx:elementName>
+                  <xqx:typeName xqx:prefix="xs">untyped</xqx:typeName>
+                </xqx:elementTest>
               </xqx:sequenceType>
             </xqx:instanceOfExpr>
             <xqx:instanceOfExpr>
@@ -101,7 +106,12 @@
                 </xqx:pathExpr>
               </xqx:argExpr>
               <xqx:sequenceType>
-                <xqx:atomicType xqx:prefix="xs">untyped</xqx:atomicType>
+                <xqx:elementTest>
+                  <xqx:elementName>
+                    <xqx:star/>
+                  </xqx:elementName>
+                  <xqx:typeName xqx:prefix="xs">untyped</xqx:typeName>
+                </xqx:elementTest>
               </xqx:sequenceType>
             </xqx:instanceOfExpr>
           </xqx:sequenceExpr>

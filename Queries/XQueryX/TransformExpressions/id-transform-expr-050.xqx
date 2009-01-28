@@ -82,7 +82,12 @@
                 </xqx:pathExpr>
               </xqx:argExpr>
               <xqx:sequenceType>
-                <xqx:atomicType xqx:prefix="xs">untypedAtomic</xqx:atomicType>
+                <xqx:attributeTest>
+                  <xqx:attributeName>
+                    <xqx:star/>
+                  </xqx:attributeName>
+                  <xqx:typeName xqx:prefix="xs">untypedAtomic</xqx:typeName>
+                </xqx:attributeTest>
               </xqx:sequenceType>
             </xqx:instanceOfExpr>
             <xqx:functionCallExpr>
