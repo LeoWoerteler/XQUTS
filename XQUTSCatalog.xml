@@ -6894,6 +6894,84 @@
                   <output-file role="principal" compare="Text">applyUpdates-016.xml</output-file>
                </state>
             </test-case>
+            <test-case  name="applyUpdates-021" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Michael Kay">
+               <description>Insert and rename attributes with the same name.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-021" date="2009-01-29"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-021-test" date="2009-01-29"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Text">applyUpdates-021.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-022" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Michael Kay">
+               <description>Insert and replace attributes with the same name.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-022" date="2009-01-29"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-022-test" date="2009-01-29"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Text">applyUpdates-022.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-023" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Michael Kay">
+               <description>Insert two attributes with the same name and delete the containing element.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-023" date="2009-01-29"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-023-test" date="2009-01-29"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Text">applyUpdates-023.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-024" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Michael Kay">
+               <description>Insert two attributes with the same name and delete the containing element's parent.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-024" date="2009-01-29"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-024-test" date="2009-01-29"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Text">applyUpdates-024.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-025" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Michael Kay">
+               <description>Swap the names of two attribute nodes.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-025" date="2009-01-29"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-025-test" date="2009-01-29"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Text">applyUpdates-025.xml</output-file>
+               </state>
+            </test-case>
+            <test-case  name="applyUpdates-026" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Michael Kay">
+               <description>Rename one attribute node, replace another.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="applyUpdates-026" date="2009-01-29"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="applyUpdates-026-test" date="2009-01-29"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="Text">applyUpdates-026.xml</output-file>
+               </state>
+            </test-case>
          </test-group>
          <test-group name="revalidate">
             <GroupInfo>
