@@ -6976,14 +6976,937 @@
          <test-group name="revalidate">
             <GroupInfo>
                <title>upd:revalidate</title>
-               <description></description>
+               <description>
+                  These are the same tests that are found in
+                   XQuery Update RemoveType Tests,
+                   XQuery Update Lax Revalidation Tests,
+                   and XQuery Update Revalidation Tests for copy-modify expressions (also called transform expressions).
+                  These tests expect errors if the revalidation mode that is used is not supported.
+               </description>
             </GroupInfo>
+            <test-case  name="revalidate-valstrict-del-001" FilePath="ValStrict/" scenario="runtime-error" Creator="Saxonica">
+               <description>deleting a mandatory element causes validation failure</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-del-001" date="2008-02-14"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-del-002" FilePath="ValStrict/" scenario="standard" Creator="Saxonica">
+               <description>deleting an optional element is fine</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-del-002" date="2008-02-14"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="revalidate-valstrict-del-002-test" date="2008-02-14"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valstrict-del-002.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-del-003" FilePath="ValStrict/" scenario="runtime-error" Creator="Saxonica">
+               <description>deleting a mandatory attribute causes validation failure</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-del-003" date="2008-02-14"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-del-004" FilePath="ValStrict/" scenario="standard" Creator="Saxonica">
+               <description>deleting an optional attribute is fine</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-del-004" date="2008-02-14"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="revalidate-valstrict-del-004-test" date="2008-02-14"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valstrict-del-004.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-ins-001" FilePath="ValStrict/" scenario="runtime-error" Creator="Saxonica">
+               <description>inserting a disallowed element causes validation failure</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-ins-001" date="2008-03-26"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-ins-002" FilePath="ValStrict/" scenario="runtime-error" Creator="Saxonica">
+               <description>inserting an element that exceeds maxOccurs causes validation failure</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-ins-002" date="2008-03-26"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-ins-003" FilePath="ValStrict/" scenario="standard" Creator="Saxonica">
+               <description>Adding a second author to a book is fine (especially if it's Thursday Next...)</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-ins-003" date="2008-03-25"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="revalidate-valstrict-ins-003-test" date="2008-03-25"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valstrict-ins-003.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-ins-004" FilePath="ValStrict/" scenario="runtime-error" Creator="Saxonica">
+               <description>inserting a disallowed attribute causes validation failure</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-ins-004" date="2008-03-26"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-ins-005" FilePath="ValStrict/" scenario="standard" Creator="Saxonica">
+               <description>Adding an xml:id to a book is fine </description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-ins-005" date="2008-03-25"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="revalidate-valstrict-ins-005-test" date="2008-03-25"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valstrict-ins-005.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-ins-006" FilePath="ValStrict/" scenario="runtime-error" Creator="Saxonica">
+               <description>Adding an xml:id to a book is an error if the ID isn't unique</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-ins-006" date="2008-03-26"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-ins-007" FilePath="ValStrict/" scenario="standard" Creator="Saxonica">
+               <description>Adding a duplicate xml:id to a book is fine if we change the ID that it conflicts with</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-ins-007" date="2008-03-25"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="revalidate-valstrict-ins-007-test" date="2008-03-25"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valstrict-ins-007.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-ren-001" FilePath="ValStrict/" scenario="runtime-error" Creator="Saxonica">
+               <description>renaming an element is bad news if the new name is not allowed</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-ren-001" date="2008-03-27"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-ren-002" FilePath="ValStrict/" scenario="runtime-error" Creator="Saxonica">
+               <description>renaming an attribute is bad news if the new name is not allowed</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-ren-002" date="2008-03-27"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-ren-003" FilePath="ValStrict/" scenario="standard" Creator="Saxonica">
+               <description>renaming an element is OK if the new name is in the substitution group</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-ren-003" date="2008-03-27"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="revalidate-valstrict-ren-003-test" date="2008-03-27"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valstrict-ren-003.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-repnode-001" FilePath="ValStrict/" scenario="runtime-error" Creator="Saxonica">
+               <description>replace element fails if the new node is invalid</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-repnode-001" date="2008-03-27"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-repnode-002" FilePath="ValStrict/" scenario="runtime-error" Creator="Saxonica">
+               <description>replace attribute fails if the new node is invalid</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-repnode-002" date="2008-03-27"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valstrict-repnode-003" FilePath="ValStrict/" scenario="standard" Creator="Saxonica">
+               <description>replacing an element is OK if the new node is valid</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valstrict-repnode-003" date="2008-03-27"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="revalidate-valstrict-repnode-003-test" date="2008-03-27"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valstrict-repnode-003.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-del-001" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+               <description>deleting a mandatory element causes validation failure</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-del-001" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-del-002" FilePath="ValLax/" scenario="standard" Creator="Saxonica">
+               <description>deleting an optional element is fine</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-del-002" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="revalidate-vallax-del-002-test" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">vallax-del-002.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-del-003" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+               <description>deleting a mandatory attribute causes validation failure</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-del-003" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-del-004" FilePath="ValLax/" scenario="standard" Creator="Saxonica">
+               <description>deleting an optional attribute is fine</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-del-004" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="revalidate-vallax-del-004-test" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">vallax-del-004.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-ins-001" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+               <description>inserting a disallowed element causes validation failure</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-ins-001" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-ins-002" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+               <description>inserting an element that exceeds maxOccurs causes validation failure</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-ins-002" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-ins-003" FilePath="ValLax/" scenario="standard" Creator="Saxonica">
+               <description>Adding a second author to a book is fine (especially if it's Thursday Next...)</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-ins-003" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="revalidate-vallax-ins-003-test" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">vallax-ins-003.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-ins-004" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+               <description>inserting a disallowed attribute causes validation failure</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-ins-004" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-ins-005" FilePath="ValLax/" scenario="standard" Creator="Saxonica">
+               <description>Adding an xml:id to a book is fine </description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-ins-005" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="revalidate-vallax-ins-005-test" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">vallax-ins-005.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-ins-006" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+               <description>Adding an xml:id to a book is an error if the ID isn't unique</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-ins-006" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-ins-007" FilePath="ValLax/" scenario="standard" Creator="Saxonica">
+               <description>Adding a duplicate xml:id to a book is fine if we change the ID that it conflicts with</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-ins-007" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="revalidate-vallax-ins-007-test" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">vallax-ins-007.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-ren-001" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+               <description>renaming an element is bad news if the new name is not allowed</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-ren-001" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-ren-002" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+               <description>renaming an attribute is bad news if the new name is not allowed</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-ren-002" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-ren-003" FilePath="ValLax/" scenario="standard" Creator="Saxonica">
+               <description>renaming an element is OK if the new name is in the substitution group</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-ren-003" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="revalidate-vallax-ren-003-test" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">vallax-ren-003.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-repnode-001" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+               <description>replace element fails if the new node is invalid</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-repnode-001" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-repnode-002" FilePath="ValLax/" scenario="runtime-error" Creator="Saxonica">
+               <description>replace attribute fails if the new node is invalid</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-repnode-002" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-vallax-repnode-003" FilePath="ValLax/" scenario="standard" Creator="Saxonica">
+               <description>replacing an element is OK if the new node is valid</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="vallax-repnode-003" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="revalidate-vallax-repnode-003-test" date="2009-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">vallax-repnode-003.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valtrans-ins-001" FilePath="ValTrans/" scenario="runtime-error" Creator="Saxonica">
+               <description>inserting a disallowed element causes validation failure</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valtrans-ins-001" date="2008-03-27"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valtrans-ins-002" FilePath="ValTrans/" scenario="standard" Creator="Saxonica">
+               <description>inserting an element is OK if the new node is valid</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valtrans-ins-002" date="2008-03-27"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valtrans-ins-002.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="revalidate-valtrans-ins-003" FilePath="ValTrans/" scenario="runtime-error" Creator="Saxonica">
+               <description>inserting a disallowed element is bad news; detected by revalidation defined
+                  in prolog of library module</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.3" section-title="upd:revalidate" section-pointer="id-upd-revalidate"/>
+               <state time="0">
+                  <query name="valtrans-ins-003" date="2008-03-27"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XQDY0027</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
          </test-group>
          <test-group name="removeType">
             <GroupInfo>
                <title>upd:removeType</title>
-               <description></description>
+               <description>
+                  These are the same tests that are found in XQuery Update RemoveType Tests.
+                  These tests expect errors if the revalidation mode that is used is not supported.
+               </description>
             </GroupInfo>
+            <test-case  name="removeType-valskip-ins-001" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>insert before removes type from ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.1" section-title="upd:insertBefore" section-pointer="id-upd-insert-before"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ins-001" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ins-001-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ins-001.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ins-002" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>insert after removes type from ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.2" section-title="upd:insertAfter" section-pointer="id-upd-insert-after"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ins-002" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ins-002-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ins-002.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ins-003" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>insert into (of text node) removes type from ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.3" section-title="upd:insertInto" section-pointer="id-upd-insert-into"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ins-003" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ins-003-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ins-003.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ins-004" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>insert as first into (of element node) removes type from ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.4" section-title="upd:insertIntoAsFirst" section-pointer="id-upd-insert-into-as-first"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ins-004" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ins-004-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ins-004.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ins-005" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>insert as last into (of comment node) doesn't remove type from ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.5" section-title="upd:insertIntoAsLast" section-pointer="id-upd-insert-into-as-last"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ins-005" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ins-005-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ins-005.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ins-006" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>insert attributes removes type from ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ins-006" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ins-006-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ins-006.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ins-007" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: with no validation, adding xsi:nil is not an error</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ins-007" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ins-007-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ins-007.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ins-008" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: with no validation, adding xml:id has is-ID property but not xs:ID type</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.6" section-title="upd:insertAttributes" section-pointer="id-upd-insert-attributes"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ins-008" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ins-008-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ins-008.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ins-009" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: with no validation, but construction mode preserve, inserted elements retain their type</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ins-009" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ins-009-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ins-009.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ins-010" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: with no validation, but construction mode strip, inserted elements lose their type</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ins-010" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ins-010-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ins-010.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ins-011" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: with no validation, but construction mode preserve, inserted attributes retain their type</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ins-011" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ins-011-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ins-011.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ins-012" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: with no validation, but construction mode strip, inserted attributes lose their type</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ins-012" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ins-012-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ins-012.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ins-013" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: with no validation, but construction mode preserve, adding an IDREF attribute affects result of idref()</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ins-013" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ins-013-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ins-013.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ins-014" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: with no validation, but construction mode preserve, adding an IDREF attribute affects result of idref()</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ins-014" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="users">users</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ins-014-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="users">users</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ins-014.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-del-001" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: deleting an element removes type from ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-del-001" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-del-001-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-del-001.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-del-002" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: deleting an attribute removes type from ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.7" section-title="upd:delete" section-pointer="id-upd-delete"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-del-002" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-del-002-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-del-002.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-del-003" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: deleting an xml:id attribute affects result of id()</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.7" section-title="upd:delete" section-pointer="id-upd-delete"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-del-003" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-del-003-test" date="2008-01-03"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-del-003.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-del-004" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: deleting a text node removes type from ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-del-004" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-del-004-test" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-del-004.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-del-005" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: deleting a comment node does not remove type from ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-del-005" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-del-005-test" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-del-005.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ren-001" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: Renaming an element removes type from self and ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ren-001" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ren-001-test" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ren-001.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ren-002" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: Renaming an attribute removes type from ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.7" section-title="upd:delete" section-pointer="id-upd-delete"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ren-002" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ren-002-test" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ren-002.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ren-003" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: Renaming an xml:id attribute affects result of id()</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.7" section-title="upd:delete" section-pointer="id-upd-delete"/>
+               <state time="0">
+                  <query name="valskip-ren-003" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ren-003-test" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ren-003.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ren-004" FilePath="ValSkip/" scenario="runtime-error" Creator="Saxonica">
+               <description>Description: Renaming a text node is an error</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ren-004" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUTY0012</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ren-005" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>Description: Renaming a PI node does not remove type from ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ren-005" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-ren-005-test" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-ren-005.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-ren-006" FilePath="ValSkip/" scenario="runtime-error" Creator="Saxonica">
+               <description>Description: two updates create conflicting namespace bindings, not detected until
+                  upd:rename() is executed, at which point it causes XUDY0024</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.1" section-title="upd:rename" section-pointer="id-upd-rename"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-ren-006" date="2008-04-07"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUDY0004</expected-error>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-repnode-001" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>replace node on an element node removes type from ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-repnode-001" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-repnode-001-test" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-repnode-001.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-repnode-002" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>replace node on an attribute node removes type from ancestors</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-repnode-002" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-repnode-002-test" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-repnode-002.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-repnode-003" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>replace node on an attribute node retains type of new attribute with construction=preserve</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-repnode-003" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-repnode-003-test" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-repnode-003.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-repnode-004" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>replace node on an ID attribute with construction=strip drops the ID</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-repnode-004" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-repnode-004-test" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-repnode-004.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-repnode-005" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>replace node on an ID attribute with construction=preserve drops the old ID and enables the new</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-repnode-005" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-repnode-005-test" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-repnode-005.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
+            <test-case  name="removeType-valskip-repnode-006" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
+               <description>replace node on an IDREF attribute with construction=strip drops the old ID</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.4" section-title="upd:removeType" section-pointer="id-upd-remove-type"/>
+               <state time="0">
+                  <query name="valskip-repnode-006" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+               <state time="1">
+                  <query name="removeType-valskip-repnode-006-test" date="2008-01-28"/>
+                  <input-file role="principal-data" variable="books">books</input-file>
+                  <output-file role="principal" compare="Fragment">valskip-repnode-006.out</output-file>
+                  <expected-error>XUST0026</expected-error>
+               </state>
+            </test-case>
          </test-group>
          <test-group name="setToUntyped">
             <GroupInfo>
