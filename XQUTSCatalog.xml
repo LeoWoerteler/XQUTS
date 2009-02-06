@@ -10119,11 +10119,14 @@
             <query name="parts-q3-2" date="2006-08-05"/>
             <input-file role="principal-data" variable="part-list">part-list</input-file>
             <input-file role="principal-data" variable="part-tree">part-tree</input-file>
+            <output-file role="principal" compare="Text">empty-sequence.txt</output-file>
+            <expected-error>XPTY0004</expected-error>            
          </state>
          <state time="1">
             <query name="parts-q3-test" date="2007-02-01"/>
             <input-file role="principal-data" variable="part-list">part-list</input-file>
             <output-file role="principal" compare="Fragment">parts-q3-results.xml</output-file>
+            <output-file role="principal" compare="Fragment">parts-q3-results-no-update.xml</output-file>
          </state>
       </test-case>
       <test-case  name="parts-q4-1" FilePath="UseCases/PartsUpdates/" scenario="standard" Creator="Update Task Force">
