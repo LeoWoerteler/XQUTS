@@ -1360,6 +1360,7 @@
                <state time="0">
                   <query name="id-insert-expr-069" date="2008-10-18"/>
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <expected-error>XUDY0029</expected-error>             	
                   <expected-error>XUDY0030</expected-error>             	
                </state>
             </test-case>
@@ -1369,6 +1370,7 @@
                <state time="0">
                   <query name="id-insert-expr-070" date="2008-10-18"/>
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <expected-error>XUDY0029</expected-error>             	
                   <expected-error>XUDY0030</expected-error>             	
                </state>
             </test-case>
@@ -1378,6 +1380,7 @@
                <state time="0">
                   <query name="id-insert-expr-071" date="2008-10-18"/>
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <expected-error>XUDY0029</expected-error>             	
                   <expected-error>XUDY0030</expected-error>             	
                </state>
             </test-case>
@@ -1387,6 +1390,7 @@
                <state time="0">
                   <query name="id-insert-expr-072" date="2008-10-18"/>
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <expected-error>XUDY0029</expected-error>             	
                   <expected-error>XUDY0030</expected-error>             	
                </state>
             </test-case>
@@ -1396,6 +1400,7 @@
                <state time="0">
                   <query name="id-insert-expr-073" date="2008-10-18"/>
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <expected-error>XUDY0029</expected-error>             	
                   <expected-error>XUDY0030</expected-error>             	
                </state>
             </test-case>
@@ -1405,6 +1410,7 @@
                <state time="0">
                   <query name="id-insert-expr-074" date="2008-10-18"/>
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <expected-error>XUDY0029</expected-error>             	
                   <expected-error>XUDY0030</expected-error>             	
                </state>
             </test-case>
@@ -1414,6 +1420,7 @@
                <state time="0">
                   <query name="id-insert-expr-075" date="2008-10-18"/>
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <expected-error>XUDY0029</expected-error>             	
                   <expected-error>XUDY0030</expected-error>             	
                </state>
             </test-case>
@@ -1423,6 +1430,7 @@
                <state time="0">
                   <query name="id-insert-expr-076" date="2008-10-18"/>
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <expected-error>XUDY0029</expected-error>             	
                   <expected-error>XUDY0030</expected-error>             	
                </state>
             </test-case>
@@ -1536,6 +1544,60 @@
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
                   <output-file role="principal" compare="Text">id-insert-expr-086a.txt</output-file>
                   <output-file role="principal" compare="Text">id-insert-expr-086b.txt</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-087" FilePath="InsertExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
+               <description>Insert an attribute before an element that does not have an element parent.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-087" date="2009-02-06"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <expected-error>XUDY0030</expected-error>             	
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-088" FilePath="InsertExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
+               <description>Insert an attribute after an element that does not have an element parent.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-088" date="2009-02-06"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <expected-error>XUDY0030</expected-error>             	
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-089" FilePath="InsertExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
+               <description>Insert an attribute before a comment that does not have an element parent.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-089" date="2009-02-06"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <expected-error>XUDY0030</expected-error>             	
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-090" FilePath="InsertExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
+               <description>Insert an attribute after a comment that does not have an element parent.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-090" date="2009-02-06"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <expected-error>XUDY0030</expected-error>             	
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-091" FilePath="InsertExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
+               <description>Insert an attribute before a PI that does not have an element parent.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-091" date="2009-02-06"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <expected-error>XUDY0030</expected-error>             	
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-092" FilePath="InsertExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
+               <description>Insert an attribute after a PI that does not have an element parent.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-092" date="2009-02-06"/>
+                  <input-file role="principal-data" variable="input-context">TopMany</input-file>
+                  <expected-error>XUDY0030</expected-error>             	
                </state>
             </test-case>
          </test-group>
