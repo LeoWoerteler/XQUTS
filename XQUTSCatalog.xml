@@ -1311,6 +1311,7 @@
                <state time="0">
                   <query name="id-insert-expr-064" date="2008-10-17"/>
                   <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUTY0005</expected-error>             	
                   <expected-error>XUTY0022</expected-error>             	
                </state>
             </test-case>
@@ -1320,6 +1321,7 @@
                <state time="0">
                   <query name="id-insert-expr-065" date="2008-10-17"/>
                   <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUTY0005</expected-error>             	
                   <expected-error>XUTY0022</expected-error>             	
                </state>
             </test-case>
@@ -1329,6 +1331,7 @@
                <state time="0">
                   <query name="id-insert-expr-066" date="2008-10-17"/>
                   <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUTY0005</expected-error>             	
                   <expected-error>XUTY0022</expected-error>             	
                </state>
             </test-case>
@@ -1347,6 +1350,7 @@
                <state time="0">
                   <query name="id-insert-expr-068" date="2008-10-17"/>
                   <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUTY0005</expected-error>             	
                   <expected-error>XUTY0022</expected-error>             	
                </state>
             </test-case>
