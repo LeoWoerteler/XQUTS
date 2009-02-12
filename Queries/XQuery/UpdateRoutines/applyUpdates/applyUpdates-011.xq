@@ -5,6 +5,6 @@
 declare variable $input-context external;
 (: insert-end :)
 
-let $var := $input-context/works[1]/employee[1]
+let $var := $input-context/works[1]/employee[2]
 return
    delete node $var/*

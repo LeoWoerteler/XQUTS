@@ -5,4 +5,4 @@
 declare variable $input-context external;
 (: insert-end :)
 
-count($input-context/works[1]/employee[1]/text())
+count($input-context/works[1]/employee[2]/text())
