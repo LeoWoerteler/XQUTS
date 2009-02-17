@@ -217,15 +217,14 @@ return
 
 <h1>Query States</h1>
 
-<p>A test case may define one or more states for a &lt;test-case&gt;. A
-&lt;state&gt; element is used for this purpose. A &lt;state&gt; element may
-define: <ul>
-  <li>One or more &lt;query&gt; elements that defines a query (s) (via the
-    "name" attribute). Each query defined via the &lt;state&gt; element must
-    be run in the exact order they are defined as each state is aware of any
-    changes performed by the previous state(s) and depend on those states to
-    execute correctly. Therefore all queries defined on a previous state must
-    execute correctly before the next one can execute.</li>
+<p>A test case may define one or more states (using a &lt;test-case&gt;
+element and &lt;state&gt; elements). A &lt;state&gt; element may define: <ul>
+  <li>A &lt;query&gt; element that defines a query (via the "name"
+    attribute). Each query defined via the &lt;state&gt; element must be run
+    in the exact order they are defined as each state is aware of any changes
+    performed by the previous state(s) and depend on those states to execute
+    correctly. Therefore all queries defined on a previous state must execute
+    correctly before the next one can execute.</li>
   <li>Zero or more &lt;input-file&gt; elements, which defines any input data
     sources required for this state.</li>
   <li>Zero or more &lt;output-file&gt; elements, which will contain the
@@ -238,6 +237,30 @@ element. If the same data source is used for multiple states, then that data
 source should not be set to its original state until the last state is
 executed. The queries defined within a &lt;state&gt; element can be
 customized using any of the approaches defined in the previous section.</p>
+
+<p>A test case is successful if each of its states is successful. Each state
+falls into one of these categories:</p>
+<ol>
+  <li>no expected results or errors - the state is successful if no error is
+    detected</li>
+  <li>one or more expected results, no expected errors - the state is
+    successful only if the actual result matches one of the expected
+  results</li>
+  <li>one or more expected errors, no expected results - the state is
+    successful if one of the expected errors is raised</li>
+  <li>one or more expected results and one or more expected errors - the
+    state is successful only if the actual result matches one of the expected
+    results or one of the expected errors is raised</li>
+</ol>
+
+<p>A source document may be updated in one state and queried in a subsequent
+state. Implementations may a) use the XDM instance that is produced by the
+updating state in the subsequent state, or b) serialize the updated document
+at the end of the updating state and then parse and validate the document in
+the subsequent state. Most test cases will execute successfully with either
+of these two approaches. A small number of test cases, found in the
+RemoveType and StrictRevalidation groups, will execute successfully only with
+the first approach.</p>
 
 <h1>Host Language Binding</h1>
 
@@ -471,7 +494,7 @@ byte-comparison with the provided expected results.</p>
 <hr />
 <address>
   <a href="http://www.w3.org/Help/Webmaster">Webmaster</a> · Last modified:
-  $Date: 2009/01/15 16:16:14 $ by $Author: aeisenbe2 $
+  $Date: 2009/02/17 21:32:32 $ by $Author: aeisenbe2 $
 </address>
 
 <p><a rel="Copyright"
