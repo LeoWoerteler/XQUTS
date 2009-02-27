@@ -53,8 +53,10 @@ in the format shown below, that can be sent to the working group.</p>
 <p>The test cases in this test suite are independent of each other, and so
 can be executed in any order. As test case execution may modify source
 documents, it is the responsibility of the test harness to return the source
-documents to their original state before executing any subsequent test
-cases.</p>
+documents to their original state before executing any subsequent test cases.
+Test sources <code>putOutput</code> and <code>putOutput2</code> refer to
+files that do not exist. A test harness should delete documents written to
+these locations after each test case has been run.</p>
 
 <h1>Test Suite Customization</h1>
 
@@ -494,7 +496,7 @@ byte-comparison with the provided expected results.</p>
 <hr />
 <address>
   <a href="http://www.w3.org/Help/Webmaster">Webmaster</a> · Last modified:
-  $Date: 2009/02/17 21:32:32 $ by $Author: aeisenbe2 $
+  $Date: 2009/02/27 21:54:28 $ by $Author: aeisenbe2 $
 </address>
 
 <p><a rel="Copyright"
