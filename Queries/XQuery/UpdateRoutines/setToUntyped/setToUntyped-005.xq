@@ -1,6 +1,7 @@
 (: Name: setToUntyped-005 :)
 (: Description: Check that all properties are set correctly by upd:setToUntyped. :)
 
+declare construction strip;
 declare default element namespace "http://ns.example.com/books2";
 
 (: insert-start :)

@@ -8051,6 +8051,26 @@
                   <output-file role="principal" compare="Text">setToUntyped-008.txt</output-file>
                </state>
             </test-case>
+            <test-case name="setToUntyped-009" FilePath="UpdateRoutines/setToUntyped/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check that all properties are set correctly by upd:setToUntyped.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.5" section-title="upd:setToUntyped" section-pointer="id-upd-set-to-untyped"/>
+               <state time="0">
+                  <query name="setToUntyped-009" date="2009-03-02"/>
+                  <input-file role="principal-data" variable="input-context">books2</input-file>
+                  <output-file role="principal" compare="Text">setToUntyped-009.txt</output-file>
+               </state>
+            </test-case>
+            <test-case name="setToUntyped-010" FilePath="UpdateRoutines/setToUntyped/" scenario="standard" Creator="Andrew Eisenberg">
+               <description>Check that all properties are set correctly by upd:setToUntyped.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.1.8" section-title="upd:replaceNode" section-pointer="id-upd-replacenode"/>
+               <spec-citation spec="XQUPDATE" section-number="3.2.5" section-title="upd:setToUntyped" section-pointer="id-upd-set-to-untyped"/>
+               <state time="0">
+                  <query name="setToUntyped-010" date="2009-03-02"/>
+                  <input-file role="principal-data" variable="input-context">books2</input-file>
+                  <output-file role="principal" compare="Text">setToUntyped-010.txt</output-file>
+               </state>
+            </test-case>
          </test-group>
       </test-group>
    </test-group>

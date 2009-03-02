@@ -8,6 +8,7 @@
                                 http://www.w3.org/2007/xquery-update-10/xquery-update-10-xqueryx.xsd">
   <xqx:mainModule>
     <xqx:prolog>
+      <xqx:constructionDecl>strip</xqx:constructionDecl>
       <xqx:defaultNamespaceDecl>
         <xqx:defaultNamespaceCategory>element</xqx:defaultNamespaceCategory>
         <xqx:uri>http://ns.example.com/books</xqx:uri>
