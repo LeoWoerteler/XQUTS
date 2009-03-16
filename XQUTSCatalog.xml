@@ -6525,6 +6525,15 @@
                   <expected-error>XUDY0021</expected-error>
                </state>
             </test-case>
+            <test-case name="attribute-errors-q17" FilePath="UpdatePrimitives/AttributeErrors/" scenario="runtime-error" Creator="John Snelson">
+               <description></description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.2" section-title="upd:applyUpdates" section-pointer="id-upd-apply-updates"/>
+               <state time="0">
+                  <query name="attribute-errors-q17" date="2007-08-30"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <expected-error>XUDY0021</expected-error>
+               </state>
+            </test-case>
          </test-group>
          <test-group name="NSBindingConflictErrs">
             <GroupInfo>
@@ -6992,11 +7001,7 @@
                <state time="0">
                   <query name="applyUpdates-023" date="2009-01-29"/>
                   <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               </state>
-               <state time="1">
-                  <query name="applyUpdates-023-test" date="2009-01-29"/>
-                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
-                  <output-file role="principal" compare="Text">applyUpdates-023.xml</output-file>
+                  <expected-error>XUDY0021</expected-error>
                </state>
             </test-case>
             <test-case  name="applyUpdates-024" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Michael Kay">
@@ -7005,11 +7010,7 @@
                <state time="0">
                   <query name="applyUpdates-024" date="2009-01-29"/>
                   <input-file role="principal-data" variable="input-context">works-mod</input-file>
-               </state>
-               <state time="1">
-                  <query name="applyUpdates-024-test" date="2009-01-29"/>
-                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
-                  <output-file role="principal" compare="Text">applyUpdates-024.xml</output-file>
+                  <expected-error>XUDY0021</expected-error>
                </state>
             </test-case>
             <test-case  name="applyUpdates-025" FilePath="UpdateRoutines/applyUpdates/" scenario="standard" Creator="Michael Kay">

@@ -1,6 +1,5 @@
 (: Name: applyUpdates-023 :)
 (: Description: Insert two attributes with the same name, delete the containing element. :)
-(: Note, currently legal, but challenged by bug 6481 :)
 
 (: insert-start :)
 declare variable $input-context external;
