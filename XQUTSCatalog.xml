@@ -5811,7 +5811,7 @@
          </GroupInfo>
          <test-case  name="id-other-expr-01" FilePath="OtherExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
             <description>Evaluates usage of an updating expression (delete) in initializing expression for variable declaration.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.5.8" section-title="Other Expressions" section-pointer="id-other-expr"/>
+            <spec-citation spec="XQUPDATE" section-number="2.2.2" section-title="Variable Declaration" section-pointer="id-variable-declaration"/>
             <state time="0">
                <query name="id-other-expr-01" date="2007-08-06"/>
                <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
@@ -5820,7 +5820,7 @@
          </test-case>
          <test-case  name="id-other-expr-02" FilePath="OtherExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
             <description>Evaluates usage of an updating expression (insert) in initializing expression for variable declaration.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.5.8" section-title="Other Expressions" section-pointer="id-other-expr"/>
+            <spec-citation spec="XQUPDATE" section-number="2.2.2" section-title="Variable Declaration" section-pointer="id-variable-declaration"/>
             <state time="0">
                <query name="id-other-expr-02" date="2007-08-06"/>
                <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
@@ -5829,7 +5829,7 @@
          </test-case>
          <test-case  name="id-other-expr-03" FilePath="OtherExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
             <description>Evaluates usage of an updating expression (rename) in initializing expression for variable declaration.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.5.8" section-title="Other Expressions" section-pointer="id-other-expr"/>
+            <spec-citation spec="XQUPDATE" section-number="2.2.2" section-title="Variable Declaration" section-pointer="id-variable-declaration"/>
             <state time="0">
                <query name="id-other-expr-03" date="2007-08-06"/>
                <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
@@ -5838,7 +5838,7 @@
          </test-case>
          <test-case  name="id-other-expr-04" FilePath="OtherExpressions/" scenario="runtime-error" Creator="Carmelo Montanez">
             <description>Evaluates usage of an updating expression (replace) in initializing expression for variable declaration.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.5.8" section-title="Other Expressions" section-pointer="id-other-expr"/>
+            <spec-citation spec="XQUPDATE" section-number="2.2.2" section-title="Variable Declaration" section-pointer="id-variable-declaration"/>
             <state time="0">
                <query name="id-other-expr-04" date="2007-08-06"/>
                <input-file role="principal-data" variable="input-context">employeesNIST</input-file>
@@ -5847,7 +5847,7 @@
          </test-case>
          <test-case  name="id-other-expr-05" FilePath="OtherExpressions/" scenario="standard" Creator="Carmelo Montanez">
             <description>Evaluates usage of an non-updating expression (transform) in initializing expression for variable declaration.</description>
-            <spec-citation spec="XQUPDATE" section-number="2.5.8" section-title="Other Expressions" section-pointer="id-other-expr"/>
+            <spec-citation spec="XQUPDATE" section-number="2.2.2" section-title="Variable Declaration" section-pointer="id-variable-declaration"/>
             <state time="0">
                <query name="id-other-expr-05" date="2007-08-06"/>
                <input-file role="principal-data" variable="input-context">works-mod</input-file>             	
