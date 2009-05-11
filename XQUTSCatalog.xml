@@ -7880,7 +7880,7 @@
                <state time="0">
                   <query name="valskip-ren-006" date="2008-04-07"/>
                   <input-file role="principal-data" variable="books">books</input-file>
-                  <expected-error>XUDY0004</expected-error>
+                  <expected-error>XUDY0024</expected-error>
                   <expected-error>XUST0026</expected-error>
                </state>
             </test-case>
@@ -8894,7 +8894,7 @@
             <state time="0">
                <query name="valskip-ren-006" date="2008-04-07"/>
                <input-file role="principal-data" variable="books">books</input-file>
-               <expected-error>XUDY0004</expected-error>
+               <expected-error>XUDY0024</expected-error>
             </state>
          </test-case>
          <test-case  name="valskip-repnode-001" FilePath="ValSkip/" scenario="standard" Creator="Saxonica">
