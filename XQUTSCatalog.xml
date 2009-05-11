@@ -7045,9 +7045,9 @@
                <title>upd:revalidate</title>
                <description>
                   These are the same tests that are found in
-                   XQuery Update RemoveType Tests,
-                   XQuery Update Lax Revalidation Tests,
-                   and XQuery Update Revalidation Tests for copy-modify expressions (also called transform expressions).
+                  XQuery Update RemoveType Tests,
+                  XQuery Update Lax Revalidation Tests,
+                  and XQuery Update Revalidation Tests for copy-modify expressions (also called transform expressions).
                   These tests expect errors if the revalidation mode that is used is not supported.
                </description>
             </GroupInfo>
@@ -8558,6 +8558,21 @@
          <state time="0">
             <query name="statictyp-xqupd-60" date="2008-03-22"/>
             <expected-error>XPTY0004</expected-error>
+         </state>
+      </test-case>
+   </test-group>
+   <test-group name="MinOther">
+      <GroupInfo>
+         <title>Other Tests</title>
+         <description/>
+      </GroupInfo>
+      <test-case name="update10keywords" FilePath="Other/" scenario="standard" Creator="Andrew Eisenberg">
+         <description>keywords can be used as variable names</description>
+         <spec-citation spec="XQUPDATE" section-number="A" section-title="EBNF for XQuery 1.0 Grammar with Update extensions" section-pointer="id-grammar"/>
+         <state time="0">
+            <query name="update10keywords" date="2009-05-11"/>
+            <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+            <output-file role="principal" compare="Text">update10keywords.txt</output-file>
          </state>
       </test-case>
    </test-group>
