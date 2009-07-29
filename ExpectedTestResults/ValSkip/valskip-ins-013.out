@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <out xmlns="http://ns.example.com/books">
    <idrefs>
       <PRICE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CAT="MMP">4.95</PRICE>
