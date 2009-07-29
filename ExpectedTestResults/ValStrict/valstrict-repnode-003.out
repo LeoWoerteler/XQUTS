@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<out xmlns="http://ns.example.com/books">
+   <a>true</a>
+   <b>true</b>
+   <c>true</c>
+   <d>true</d>
+</out>
