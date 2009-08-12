@@ -1,7 +1,7 @@
 <project name="Build the XQTS zip file" default="build">
    
    <property name="version" value="current"/>
-   <property name="zipfile" value="../../XQUTS_${version}.zip"/>
+   <property name="zipfile" value="../../Archive/XQUTS_${version}.zip"/>
    <property name="stagingArea" value="../.."/>
    <property name="catalog" value="${stagingArea}/XQUTSCatalog.xml"/>
    
@@ -15,7 +15,7 @@
       
       <zip
          destfile="${zipfile}">
-         <fileset dir="${stagingArea}" includes="**" excludes="XQUTS_*.zip"/>
+         <fileset dir="${stagingArea}" includes="**" excludes="Archive/**, Tools/**"/>
       </zip>
       
    </target>
