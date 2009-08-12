@@ -34,13 +34,27 @@
 
 
    <target name='getErrors'>
-      <style
+      <xslt
          in="temp/update.html"
          basedir="."
          style="GetErrors.xsl"
          out="temp/updateErrors.xml"
          force="yes">
-      </style>     
+         <xmlcatalog>
+            <dtd
+               publicId="-//W3C//DTD XHTML 1.0 Transitional//EN"
+               location="xhtml/xhtml1-transitional.dtd"/>
+            <dtd
+               publicId="-//W3C//ENTITIES Latin 1 for XHTML//EN"
+               location="xhtml/xhtml-lat1.ent"/>
+            <dtd
+               publicId="-//W3C//ENTITIES Symbols for XHTML//EN"
+               location="xhtml/xhtml-symbol.ent"/>
+            <dtd
+               publicId="-//W3C//ENTITIES Special for XHTML//EN"
+               location="xhtml/xhtml-special.ent"/>
+         </xmlcatalog>
+      </xslt>     
    </target>
    
 
@@ -50,7 +64,7 @@
          <format property="now" pattern="MM/dd/yyyy HH:mm" />
       </tstamp>
       
-      <style
+      <xslt
          in="${updateCatalog}"
          basedir="."
          style="UpdateErrors.xsl"
@@ -58,7 +72,7 @@
          force="yes">
          <param name="errors" expression="temp/updateErrors.xml"/> 
          <param name="now" expression="${now}"/> 
-      </style>     
+      </xslt>     
    </target>
    
 </project>
