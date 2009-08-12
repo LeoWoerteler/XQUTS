@@ -44,14 +44,28 @@
    </target>
    
    <target name="process">
-      <style in="temp/${specname}.html"
+      <xslt in="temp/${specname}.html"
          out="temp/${specname}_citations.xml"
          destdir="."
          basedir="."
          style="TOCCitations.xsl"
          force="yes">
          <param name="spec" expression="${spec}"/> 
-      </style>     
+         <xmlcatalog>
+            <dtd
+               publicId="-//W3C//DTD XHTML 1.0 Transitional//EN"
+               location="xhtml/xhtml1-transitional.dtd"/>
+            <dtd
+               publicId="-//W3C//ENTITIES Latin 1 for XHTML//EN"
+               location="xhtml/xhtml-lat1.ent"/>
+            <dtd
+               publicId="-//W3C//ENTITIES Symbols for XHTML//EN"
+               location="xhtml/xhtml-symbol.ent"/>
+            <dtd
+               publicId="-//W3C//ENTITIES Special for XHTML//EN"
+               location="xhtml/xhtml-special.ent"/>
+         </xmlcatalog>
+      </xslt>     
    </target>
    
    
@@ -61,7 +75,7 @@
          <format property="now" pattern="MM/dd/yyyy HH:mm" />
       </tstamp>
       
-      <style
+      <xslt
          in="temp/${prefix1}_citations.xml"
          basedir="."
          style="UpdateCoverage.xsl"
@@ -70,7 +84,7 @@
          <param name="now" expression="${now}"/> 
          <param name="catalogName" expression="${updateCatalog}"/> 
          <param name="specName" expression="${specName}"/> 
-      </style>     
+      </xslt>     
    </target>
    
    
