@@ -29,7 +29,7 @@
          <format property="now" pattern="MM/dd/yyyy HH:mm" />
       </tstamp>
       
-      <style
+      <xslt
          in="${catalog}"
          out="XQUTSReport.html"
          destdir="."
@@ -39,7 +39,7 @@
          <param name="creationDate" expression="${now}"/> 
          <param name="documentAuthor" expression="${user.name}"/> 
          <param name="resultFiles" expression="${results}"/> 
-      </style>     
+      </xslt>     
    </target>
    
    
@@ -50,7 +50,7 @@
          <format property="now" pattern="MM/dd/yyyy HH:mm" />
       </tstamp>
       
-      <style
+      <xslt
          in="${catalog}"
          out="XQUTSReportSimple.html"
          destdir="."
@@ -64,7 +64,7 @@
          <param name="details" expression="false"/>
          <param name="failures" expression="false"/> 
          <param name="test-run-details" expression="false"/>
-      </style>     
+      </xslt>     
    </target>
    
    
