@@ -4,7 +4,7 @@
    xmlns="http://www.w3.org/2005/02/query-test-update"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    CatalogDesignDate="2009-08-13"
-   version="1.0.0"
+   version="1.0.0 dev"
    SourceOffsetPath="./"
    ResultOffsetPath="ExpectedTestResults/"
    XQueryQueryOffsetPath="Queries/XQuery/"
