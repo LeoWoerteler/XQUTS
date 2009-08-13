@@ -229,6 +229,23 @@ Please proceed with the following steps:
    </target>
    
 
+   <target name="deleteExistingXQueryX" description="Delete existing XQueryX files">      
+      
+      <fail message="sourceDir property must be set.">
+         <condition>
+            <not>
+               <isset property="sourceDir" />
+            </not>
+         </condition>
+      </fail>
+      
+      <delete>
+         <fileset dir="${XQueryXDir}" includes="**/*.xqx" />
+      </delete>
+      
+   </target>
+   
+
    <target name='validateXQueryX' description="Validate XQueryX files">
       
       <fail message="sourceDir property must be set.">
