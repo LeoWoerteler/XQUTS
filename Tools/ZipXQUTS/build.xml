@@ -15,7 +15,7 @@
       
       <zip
          destfile="${zipfile}">
-         <fileset dir="${stagingArea}" includes="**" excludes="Archive/**, Tools/**"/>
+         <fileset dir="${stagingArea}" includes="**" excludes="Archive/**, Tools/**, results/**"/>
       </zip>
       
    </target>
