@@ -3,8 +3,8 @@
 <test-suite
    xmlns="http://www.w3.org/2005/02/query-test-update"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   CatalogDesignDate="2003-04-03"
-   version="0.7"
+   CatalogDesignDate="2009-08-13"
+   version="1.0.0"
    SourceOffsetPath="./"
    ResultOffsetPath="ExpectedTestResults/"
    XQueryQueryOffsetPath="Queries/XQuery/"
@@ -15,17 +15,17 @@
    xsi:schemaLocation="http://www.w3.org/2005/02/query-test-update XQUTSCatalog.xsd">
    
    <test-suite-info>
-      <title>XQuery Update Test Suite 0.1.0</title>
+      <title>XQuery Update Test Suite 1.0.0</title>
       <description>
-         Test Suite for XQuery Update 0.1.0.
-         See http://www.w3.org/XML/Query/test-suite/update.
+         Test Suite for XQuery Update 1.0.
+         See http://dev.w3.org/2007/xquery-update-10-test-suite/.
       </description>
    </test-suite-info>
    
    <citations>
       <citation-spec name="XQUPDATE">
-         <description last-mod="2006-04-12">XQuery Update Facility</description>
-         <spec-URI>http://www.w3.org/TR/xqupdate/</spec-URI>
+         <description last-mod="2009-06-09">XQuery Update Facility 1.0</description>
+         <spec-URI>http://www.w3.org/TR/xquery-update-10/</spec-URI>
       </citation-spec>
    </citations>
    <comparisons>
