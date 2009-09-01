@@ -9,11 +9,11 @@
       type="xsd:string" />
 
    <xsd:complexType name="commentType">
-      <xsd:sequence>
-         <xsd:element
-            ref="xqtsr:p"
-            minOccurs="1"
-            maxOccurs="unbounded" />
+      <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+         <xsd:choice>         
+            <xsd:element ref="xqtsr:p" />
+            <xsd:any processContents="skip" />
+         </xsd:choice>
       </xsd:sequence>
    </xsd:complexType>
    

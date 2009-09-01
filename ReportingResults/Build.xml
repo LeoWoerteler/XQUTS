@@ -5,11 +5,11 @@
    
    <property name="catalog" location="..\XQUTSCatalog.xml" />
    
-   <property name="schema" location="XQUTSResult.xsd" />
+   <property name="schema" location="XQTSResult.xsd" />
    
    <property
       name="schemaLocation"
-      value="http://www.w3.org/2005/02/query-test-XQUTSResult ${schema}" />
+      value="http://www.w3.org/2005/02/query-test-XQTSResult ${schema}" />
    
    <property name="results" location="Results.xml" />
    

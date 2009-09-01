@@ -6,9 +6,6 @@
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
   <title>Guidelines for Submitting XML Query Update Test Suite Results</title>
   <meta name="generator" content="amaya 9.51, see http://www.w3.org/Amaya/" />
-  <link
-  href="http://www.w3.org/XML/Group/xquery-test/TestSuiteStagingArea/XQUTSCatalog.xml"
-  rel="stylesheet" type="text/css" />
 </head>
 
 <body xml:lang="en" lang="en">
@@ -39,20 +36,20 @@ downloaded:</p>
       Results.xml
       XQUTSReport.html
       XQUTSReportSimple.html
-      XQUTSResult.xsd
+      XQTSResult.xsd
       XQUTSResults.xsl
       XQUTSSampleResult.xml</pre>
 </blockquote>
 
 <p>We ask that the document that you send us begin with a test-suite-result
-element and validate using the schema defined by XQUTSResult.xsd. We have
+element and validate using the schema defined by XQTSResult.xsd. We have
 provided a sample result file for you to look at, XQUTSSampleResult.xml. This
 document has the following structure:</p>
 
 <blockquote>
   <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;test-suite-result
-   xmlns='http://www.w3.org/2005/02/query-test-XQUTSResult'
+   xmlns='http://www.w3.org/2005/02/query-test-XQTSResult'
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
 
    &lt;implementation ...&gt;
@@ -134,7 +131,7 @@ provided.</p>
 <hr />
 <address>
   <a href="http://www.w3.org/Help/Webmaster">Webmaster</a> · Last modified:
-  $Date: 2009/08/13 21:40:31 $ by $Author: aeisenbe2 $
+  $Date: 2009/09/01 20:15:39 $ by $Author: aeisenbe2 $
 </address>
 
 <p><a rel="Copyright"
