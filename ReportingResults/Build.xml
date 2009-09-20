@@ -12,6 +12,8 @@
       value="http://www.w3.org/2005/02/query-test-XQTSResult ${schema}" />
    
    <property name="results" location="Results.xml" />
+
+   <property name="destination" location="." />
    
    
    
@@ -31,8 +33,8 @@
       
       <xslt
          in="${catalog}"
-         out="XQUTSReport.html"
-         destdir="."
+         out="${destination}/XQUTSReport.html"
+         destdir="${destination}"
          basedir="."
          style="XQUTSResults.xsl"
          force="yes">
@@ -52,8 +54,8 @@
       
       <xslt
          in="${catalog}"
-         out="XQUTSReportSimple.html"
-         destdir="."
+         out="${destination}/XQUTSReportSimple.html"
+         destdir="${destination}"
          basedir="."
          style="XQUTSResults.xsl"
          force="yes">
