@@ -1,9 +1,1 @@
-<out xmlns="http://ns.example.com/books">
-   <a>false</a>
-   <b>false</b>
-   <c>false</c>
-   <d>true</d>
-   <d>true</d>
-   <e>true</e>
-   <f>true</f>
-</out>
+<?xml version="1.0" encoding="UTF-8"?><out xmlns="http://ns.example.com/books"><a>false</a><b>false</b><c>false</c><d>true</d><d>true</d><e>true</e><f>true</f></out>

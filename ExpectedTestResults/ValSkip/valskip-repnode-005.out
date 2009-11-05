@@ -1,6 +1,1 @@
-<out xmlns="http://ns.example.com/books">
-   <old/>
-   <new>
-      <CATEGORY xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" CODE="P2" DESC="Paperback"/>
-   </new>
-</out>
+<?xml version="1.0" encoding="UTF-8"?><out xmlns="http://ns.example.com/books"><old/><new><CATEGORY xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DESC="Paperback" CODE="P2"/></new></out>
