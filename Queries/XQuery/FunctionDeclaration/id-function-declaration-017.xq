@@ -6,7 +6,8 @@ declare updating function local:increase($e as element(b)?, $amount as xs:intege
    {
      if ($e) then (
         replace value of node $e with ($e + $amount),
-        local:increase($e/following-sibling::b[1], $amount+1)
+        local:increase($e/../b[.>>$e][1], $amount+1)
+        (: i.e. $e/following-sibling::b[1], but we're not allowed to use the following-sibling axis: see bug 8251 :)
      ) else ()
    };
    
