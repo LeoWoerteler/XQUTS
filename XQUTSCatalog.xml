@@ -1626,6 +1626,19 @@
                   <expected-error>XUDY0030</expected-error>             	
                </state>
             </test-case>
+            <test-case  name="id-insert-expr-093" FilePath="InsertExpressions/" scenario="standard" Creator="Michael Kay">
+               <description>Insert an attribute that requires creation of a new namespace node.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-093" date="2009-12-07"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-insert-expr-093-test" date="2009-12-07"/>
+                  <input-file role="principal-data" variable="input-context">works-mod</input-file>
+                  <output-file role="principal" compare="XML">id-insert-expr-093.xml</output-file>
+               </state>
+            </test-case>
          </test-group>
          <test-group name="DeleteExpressions">
             <GroupInfo>
