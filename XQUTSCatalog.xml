@@ -3145,6 +3145,33 @@
                <output-file role="principal" compare="Text">id-rename-expr-034b.txt</output-file>
             </state>
          </test-case>
+         <test-case  name="id-rename-expr-035" FilePath="RenameExpressions/" scenario="standard" Creator="Michael Kay">
+            <description>Rename an element to be in a namespace (the default namespace)</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+            <state time="0">
+               <query name="id-rename-expr-035" date="2010-02-20"/>
+               <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+               <output-file role="principal" compare="XML">id-rename-expr-035.xml</output-file>
+            </state>
+         </test-case>
+         <test-case  name="id-rename-expr-036" FilePath="RenameExpressions/" scenario="standard" Creator="Michael Kay">
+            <description>Rename an element to be in a namespace (with a prefix)</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+            <state time="0">
+               <query name="id-rename-expr-036" date="2010-02-20"/>
+               <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+               <output-file role="principal" compare="XML">id-rename-expr-036.xml</output-file>
+            </state>
+         </test-case>
+         <test-case  name="id-rename-expr-037" FilePath="RenameExpressions/" scenario="standard" Creator="Michael Kay">
+            <description>Rename an attribute to be in a namespace (with a prefix)</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+            <state time="0">
+               <query name="id-rename-expr-037" date="2010-02-20"/>
+               <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+               <output-file role="principal" compare="XML">id-rename-expr-037.xml</output-file>
+            </state>
+         </test-case>
          <test-case name="complex-renames-q1" FilePath="RenameExpressions/" scenario="standard" Creator="John Snelson">
             <description>Rename all PIs with target "a-pi".</description>
             <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
