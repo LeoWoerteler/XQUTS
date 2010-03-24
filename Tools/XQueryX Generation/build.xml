@@ -78,8 +78,8 @@ Please proceed with the following steps:
    <target name="getPublicUpdateFiles" description="get public XQuery Update parser and schema files">
       <mkdir dir="temp" />
       <get
-         src="http://www.w3.org/2007/01/applets/xquery-update.zip"
-         dest="temp/applet.zip" />
+         src="http://www.w3.org/2010/02/qt-applets/xquery10-update/applet.jar"
+         dest="temp/applet.jar" />
       <get
          src="http://www.w3.org/2007/xquery-update-10/xquery-update-10-xqueryx.xsd"
          dest="temp/xquery-update-10-xqueryx.xsd" />
@@ -109,8 +109,8 @@ Please proceed with the following steps:
    <target name="getPrivateUpdateFiles" description="get private XQuery Update parser and schema files">
       <mkdir dir="temp" />
       <get
-         src="http://www.w3.org/XML/Group/qtspecs/specifications/grammar-11/parser/applets/xquery10-update/applet.zip"
-         dest="temp/applet.zip"
+         src="http://www.w3.org/XML/Group/qtspecs/specifications/grammar-11/parser/applets/xquery10-update/applet.jar"
+         dest="temp/applet.jar"
          username="${username}"
          password="${password}" />
       <get
@@ -169,14 +169,14 @@ Please proceed with the following steps:
          </condition>
       </fail>
       
-      <javac classpath="temp/applet.zip" srcdir="." includes="*.java" destdir="temp" target="1.4"/>
+      <javac classpath="temp/applet.jar" srcdir="." includes="*.java" destdir="temp" target="1.4"/>
    </target>
    
    
    <target name="build" depends="checkBuild, compile" unless="buildNotRequired" >
       <zip destfile="temp/applet-ant.zip">
          <fileset dir="temp" includes="**/*.class" />
-         <zipfileset src="temp/applet.zip" />
+         <zipfileset src="temp/applet.jar" />
       </zip>
    </target>
    

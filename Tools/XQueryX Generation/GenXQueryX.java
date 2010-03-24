@@ -31,7 +31,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.w3c.xqparser.ParseException;
 import org.w3c.xqparser.SimpleNode;
-import org.w3c.xqparser.XPath;
+import org.w3c.xqparser.XParser;
 import org.w3c.xqparser.XQueryXConverter;
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException;
@@ -124,8 +124,8 @@ public class GenXQueryX {
         }
 
         try {
-            XPath parser = new XPath(new StringReader(xquery.toString()));
-            tree = parser.XPath2();
+            XParser parser = new XParser(new StringReader(xquery.toString()));
+            tree = parser.START();
             if (null == tree) {
                 throw new UnableToGenerateXQueryX("Cannot parse query.");
             }
