@@ -1519,7 +1519,6 @@
                   <query name="id-insert-expr-081" date="2008-12-18"/>
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
                   <output-file role="principal" compare="Text">id-insert-expr-081a.txt</output-file>
-                  <output-file role="principal" compare="Text">id-insert-expr-081b.txt</output-file>
                </state>
             </test-case>
             <test-case  name="id-insert-expr-082" FilePath="InsertExpressions/" scenario="standard" Creator="Andrew Eisenberg">
@@ -1529,7 +1528,6 @@
                   <query name="id-insert-expr-082" date="2008-12-18"/>
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
                   <output-file role="principal" compare="Text">id-insert-expr-082a.txt</output-file>
-                  <output-file role="principal" compare="Text">id-insert-expr-082b.txt</output-file>
                </state>
             </test-case>
             <test-case  name="id-insert-expr-083" FilePath="InsertExpressions/" scenario="standard" Creator="Andrew Eisenberg">
@@ -1539,7 +1537,6 @@
                   <query name="id-insert-expr-083" date="2008-12-18"/>
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
                   <output-file role="principal" compare="Text">id-insert-expr-083a.txt</output-file>
-                  <output-file role="principal" compare="Text">id-insert-expr-083b.txt</output-file>
                </state>
             </test-case>
             <test-case  name="id-insert-expr-084" FilePath="InsertExpressions/" scenario="standard" Creator="Andrew Eisenberg">
@@ -1549,7 +1546,6 @@
                   <query name="id-insert-expr-084" date="2008-12-18"/>
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
                   <output-file role="principal" compare="Text">id-insert-expr-084a.txt</output-file>
-                  <output-file role="principal" compare="Text">id-insert-expr-084b.txt</output-file>
                </state>
             </test-case>
             <test-case  name="id-insert-expr-085" FilePath="InsertExpressions/" scenario="standard" Creator="Andrew Eisenberg">
@@ -1559,7 +1555,6 @@
                   <query name="id-insert-expr-085" date="2008-12-18"/>
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
                   <output-file role="principal" compare="Text">id-insert-expr-085a.txt</output-file>
-                  <output-file role="principal" compare="Text">id-insert-expr-085b.txt</output-file>
                </state>
             </test-case>
             <test-case  name="id-insert-expr-086" FilePath="InsertExpressions/" scenario="standard" Creator="Andrew Eisenberg">
@@ -1569,7 +1564,6 @@
                   <query name="id-insert-expr-086" date="2008-12-18"/>
                   <input-file role="principal-data" variable="input-context">emptydoc</input-file>
                   <output-file role="principal" compare="Text">id-insert-expr-086a.txt</output-file>
-                  <output-file role="principal" compare="Text">id-insert-expr-086b.txt</output-file>
                </state>
             </test-case>
             <test-case  name="id-insert-expr-087" FilePath="InsertExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
@@ -2317,7 +2311,6 @@
                      <query name="id-replace-expr-045" date="2008-12-18"/>
                      <input-file role="principal-data" variable="input-context">emptydoc</input-file>
                      <output-file role="principal" compare="Text">id-replace-expr-045a.txt</output-file>
-                     <output-file role="principal" compare="Text">id-replace-expr-045b.txt</output-file>
                   </state>
                </test-case>
             </test-group>
@@ -3132,7 +3125,6 @@
                <query name="id-rename-expr-033" date="2008-12-18"/>
                <input-file role="principal-data" variable="input-context">emptydoc</input-file>
                <output-file role="principal" compare="Text">id-rename-expr-033a.txt</output-file>
-               <output-file role="principal" compare="Text">id-rename-expr-033b.txt</output-file>
             </state>
          </test-case>
          <test-case  name="id-rename-expr-034" FilePath="RenameExpressions/" scenario="standard" Creator="Andrew Eisenberg">
@@ -3142,7 +3134,6 @@
                <query name="id-rename-expr-034" date="2008-12-18"/>
                <input-file role="principal-data" variable="input-context">emptydoc</input-file>
                <output-file role="principal" compare="Text">id-rename-expr-034a.txt</output-file>
-               <output-file role="principal" compare="Text">id-rename-expr-034b.txt</output-file>
             </state>
          </test-case>
          <test-case  name="id-rename-expr-035" FilePath="RenameExpressions/" scenario="standard" Creator="Michael Kay">
