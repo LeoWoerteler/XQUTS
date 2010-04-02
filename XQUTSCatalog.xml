@@ -1566,6 +1566,60 @@
                   <output-file role="principal" compare="Text">id-insert-expr-086a.txt</output-file>
                </state>
             </test-case>
+            <test-case  name="id-insert-expr-081-no-inherit" FilePath="InsertExpressions/" scenario="standard" Creator="Josh Spiegel">
+               <description>Check namepsace propogation when inserting an element.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-081-no-inherit" date="2010-04-02"/>
+                  <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-081-no-inherit.txt</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-082-no-inherit" FilePath="InsertExpressions/" scenario="standard" Creator="Josh Spiegel">
+               <description>Check namepsace propogation when inserting an element.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-082-no-inherit" date="2010-04-02"/>
+                  <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-082-no-inherit.txt</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-083-no-inherit" FilePath="InsertExpressions/" scenario="standard" Creator="Josh Spiegel">
+               <description>Check namepsace propogation when inserting an element.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-083-no-inherit" date="2010-04-02"/>
+                  <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-083-no-inherit.txt</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-084-no-inherit" FilePath="InsertExpressions/" scenario="standard" Creator="Josh Spiegel">
+               <description>Check namepsace propogation when inserting an element.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-084-no-inherit" date="2010-04-02"/>
+                  <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-084-no-inherit.txt</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-085-no-inherit" FilePath="InsertExpressions/" scenario="standard" Creator="Josh Spiegel">
+               <description>Check namepsace propogation when inserting an element.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-085-no-inherit" date="2010-04-02"/>
+                  <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-085-no-inherit.txt</output-file>
+               </state>
+            </test-case>
+            <test-case  name="id-insert-expr-086-no-inherit" FilePath="InsertExpressions/" scenario="standard" Creator="Josh Spiegel">
+               <description>Check namepsace propogation when inserting an attribute.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-086-no-inherit" date="2010-04-02"/>
+                  <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                  <output-file role="principal" compare="Text">id-insert-expr-086-no-inherit.txt</output-file>
+               </state>
+            </test-case>
             <test-case  name="id-insert-expr-087" FilePath="InsertExpressions/" scenario="runtime-error" Creator="Andrew Eisenberg">
                <description>Insert an attribute before an element that does not have an element parent.</description>
                <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert" section-pointer="id-insert"/>
@@ -2311,6 +2365,15 @@
                      <query name="id-replace-expr-045" date="2008-12-18"/>
                      <input-file role="principal-data" variable="input-context">emptydoc</input-file>
                      <output-file role="principal" compare="Text">id-replace-expr-045a.txt</output-file>
+                  </state>
+               </test-case>
+               <test-case  name="id-replace-expr-045-no-inherit" FilePath="ReplaceExpressions/" scenario="standard" Creator="Josh Spiegel">
+                  <description>Check namepsace propogation when replacing an attribute.</description>
+                  <spec-citation spec="XQUPDATE" section-number="2.4.3.1" section-title="Replacing a Node" section-pointer="id-replacing-node"/>
+                  <state time="0">
+                     <query name="id-replace-expr-045-no-inherit" date="2010-04-02"/>
+                     <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+                     <output-file role="principal" compare="Text">id-replace-expr-045-no-inherit.txt</output-file>
                   </state>
                </test-case>
             </test-group>
@@ -3134,6 +3197,24 @@
                <query name="id-rename-expr-034" date="2008-12-18"/>
                <input-file role="principal-data" variable="input-context">emptydoc</input-file>
                <output-file role="principal" compare="Text">id-rename-expr-034a.txt</output-file>
+            </state>
+         </test-case>
+         <test-case  name="id-rename-expr-033-no-inherit" FilePath="RenameExpressions/" scenario="standard" Creator="Josh Spiegel">
+            <description>Check namepsace propogation when renaming an element.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+            <state time="0">
+               <query name="id-rename-expr-033-no-inherit" date="2010-04-02"/>
+               <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+               <output-file role="principal" compare="Text">id-rename-expr-033-no-inherit.txt</output-file>
+            </state>
+         </test-case>
+         <test-case  name="id-rename-expr-034-no-inherit" FilePath="RenameExpressions/" scenario="standard" Creator="Josh Spiegel">
+            <description>Check namepsace propogation when renaming an attribute.</description>
+            <spec-citation spec="XQUPDATE" section-number="2.4.4" section-title="Rename" section-pointer="id-rename"/>
+            <state time="0">
+               <query name="id-rename-expr-034-no-inherit" date="2010-04-02"/>
+               <input-file role="principal-data" variable="input-context">emptydoc</input-file>
+               <output-file role="principal" compare="Text">id-rename-expr-034-no-inherit.txt</output-file>
             </state>
          </test-case>
          <test-case  name="id-rename-expr-035" FilePath="RenameExpressions/" scenario="standard" Creator="Michael Kay">
@@ -8126,6 +8207,60 @@
                   <query name="setToUntyped-010" date="2009-03-02"/>
                   <input-file role="principal-data" variable="input-context">books2</input-file>
                   <output-file role="principal" compare="Text">setToUntyped-010.txt</output-file>
+               </state>
+            </test-case>
+         </test-group>
+         <test-group name="propagateNamespace">
+            <GroupInfo>
+               <title>upd:propagateNamespace</title>
+               <description></description>
+            </GroupInfo>
+            <test-case name="propagateNamespaces01" FilePath="UpdateRoutines/propagateNamespaces/" scenario="standard" Creator="Josh Spiegel">
+               <description>Check that all properties are set correctly by upd:propagateNamespaces.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.6" section-title="upd:propagateNamespaces" section-pointer="id-upd-propagate-namespace"/>
+               <state time="0">
+                  <query name="propagateNamespaces01" date="2010-04-02"/>
+                  <output-file role="principal" compare="XML">propagateNamespaces01.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="propagateNamespaces02" FilePath="UpdateRoutines/propagateNamespaces/" scenario="standard" Creator="Josh Spiegel">
+               <description>Check that all properties are set correctly by upd:propagateNamespaces.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.6" section-title="upd:propagateNamespaces" section-pointer="id-upd-propagate-namespace"/>
+               <state time="0">
+                  <query name="propagateNamespaces02" date="2010-04-02"/>
+                  <output-file role="principal" compare="XML">propagateNamespaces02.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="propagateNamespaces03" FilePath="UpdateRoutines/propagateNamespaces/" scenario="standard" Creator="Josh Spiegel">
+               <description>Check that all properties are set correctly by upd:propagateNamespaces.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.6" section-title="upd:propagateNamespaces" section-pointer="id-upd-propagate-namespace"/>
+               <state time="0">
+                  <query name="propagateNamespaces03" date="2010-04-02"/>
+                  <output-file role="principal" compare="XML">propagateNamespaces03.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="propagateNamespaces04" FilePath="UpdateRoutines/propagateNamespaces/" scenario="standard" Creator="Josh Spiegel">
+               <description>Check that all properties are set correctly by upd:propagateNamespaces.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.6" section-title="upd:propagateNamespaces" section-pointer="id-upd-propagate-namespace"/>
+               <state time="0">
+                  <query name="propagateNamespaces04" date="2010-04-02"/>
+                  <output-file role="principal" compare="XML">propagateNamespaces04.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="propagateNamespaces05" FilePath="UpdateRoutines/propagateNamespaces/" scenario="standard" Creator="Josh Spiegel">
+               <description>Check that all properties are set correctly by upd:propagateNamespaces.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.6" section-title="upd:propagateNamespaces" section-pointer="id-upd-propagate-namespace"/>
+               <state time="0">
+                  <query name="propagateNamespaces05" date="2010-04-02"/>
+                  <output-file role="principal" compare="XML">propagateNamespaces05.xml</output-file>
+               </state>
+            </test-case>
+            <test-case name="propagateNamespaces06" FilePath="UpdateRoutines/propagateNamespaces/" scenario="standard" Creator="Josh Spiegel">
+               <description>Check that all properties are set correctly by upd:propagateNamespaces.</description>
+               <spec-citation spec="XQUPDATE" section-number="3.2.6" section-title="upd:propagateNamespaces" section-pointer="id-upd-propagate-namespace"/>
+               <state time="0">
+                  <query name="propagateNamespaces06" date="2010-04-02"/>
+                  <output-file role="principal" compare="XML">propagateNamespaces06.xml</output-file>
                </state>
             </test-case>
          </test-group>
