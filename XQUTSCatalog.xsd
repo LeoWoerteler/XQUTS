@@ -557,6 +557,7 @@
       <xs:sequence>
          <xs:element name="title" type="xs:string" />
          <xs:element name="description" type="test:description" />
+         <xs:element name="depends-on" type="test:depends-on" minOccurs="0" />
          <xs:element name="note" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
       </xs:sequence>
    </xs:complexType>
@@ -596,22 +597,13 @@
          <!-- Identify the parts of the XQuery specifications that are       -->
          <!-- being tested                                                   -->
          
-         <xs:element name="spec-citation" maxOccurs="unbounded">
+         <xs:element name="spec-citation" type="test:spec-citation" maxOccurs="unbounded">
             <xs:annotation>
                <xs:documentation>
                   Identify the parts of the XQuery specifications that are being tested.
                </xs:documentation>
             </xs:annotation>
-            <xs:complexType>
-               <xs:simpleContent>
-                  <xs:extension base="xs:string">
-                     <xs:attribute name="section-number" type="xs:string" use="required" />
-                     <xs:attribute name="spec" type="test:citation-spec-enum" use="required" />
-                     <xs:attribute name="section-title" type="xs:string" use="required" />
-                     <xs:attribute name="section-pointer" type="xs:string" use="required" />
-                  </xs:extension>
-               </xs:simpleContent>
-            </xs:complexType>
+
          </xs:element>
 
 		 <xs:choice>
@@ -640,6 +632,17 @@
             </xs:documentation>
          </xs:annotation>
       </xs:attribute>
+   </xs:complexType>
+   
+   <xs:complexType name="spec-citation">
+      <xs:simpleContent>
+         <xs:extension base="xs:string">
+            <xs:attribute name="section-number" type="xs:string" use="required" />
+            <xs:attribute name="spec" type="test:citation-spec-enum" use="required" />
+            <xs:attribute name="section-title" type="xs:string" use="required" />
+            <xs:attribute name="section-pointer" type="xs:string" use="required" />
+         </xs:extension>
+      </xs:simpleContent>
    </xs:complexType>
 
    <xs:complexType name="state">
@@ -1022,6 +1025,81 @@
          <xs:pattern value="\*|([A-Z]{4}[0-9]{4})" />
       </xs:restriction>
    </xs:simpleType>
+   
+   <!-- depends-on element -->
+   
+   <xs:complexType name="depends-on">
+     <xs:annotation>
+       <xs:documentation>
+         When this element is present for a test group, the tests in the group should be run only
+         by a product that claims support for an optional or implementation-defined feature. If more
+         that one feature is listed, the tests should be run only if ALL the features 
+         listed with @supported=true (and none of those listed with @supported=false) are supported.
+       </xs:documentation>
+     </xs:annotation>
+     <xs:sequence>
+       <xs:element name="feature" type="test:feature" minOccurs="1" maxOccurs="unbounded"/>
+       <xs:element name="description" type="test:description"/>
+       <xs:element name="spec-citation" type="test:spec-citation"/>
+     </xs:sequence>
+   </xs:complexType>
+   
+   <xs:simpleType name="feature-enum">
+     <xs:annotation>
+       <xs:documentation>
+         Defines a feature that may be present (supported) in some conformant implementations and absent (not supported) in others.
+       </xs:documentation>
+     </xs:annotation>
+
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="revalidation:strict">
+        <xs:annotation>
+          <xs:documentation>Supports revalidation mode = strict</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>  
+      <xs:enumeration value="revalidation:lax">
+        <xs:annotation>
+          <xs:documentation>Supports revalidation mode = lax</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="revalidation:skip">
+        <xs:annotation>
+          <xs:documentation>Supports revalidation mode = skip</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="put:text">
+        <xs:annotation>
+          <xs:documentation>Supports fn:put() applied to text nodes</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="put:attribute">
+        <xs:annotation>
+          <xs:documentation>Supports fn:put() applied to attribute nodes</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="put:comment">
+        <xs:annotation>
+          <xs:documentation>Supports fn:put() applied to comment nodes</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="put:processing-instruction">
+        <xs:annotation>
+          <xs:documentation>Supports fn:put() applied to processing-instruction nodes</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+ 
+     
+   </xs:simpleType>
+   
+   <xs:complexType name="feature">
+      <xs:simpleContent>
+         <xs:extension base="test:feature-enum">
+            <xs:attribute name="supported" type="xs:boolean" use="optional" default="true"/> 
+         </xs:extension>
+      </xs:simpleContent>
+   </xs:complexType>
+     
    
    
    <!-- infoBase type                                                        -->
