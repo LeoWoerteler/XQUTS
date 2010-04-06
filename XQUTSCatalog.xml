@@ -547,6 +547,34 @@
                   </state>
                </test-case>
             </test-group>
+            <test-group name="Revalidation Declaration Strict Unsupported">
+               <GroupInfo>
+                  <title>Revalidation Declaration = strict unsupported</title>
+                  <description/>
+                  <depends-on>
+                     <feature supported="false">revalidation:strict</feature>
+                     <description>These tests are designed to be run only by a product that does NOT support
+                        revalidation mode strict</description>
+                     <spec-citation spec="XQUPDATE" section-number="2.2.1"
+                        section-title="Revalidation Declaration"
+                        section-pointer="id-revalidation-declaration"/>
+                  </depends-on>
+               </GroupInfo>
+               <test-case name="revalidation-declaration-01-fail"
+                  FilePath="Prolog/RevalidationDeclaration/" scenario="parse-error"
+                  Creator="Andrew Eisenberg">
+                  <description>One declare validation specifying strict</description>
+                  <spec-citation spec="XQUPDATE" section-number="2.2.1"
+                     section-title="Revalidation Declaration"
+                     section-pointer="id-revalidation-declaration"/>
+                  <state time="0">
+                     <query name="revalidation-declaration-01" date="2008-10-16"/>
+                     <input-file role="principal-data" variable="input-context"
+                        >emptydoc</input-file>
+                     <expected-error>XUST0026</expected-error>
+                  </state>
+               </test-case>
+            </test-group>   
             <test-group name="Revalidation Declaration Lax">
                <GroupInfo>
                   <title>Revalidation Declaration = lax</title>
@@ -573,7 +601,6 @@
                         >emptydoc</input-file>
                      <output-file role="principal" compare="Text"
                         >revalidation-declaration-03.txt</output-file>
-                     <expected-error>XUST0026</expected-error>
                   </state>
                </test-case>
                <test-case name="revalidation-declaration-04"
@@ -821,6 +848,34 @@
                      <input-file role="principal-data" variable="books">books</input-file>
                      <output-file role="principal" compare="Fragment"
                         >vallax-repnode-003.out</output-file>
+                  </state>
+               </test-case>
+            </test-group>
+            <test-group name="Revalidation Declaration Lax Unsupported">
+               <GroupInfo>
+                  <title>Revalidation Declaration = lax unsupported</title>
+                  <description/>
+                  <depends-on>
+                     <feature supported="false">revalidation:lax</feature>
+                     <description>These tests are designed to be run only by a product that does NOT support
+                        revalidation mode lax</description>
+                     <spec-citation spec="XQUPDATE" section-number="2.2.1"
+                        section-title="Revalidation Declaration"
+                        section-pointer="id-revalidation-declaration"/>
+                  </depends-on>
+               </GroupInfo>
+               <test-case name="revalidation-declaration-03-fail"
+                  FilePath="Prolog/RevalidationDeclaration/" scenario="parse-error"
+                  Creator="Andrew Eisenberg">
+                  <description>One declare validation specifying lax</description>
+                  <spec-citation spec="XQUPDATE" section-number="2.2.1"
+                     section-title="Revalidation Declaration"
+                     section-pointer="id-revalidation-declaration"/>
+                  <state time="0">
+                     <query name="revalidation-declaration-03" date="2008-10-16"/>
+                     <input-file role="principal-data" variable="input-context"
+                        >emptydoc</input-file>
+                     <expected-error>XUST0026</expected-error>
                   </state>
                </test-case>
             </test-group>
@@ -1413,6 +1468,34 @@
                      <input-file role="principal-data" variable="books">books</input-file>
                      <output-file role="principal" compare="Fragment"
                         >valskip-repnode-006.out</output-file>
+                  </state>
+               </test-case>
+            </test-group>
+            <test-group name="Revalidation Declaration Skip Unsupported">
+               <GroupInfo>
+                  <title>Revalidation Declaration = skip unsupported</title>
+                  <description/>
+                  <depends-on>
+                     <feature supported="false">revalidation:skip</feature>
+                     <description>These tests are designed to be run only by a product that does NOT support
+                        revalidation mode skip</description>
+                     <spec-citation spec="XQUPDATE" section-number="2.2.1"
+                        section-title="Revalidation Declaration"
+                        section-pointer="id-revalidation-declaration"/>
+                  </depends-on>
+               </GroupInfo>
+               <test-case name="revalidation-declaration-05-fail"
+                  FilePath="Prolog/RevalidationDeclaration/" scenario="parse-error"
+                  Creator="Andrew Eisenberg">
+                  <description>One declare validation specifying skip</description>
+                  <spec-citation spec="XQUPDATE" section-number="2.2.1"
+                     section-title="Revalidation Declaration"
+                     section-pointer="id-revalidation-declaration"/>
+                  <state time="0">
+                     <query name="revalidation-declaration-05" date="2008-10-16"/>
+                     <input-file role="principal-data" variable="input-context"
+                        >emptydoc</input-file>
+                     <expected-error>XUST0026</expected-error>
                   </state>
                </test-case>
             </test-group>
@@ -11254,7 +11337,9 @@
       <test-group name="AdditionalTyping" featureOwner="Jonathan Robie">
          <GroupInfo>
             <title>Additional Typing</title>
-            <description/>
+            <description>Note that despite the names and descriptions of the tests in this group,
+            they do not actually depend on the static typing feature; a product that implements
+            dynamic type checking can run these tests and pass them. (MHK 2010-04-07)</description>
          </GroupInfo>
          <test-case name="statictyp-xqupd-01" FilePath="Static-typing-xqupd/"
             scenario="runtime-error" Creator="Zhen Hua Liu">
@@ -12941,6 +13026,14 @@
          <GroupInfo>
             <title>Update Facility Static Typing Feature</title>
             <description/>
+            <depends-on>
+               <feature supported="true">static-typing</feature>
+               <description>These tests are designed to be run only by a product that supports
+                  the optional static typing feature</description>
+               <spec-citation spec="XQUPDATE" section-number="4"
+                  section-title="Static Typing Feature"
+                  section-pointer="id-update-static"/>
+            </depends-on>
          </GroupInfo>
          <test-case name="stf-insert-01" FilePath="StaticTypingFeature/" scenario="runtime-error"
             Creator="Michael Dyck">

@@ -1052,6 +1052,11 @@
      </xs:annotation>
 
     <xs:restriction base="xs:string">
+       <xs:enumeration value="static-typing">
+          <xs:annotation>
+             <xs:documentation>Supports the optional static typing feature</xs:documentation>
+          </xs:annotation>
+       </xs:enumeration>
       <xs:enumeration value="revalidation:strict">
         <xs:annotation>
           <xs:documentation>Supports revalidation mode = strict</xs:documentation>
