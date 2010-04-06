@@ -32,6 +32,7 @@ submitting results to the XML Query Working Group can be found in [3].</p>
 the following tasks:</p>
 <ul>
   <li>Read test cases from the catalog</li>
+  <li>Deciding which test cases to run</li>
   <li>Execute each test case by:
     <ul>
       <li>Applying customization, if applicable (see below)</li>
@@ -54,6 +55,26 @@ documents to their original state before executing any subsequent test cases.
 Test sources <code>putOutput</code> and <code>putOutput2</code> refer to
 files that do not exist. A test harness should delete documents written to
 these locations after each test case has been run.</p>
+
+<h1>Deciding which test cases to run</h1>
+
+<p>Some features in the specification are optional or implementation-defined.<p>
+    
+<p>Where a test depends on an optional or implementation-defined feature then it is
+    placed in a test group whose group information includes a <code>depends-on</code>
+    element to document the dependency. The names of these features appear (with their meanings)
+    in the enumeration type <code>feature-enum</code> in the schema for the test catalog.
+    For example, <code>static-typing</code> labels tests that depend on the static typing
+    and <code>revalidation:strict</code> depends on revalidation mode strict being supported.
+    If the <code>feature</code> element specifies <code>supported="true"</code> (the default)
+    then the tests in this group should be run only if the product supports the feature; if it specifies
+    <code>supported="false"</code> then it should be run only if the product does not support the feature.
+    If more than one <code>feature</code> element is present then the tests should be run only
+if all the conditions are satisfied.</p>
+
+<p>One of the purposes of this test suite is to collect data on how many products support
+    optional features. Therefore, products should not attempt to run tests unless they 
+implement the relevant feature.</p>
 
 <h1>Test Suite Customization</h1>
 
@@ -493,7 +514,7 @@ byte-comparison with the provided expected results.</p>
 <hr />
 <address>
   <a href="http://www.w3.org/Help/Webmaster">Webmaster</a> · Last modified:
-  $Date: 2009/09/01 20:15:39 $ by $Author: aeisenbe2 $
+  $Date: 2010/04/06 22:45:41 $ by $Author: mkay $
 </address>
 
 <p><a rel="Copyright"
