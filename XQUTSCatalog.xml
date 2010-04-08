@@ -10629,15 +10629,19 @@
                   </state>
                </test-case>
                <test-case name="namespace-errors-q16" FilePath="UpdatePrimitives/NamespaceErrors/"
-                  scenario="runtime-error" Creator="Andrew Eisenberg">
+                  scenario="standard" Creator="Andrew Eisenberg">
                   <description>Rename of element with non-prefixed implicit namespace binding that
-                     clashes.</description>
+                     does not clash.</description>
                   <spec-citation spec="XQUPDATE" section-number="3.1.11" section-title="upd:rename"
                      section-pointer="id-upd-rename"/>
                   <state time="0">
                      <query name="namespace-errors-q16" date="2008-11-05"/>
                      <input-file role="principal-data" variable="input-context">grant</input-file>
-                     <expected-error>XUDY0023</expected-error>
+                  </state>
+                  <state time="1">
+                     <query name="namespace-errors-q16-test" date="2010-04-08"/>
+                     <input-file role="principal-data" variable="input-context">grant</input-file>
+                     <output-file role="principal" compare="XML">namespace-errors-q16.xml</output-file>
                   </state>
                </test-case>
                <test-case name="namespace-errors-q17" FilePath="UpdatePrimitives/NamespaceErrors/"
