@@ -33,6 +33,8 @@
 <!--                 Add a legend.                                           -->
 <!--                                                                         -->
 <!--   2008-03-14    Adjsuted to work with XQuery Update Test Suite.         -->
+<!--                                                                         -->
+<!--   2010-04-09    Adjsuted to recognize optional features.                -->
 
 
 
@@ -189,12 +191,7 @@
                   <xsl:value-of select="$XQTSversion"/>
                   <xsl:text>. Implementations that have used older versions of the test suite are noted.</xsl:text>
                </p>
-               
-               <p>
-                  When results are listed as number/number/number, then indicate passed/failed/total.
-                  Passed and failed together may not equal total, due to tests not run or not reported.
-               </p>
-               
+                             
                <p>The latest version of our files is available at
                   <a href="http://dev.w3.org/cvsweb/2007/xquery-update-10-test-suite/">http://dev.w3.org/cvsweb/2007/xquery-update-10-test-suite/</a>.
                   <xsl:if test='$details="true"'>
@@ -498,6 +495,9 @@
                         </td>
                         <td>untested</td>
                      </tr>
+                     <tr>
+                       <td colspan="8" align="right">Figures are quoted as Passed / Failed / Total (any discrepancy represents tests not run or not reported)</td>
+                     </tr>
                   </table>
             </td>
          </tr>
@@ -668,6 +668,7 @@
                         name='failed'
                         select="count($results[@result='fail'])"
                         />
+                     
                      <xsl:variable name="total">
                         <xsl:choose>
                            <xsl:when test="$syntax='XQueryX'">
@@ -679,17 +680,29 @@
                         </xsl:choose>
                      </xsl:variable>
                      
+                     <xsl:variable name='attempted'>
+                        <xsl:choose>
+                          <xsl:when test="$title='Minimal Conformance'">
+                            <!-- tests for minimal conformance are treated as failed if not run -->
+                            <xsl:value-of select="$total"/>
+                          </xsl:when>
+                          <xsl:otherwise>
+                            <xsl:value-of select="$passed + $failed"/>
+                          </xsl:otherwise>
+                        </xsl:choose>
+                     </xsl:variable>   
+                     
                      <xsl:attribute name="bgcolor">
                         <xsl:choose>
-                           <xsl:when test='$passed=$total and $passed != 0'>
-                              <xsl:value-of select="$perfectcolor"/>
-                           </xsl:when>
-                           <xsl:when test='(100 * $passed) &gt; (98 * $total)'>
-                              <xsl:value-of select="$passcolor"/>
-                           </xsl:when>
                            <xsl:when test='$passed = 0'>
                               <xsl:value-of select="$untestedcolor"/>
                            </xsl:when>
+                           <xsl:when test='$passed=$attempted and $passed != 0'>
+                              <xsl:value-of select="$perfectcolor"/>
+                           </xsl:when>
+                           <xsl:when test='(100 * $passed) &gt; (98 * $attempted)'>
+                              <xsl:value-of select="$passcolor"/>
+                           </xsl:when>                           
                            <xsl:otherwise>
                               <xsl:value-of select="$failcolor"/>
                            </xsl:otherwise>

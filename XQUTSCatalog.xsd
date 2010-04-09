@@ -1057,6 +1057,11 @@
              <xs:documentation>Supports the optional static typing feature</xs:documentation>
           </xs:annotation>
        </xs:enumeration>
+       <xs:enumeration value="full-axis">
+          <xs:annotation>
+             <xs:documentation>Supports the full axis feature (as defined in the XQuery specification)</xs:documentation>
+          </xs:annotation>
+       </xs:enumeration>
       <xs:enumeration value="revalidation:strict">
         <xs:annotation>
           <xs:documentation>Supports revalidation mode = strict</xs:documentation>
