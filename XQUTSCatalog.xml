@@ -509,6 +509,7 @@
                   <input-file role="principal-data" variable="input-context"
                      >employeesNIST</input-file>
                   <expected-error>XUST0028</expected-error>
+                  <expected-error>XUST0002</expected-error>
                </state>
             </test-case>
             <test-case name="id-function-declaration-015" FilePath="FunctionDeclaration/"
