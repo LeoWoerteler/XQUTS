@@ -4,16 +4,9 @@
    xmlns:xqtsr="http://www.w3.org/2005/02/query-test-XQTSResult"
    targetNamespace="http://www.w3.org/2005/02/query-test-XQTSResult">
 
-   <xsd:element
-      name="p"
-      type="xsd:string" />
-
    <xsd:complexType name="commentType">
       <xsd:sequence minOccurs="1" maxOccurs="unbounded">
-         <xsd:choice>         
-            <xsd:element ref="xqtsr:p" />
-            <xsd:any processContents="skip" />
-         </xsd:choice>
+         <xsd:any processContents="skip" />
       </xsd:sequence>
    </xsd:complexType>
    
