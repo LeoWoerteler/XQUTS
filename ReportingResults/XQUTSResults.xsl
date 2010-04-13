@@ -342,7 +342,7 @@
                <blockquote>
                   
                   <table>
-                     <xsl:apply-templates select='//xqts:feature'/>
+                     <xsl:apply-templates select='/xqts:test-suite/xqts:features/xqts:feature'/>
                   </table>
                   
                </blockquote>                  
