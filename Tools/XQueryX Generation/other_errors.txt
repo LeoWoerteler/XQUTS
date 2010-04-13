@@ -1,3 +1,0 @@
-Prolog\RevalidationDeclaration\revalidation-declaration-02.xq
-Prolog\RevalidationDeclaration\revalidation-declaration-04.xq
-Prolog\RevalidationDeclaration\revalidation-declaration-06.xq
