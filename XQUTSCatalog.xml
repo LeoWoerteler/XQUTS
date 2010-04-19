@@ -10841,7 +10841,7 @@
                </depends-on>
             </GroupInfo>
             <test-case name="revalidation-declaration-01-fail"
-               FilePath="Prolog/RevalidationDeclaration/" scenario="parse-error"
+               FilePath="Prolog/RevalidationDeclaration/" scenario="standard"
                Creator="Andrew Eisenberg">
                <description>One declare validation specifying strict</description>
                <spec-citation spec="XQUPDATE" section-number="2.2.1"
@@ -11131,7 +11131,7 @@
                </depends-on>
             </GroupInfo>
             <test-case name="revalidation-declaration-03-fail"
-               FilePath="Prolog/RevalidationDeclaration/" scenario="parse-error"
+               FilePath="Prolog/RevalidationDeclaration/" scenario="standard"
                Creator="Andrew Eisenberg">
                <description>One declare validation specifying lax</description>
                <spec-citation spec="XQUPDATE" section-number="2.2.1"
@@ -11722,7 +11722,7 @@
                </depends-on>
             </GroupInfo>
             <test-case name="revalidation-declaration-05-fail"
-               FilePath="Prolog/RevalidationDeclaration/" scenario="parse-error"
+               FilePath="Prolog/RevalidationDeclaration/" scenario="standard"
                Creator="Andrew Eisenberg">
                <description>One declare validation specifying skip</description>
                <spec-citation spec="XQUPDATE" section-number="2.2.1"
