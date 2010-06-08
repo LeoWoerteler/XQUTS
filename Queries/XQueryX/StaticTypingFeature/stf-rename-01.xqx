@@ -8,6 +8,16 @@
     <xqx:prolog>
       <xqx:varDecl>
         <xqx:varName>input-context</xqx:varName>
+        <xqx:typeDeclaration>
+          <xqx:documentTest>
+            <xqx:elementTest>
+              <xqx:elementName>
+                <xqx:star/>
+              </xqx:elementName>
+              <xqx:typeName xqx:prefix="xs">untyped</xqx:typeName>
+            </xqx:elementTest>
+          </xqx:documentTest>
+        </xqx:typeDeclaration>
         <xqx:external/>
       </xqx:varDecl>
     </xqx:prolog>

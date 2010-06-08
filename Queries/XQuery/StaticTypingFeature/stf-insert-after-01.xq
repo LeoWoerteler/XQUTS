@@ -2,7 +2,7 @@
 (: Description: insert-after: ST of TargetExpr has cardinality greater than one. :)
 
 (: insert-start :)
-declare variable $input-context external;
+declare variable $input-context as document-node(element(*, xs:untyped)) external;
 (: insert-end :)
 
 let $source := <employee name="John Q Public"/>,
