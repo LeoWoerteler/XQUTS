@@ -2043,6 +2043,21 @@
                   <output-file role="principal" compare="XML">id-insert-expr-093.xml</output-file>
                </state>
             </test-case>
+            <test-case name="id-insert-expr-094" FilePath="InsertExpressions/" scenario="standard"
+               Creator="Andrew Eisenberg">
+               <description>Insert an attribute that doesn't conflict with an element in the dedault namespace.</description>
+               <spec-citation spec="XQUPDATE" section-number="2.4.1" section-title="Insert"
+                  section-pointer="id-insert"/>
+               <state time="0">
+                  <query name="id-insert-expr-094" date="2010-06-11"/>
+                  <input-file role="principal-data" variable="input-context">books</input-file>
+               </state>
+               <state time="1">
+                  <query name="id-insert-expr-094-test" date="2010-06-11"/>
+                  <input-file role="principal-data" variable="input-context">books</input-file>
+                  <output-file role="principal" compare="XML">id-insert-expr-094.xml</output-file>
+               </state>
+            </test-case>
          </test-group>
          <test-group name="DeleteExpressions">
             <GroupInfo>
