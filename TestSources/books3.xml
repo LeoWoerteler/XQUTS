@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <BOOKLIST xmlns="http://ns.example.com/books">
-<BOOKS ITEMS="6">
+<BOOKS>
 	<ITEM CAT="MMP">
 	    <!-- the first book -->
 	    <?pi data?>
