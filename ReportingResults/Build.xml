@@ -73,12 +73,18 @@
    
    
    <target name='validate'>
+
+      <!-- vaidate the result files that are in the same directory as the Results.xml file -->
+
       <xmlvalidate
          failonerror="yes"
          lenient="no"
          warn="yes"
          >
-         <fileset dir="." includes="XQUTSSampleResult.xml"/>
+         <fileset dir="${results}/.." includes="*.xml">
+            <contains text='http://www.w3.org/2005/02/query-test-XQTSResult' />
+            <containsregexp expression='&lt;([^:]*[:])?test-suite-result' />
+         </fileset>
          <attribute name="http://xml.org/sax/features/validation" value="true"/>
          <attribute name="http://apache.org/xml/features/validation/schema"  value="true"/>
          <attribute name="http://xml.org/sax/features/namespaces" value="true"/>
