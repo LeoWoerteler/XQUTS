@@ -4,9 +4,19 @@
    xmlns:xqtsr="http://www.w3.org/2005/02/query-test-XQTSResult"
    targetNamespace="http://www.w3.org/2005/02/query-test-XQTSResult">
 
-   <xsd:complexType name="commentType">
-      <xsd:sequence minOccurs="1" maxOccurs="unbounded">
-         <xsd:any processContents="skip" />
+   <xsd:element name="p">
+      <xsd:complexType mixed="true">
+         <xsd:sequence>
+            <xsd:any minOccurs="0" maxOccurs="unbounded" namespace="##any" processContents="skip" />
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+
+   <xsd:complexType name="commentType" mixed="true">
+      <xsd:sequence minOccurs="0" maxOccurs="unbounded">
+         <xsd:sequence>         
+            <xsd:element ref="xqtsr:p" />
+         </xsd:sequence>
       </xsd:sequence>
    </xsd:complexType>
    
@@ -234,7 +244,7 @@
          <xsd:attribute
             name="value"
             type="xsd:string"
-            use="required" />
+            use="optional" />
          <xsd:attribute
             name="context-type"
             use="required">
