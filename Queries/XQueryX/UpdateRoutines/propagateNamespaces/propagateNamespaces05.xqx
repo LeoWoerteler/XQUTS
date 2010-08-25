@@ -12,7 +12,7 @@
       </xqx:copyNamespacesDecl>
       <xqx:defaultNamespaceDecl>
         <xqx:defaultNamespaceCategory>element</xqx:defaultNamespaceCategory>
-        <xqx:uri>bar</xqx:uri>
+        <xqx:uri>http://example.org</xqx:uri>
       </xqx:defaultNamespaceDecl>
     </xqx:prolog>
     <xqx:queryBody>

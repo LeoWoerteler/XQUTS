@@ -1,4 +1,4 @@
-<result xmlns="bar">
+<result xmlns="http://example.org">
   <x>foo a-ns</x>
-  <y>bar</y>
+  <y>http://example.org</y>
 </result>

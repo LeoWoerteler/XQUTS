@@ -1,7 +1,7 @@
 declare copy-namespaces preserve, inherit;
 declare boundary-space preserve;
 
-declare default element namespace "bar";
+declare default element namespace "http://example.org";
 
 copy $x := <x xmlns="foo" xmlns:a="a-ns"/>
 modify 
