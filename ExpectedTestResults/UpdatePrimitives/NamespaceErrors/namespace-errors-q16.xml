@@ -1,5 +1,5 @@
 <mygrant xmlns:nara="http://www.anr.fr/nara" xmlns="http://www.example.com/test"> 
-  <nara:lab name="AgroPlus"> 
+  <nara:lab xmlns="" name="AgroPlus"> 
      <nara:address>Saclay, France</nara:address> 
      <nara:researcher rid="r1" name="Fred" position="technical staff"/> 
      <nara:researcher rid="r2" name="Liz" position="lab assistant"/> 
@@ -8,10 +8,10 @@
        <agro:engineer name="Marc"/> 
      </agro:lab> 
   </nara:lab> 
-  <univ:lab xmlns:univ="http://www.education.gouv.fr" name="Food Engineering Dept, Orsay U."> 
+  <univ:lab xmlns="" xmlns:univ="http://www.education.gouv.fr" name="Food Engineering Dept, Orsay U."> 
     <univ:address>Orsay, France</univ:address> 
     <univ:researcher rid="r3" name="Henry" position="associate professor"/> 
     <univ:PhD name="Robert" advisor="r3"/> 
-    <PhD xmlns="" name="Julia" advisor="r1"/> 
+    <PhD name="Julia" advisor="r1"/> 
   </univ:lab> 
 </mygrant>
