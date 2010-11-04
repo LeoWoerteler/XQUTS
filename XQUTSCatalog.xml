@@ -12465,7 +12465,7 @@
          </test-group>
          <test-group name="put-comment-fail">
             <GroupInfo>
-               <title>fn:put() applied to comment nodes - failing</title>
+               <title>fn:put() applied to comment nodes - unsupported</title>
                <description>These tests all call fn:put with the argument being a comment node. The
                   tests should be run by a product that does NOT support this feature</description>
                <depends-on>
@@ -12515,7 +12515,7 @@
          </test-group>
          <test-group name="put-PI-fail">
             <GroupInfo>
-               <title>fn:put() applied to processing-instruction nodes - failing</title>
+               <title>fn:put() applied to processing-instruction nodes - unsupported</title>
                <description>These tests all call fn:put with the argument being a PI node. The tests
                   should be run by a product that does NOT support this feature</description>
                <depends-on>
@@ -12565,7 +12565,7 @@
          </test-group>
          <test-group name="put-attribute-fail">
             <GroupInfo>
-               <title>fn:put() applied to attribute nodes - failing</title>
+               <title>fn:put() applied to attribute nodes - unsupported</title>
                <description>These tests all call fn:put with the argument being an attribute node.
                   The tests should be run by a product that does NOT support this
                   feature</description>
@@ -12616,7 +12616,7 @@
          </test-group>
          <test-group name="put-text-fail">
             <GroupInfo>
-               <title>fn:put() applied to text nodes - failing</title>
+               <title>fn:put() applied to text nodes - unsupported</title>
                <description>These tests all call fn:put with the argument being a text node. The
                   tests should be run by a product that does NOT support this feature</description>
                <depends-on>
