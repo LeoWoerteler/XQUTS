@@ -28,7 +28,7 @@
    
    <target name="create">
       <tstamp>
-         <format property="now" pattern="MM/dd/yyyy HH:mm" />
+         <format property="now" pattern="yyyy-MM-dd HH:mm" />
       </tstamp>
       
       <xslt
@@ -49,7 +49,7 @@
    
    <target name="createsimple">
       <tstamp>
-         <format property="now" pattern="MM/dd/yyyy HH:mm" />
+         <format property="now" pattern="yyyy-MM-dd HH:mm" />
       </tstamp>
       
       <xslt

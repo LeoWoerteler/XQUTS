@@ -34,7 +34,9 @@
 <!--                                                                         -->
 <!--   2008-03-14    Adjsuted to work with XQuery Update Test Suite.         -->
 <!--                                                                         -->
-<!--   2010-04-09    Adjsuted to recognize optional features.                -->
+<!--   2010-04-09    Adjusted to recognize optional features.                -->
+<!--                                                                         -->
+<!--   2011-01-20    Added a link to the Java parsing applet.                -->
 
 
 
@@ -197,6 +199,10 @@
                   <xsl:if test='$details="true"'>
                      The "catalog" and "query" links found with each test case are links to this version.                     
                   </xsl:if>
+               </p>
+
+               <p>A Java applet that parses XQuery Update Facility 1.0 expressions is available at
+                  <a href="http://www.w3.org/2010/02/qt-applets/xquery10-update/">http://www.w3.org/2010/02/qt-applets/xquery10-update/</a>.
                </p>
                
                <xsl:apply-templates>
