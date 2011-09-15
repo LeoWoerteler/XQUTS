@@ -114,13 +114,7 @@
                     <xqx:predicates>
                       <xqx:eqOp>
                         <xqx:firstOperand>
-                          <xqx:pathExpr>
-                            <xqx:stepExpr>
-                              <xqx:filterExpr>
-                                <xqx:contextItemExpr/>
-                              </xqx:filterExpr>
-                            </xqx:stepExpr>
-                          </xqx:pathExpr>
+                          <xqx:contextItemExpr/>
                         </xqx:firstOperand>
                         <xqx:secondOperand>
                           <xqx:stringConstantExpr>
@@ -160,13 +154,7 @@
                     <xqx:predicates>
                       <xqx:eqOp>
                         <xqx:firstOperand>
-                          <xqx:pathExpr>
-                            <xqx:stepExpr>
-                              <xqx:filterExpr>
-                                <xqx:contextItemExpr/>
-                              </xqx:filterExpr>
-                            </xqx:stepExpr>
-                          </xqx:pathExpr>
+                          <xqx:contextItemExpr/>
                         </xqx:firstOperand>
                         <xqx:secondOperand>
                           <xqx:stringConstantExpr>
@@ -206,13 +194,7 @@
                     <xqx:predicates>
                       <xqx:eqOp>
                         <xqx:firstOperand>
-                          <xqx:pathExpr>
-                            <xqx:stepExpr>
-                              <xqx:filterExpr>
-                                <xqx:contextItemExpr/>
-                              </xqx:filterExpr>
-                            </xqx:stepExpr>
-                          </xqx:pathExpr>
+                          <xqx:contextItemExpr/>
                         </xqx:firstOperand>
                         <xqx:secondOperand>
                           <xqx:stringConstantExpr>
@@ -252,13 +234,7 @@
                     <xqx:predicates>
                       <xqx:eqOp>
                         <xqx:firstOperand>
-                          <xqx:pathExpr>
-                            <xqx:stepExpr>
-                              <xqx:filterExpr>
-                                <xqx:contextItemExpr/>
-                              </xqx:filterExpr>
-                            </xqx:stepExpr>
-                          </xqx:pathExpr>
+                          <xqx:contextItemExpr/>
                         </xqx:firstOperand>
                         <xqx:secondOperand>
                           <xqx:stringConstantExpr>
