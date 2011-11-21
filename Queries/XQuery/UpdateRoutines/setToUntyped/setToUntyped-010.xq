@@ -1,4 +1,4 @@
-(: Name: setToUntyped-009 :)
+(: Name: setToUntyped-010 :)
 (: Description: Check that all properties are set correctly by upd:setToUntyped. :)
 
 declare construction preserve;
